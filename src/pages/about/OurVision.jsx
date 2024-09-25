@@ -10,7 +10,7 @@ export const OurVision = () => {
 
     <div className="screen-size bg-white pb-10 pt-16 sm:py-16 px-2 lg:px-10">
       {/* Title */}
-      <div className="mb-8 max-sm:center">
+      <div className="mb-8 ">
         <h2 className="text-[28px] font-semibold bg-[#FEF116] text-center w-[200px] p-3">
           Our Vision...
         </h2>

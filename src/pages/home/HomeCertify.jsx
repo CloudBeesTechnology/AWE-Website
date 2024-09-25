@@ -6,7 +6,7 @@ import { TiTickOutline } from "react-icons/ti";
 
 export const HomeCertify= () => {
   return (
-    <section className="bg-white screen-size my-20  flex  items-center justify-between max-md:flex-col w-full  gap-10">
+    <section className="bg-white screen-size sm:my-20 my-10 flex items-center justify-between max-md:flex-col w-full  gap-10 ">
           {/* Left Image Section */}
       <div className="  ">
         <img

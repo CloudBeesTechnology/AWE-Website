@@ -7,7 +7,7 @@ export const HomeMS = () => {
     <div 
       className=" screen-size center flex-col mb-10"
     >
-        <h2 className='sm:my-10 text-[22px] text-center sm:text-[38px] font-semibold
+        <h2 className='sm:my-10 mb-5 text-[22px] text-center sm:text-[38px] font-semibold
         '>AWE’s major services consist of:</h2>
      <div className='w-full flex justify-center items-center flex-wrap  gap-5'>
      {services.map((service, index) => (

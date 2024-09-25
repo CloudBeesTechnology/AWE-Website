@@ -11,7 +11,7 @@ export const About = () => {
       <CommonBanner background={bg} title="About" />
 
       <section className="screen-size mx-auto my-10">
-      <div className="bg-white py-16  lg:px-10">
+      <div className="bg-white py-10  lg:px-10">
       {/* Title */}
       <div className="mb-8">
         <h2 className="text-center text-[28px] font-semibold bg-[#FEF116] w-[250px] p-3">
