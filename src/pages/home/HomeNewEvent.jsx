@@ -18,11 +18,13 @@ export const HomeNewEvent  = () => {
   ];
 
   return ( 
-    <div className=" screen-size mx-auto flex  items-center justify-between max-md:flex-col w-full  gap-10">
+    <div className=" screen-size mx-auto sm:my-20 my-14">
       {/* Main Content */}
         {/* Left Image Section */}
-       <div></div>
-          <div >
+        <h2 className="text-center text-xl font-bold text-dark_red relative mb-4"><span className=' absolute w-[100px] h-4 top-4   border-b-2 border-dark_red '></span>
+        NEWS & EVENTS</h2>
+       <div className='flex  items-center justify-between max-md:flex-col w-full  gap-10 my-10'>
+       <div >
           <img
             src={image} // Replace with your image URL
             alt="Event"
@@ -41,6 +43,8 @@ export const HomeNewEvent  = () => {
             ))}
           </ul>
         </div>
+       </div>
+       
    
         </div>
   );

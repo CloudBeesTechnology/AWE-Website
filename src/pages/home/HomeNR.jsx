@@ -3,7 +3,7 @@ import React from 'react';
 
 export const HomeNR = () => {
   return (
-    <section className=" screen-size relative  bg-bottom " >
+    <section className="screen-size relative  bg-bottom " >
       {/* <div className="absolute inset-0 bg-black bg-opacity-50"></div> */}
 
       <div className="relative z-10 flex flex-col lg:flex-row border gap-5 justify-between items-start lg:items-center p-8 lg:p-16">

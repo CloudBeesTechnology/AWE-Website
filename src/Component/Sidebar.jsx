@@ -1,12 +1,20 @@
 import { Link, NavLink } from "react-router-dom";
 import { RiCloseFill } from "react-icons/ri"; // Corrected the import to the proper close icon
 import { useState } from "react";
+import { FaChevronDown } from "react-icons/fa";
 
 export const Sidebar = ({ showSidebar, toggleSidebar }) => {
   const [showServicesList, setServicesList] = useState(false);
 
   const toggleServiceList = () => {
     setServicesList(!showServicesList);
+  };
+
+
+
+
+  const closeServiceList = () => {
+    setServicesList(false);
   };
 
   return (
@@ -21,7 +29,7 @@ export const Sidebar = ({ showSidebar, toggleSidebar }) => {
         <div className="pb-7 px-2 mt-5 flex justify-between items-center">
           <button
             onClick={toggleSidebar}
-            className="text-secondary text-[20px] focus:outline-none"
+            className="text-secondary text-[22px] focus:outline-none"
           >
             <RiCloseFill />
           </button>
@@ -36,38 +44,69 @@ export const Sidebar = ({ showSidebar, toggleSidebar }) => {
             Home
           </NavLink>
           <div className="relative">
-            <NavLink
-              to="/about"
-              className={({ isActive }) =>
-                isActive ? " text-dark_red font-bold" : ""
-              }
-              onClick={toggleServiceList}
-            >
-              About Us
-            </NavLink>
-            {showServicesList && (
-              <div className="absolute top-8 -left-5 bg-white flex flex-col text-[18px] p-4 gap-1 w-[170px] shadow-md rounded-md font-medium">
-                <NavLink to="/mission" className="border-b border-grey p-1 ">
-                  MISSION
-                </NavLink>
-                <NavLink to="/vision" className="border-b border-grey p-1 ">
-                  VISION
-                </NavLink>
-                <NavLink to="/values" className="border-b border-grey p-1 ">
-                  VALUES
-                </NavLink>
-                <NavLink to="/services" className="border-b border-grey p-1 ">
-                  SERVICES
-                </NavLink>
-                <NavLink to="/ourWorkForce" className="border-b border-grey p-1 ">
-                  WORKFORCE
-                </NavLink>
-                <NavLink to="/awards" className="border-b border-grey p-1 ">
-                  AWARDS
-                </NavLink>
-              </div>
-            )}
-          </div>
+      {/* About Us text with NavLink */}
+      <NavLink
+        to="/about"
+        className={({ isActive }) =>
+          isActive ? "border-b-4 border-dark_red font-bold" : ""
+        }
+      >
+        About Us
+      </NavLink>
+
+      {/* Icon to toggle the service list */}
+      <button onClick={toggleServiceList} className="ml-2 focus:outline-none">
+        <FaChevronDown className="inline text-dark_red" />
+      </button>
+
+      {/* Dropdown service list, shown only when showServicesList is true */}
+      {showServicesList && (
+        <div className="absolute top-8 -left-4 bg-white flex flex-col text-[18px] p-4 gap-1 w-[170px] shadow-md rounded-md font-medium">
+          <NavLink
+            to="/ourMission"
+            className="border-b border-grey p-1 text-dark_red"
+            onClick={closeServiceList}
+          >
+            MISSION
+          </NavLink>
+          <NavLink
+            to="/ourVision"
+            className="border-b border-grey p-1 text-dark_red"
+            onClick={closeServiceList}
+          >
+            VISION
+          </NavLink>
+          <NavLink
+            to="/values" // Add the missing `to` prop for VALUES
+            className="border-b border-grey p-1 text-dark_red"
+            onClick={closeServiceList}
+          >
+            VALUES
+          </NavLink>
+          <NavLink
+            to="/OurService"
+            className="border-b border-grey p-1 text-dark_red"
+            onClick={closeServiceList}
+          >
+            SERVICES
+          </NavLink>
+          <NavLink
+            to="/ourWorkForce"
+            className="border-b border-grey p-1 text-dark_red"
+            onClick={closeServiceList}
+          >
+            WORKFORCE
+          </NavLink>
+          <NavLink
+            to="/awards" // Add the missing `to` prop for AWARDS
+            className="border-b border-grey p-1 text-dark_red"
+            onClick={closeServiceList}
+          >
+            AWARDS
+          </NavLink>
+        </div>
+      )}
+    </div>
 
           <NavLink
             to="/gallery"
