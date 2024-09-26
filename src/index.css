@@ -49,3 +49,6 @@
   @apply  bg-no-repeat w-full bg-cover bg-center
 }
 }
+.custom-gradient {
+  background: linear-gradient(to top right, #EEDAD9, #f3D3D3 );
+}

@@ -27,14 +27,33 @@ export const HomeHeader = () => {
     </div>
 </div>
 
-<div className=" bg-yellow  max-sm:w-full p-2 rounded-l-2xl w-1/2 h-[180px] mx-auto flex justify-between items-center absolute -bottom-24 right-0 max-sm:left-0">
+<div className="absolute -bottom-24 flex max-md:items-start gap-2 text-sm bg-yellow max-w-[95%] w-full px-2 py-4 rounded-lg">
+      <div className="center text-center gap-2 max-md:flex-col">
+        <span className="text-black text-start sm:text-2xl border sm:p-2 p-1 rounded-full"><FaLocationDot/></span>
+        <div>
+          <h4 className="text-black font-semibold mb-1">Location</h4>
+          <p className="text-black  ">
+           <span className='flex max-md:flex-col max-md:gap-1 max-md:mb-1'> P. O. Box 78, <span>Kuala Belait KA 1189,</span></span> 
+           Brunei Darussalam
+          </p>
+        </div>
+      </div>
+      <div className=" center text-center max-md:flex-col">
+        <span className="text-black sm:text-2xl border p-2 rounded-full"><MdCall/></span>
+        <div>
+          <h4 className="text-black font-semibold mb-2">Contact</h4>
+          <p className="text-black ">+673 3331001</p>
+        </div>
+      </div>
+    </div>
+{/* <div className=" bg-yellow rounded-md px-6 md:p-2 md:rounded-l-2xl md:w-1/2 h-[180px] mx-auto flex justify-between items-center gap-10 absolute -bottom-24 md:right-0 ">
       <div className="flex items-center sm:space-x-5 space-x-2 ">
         <span className="text-black text-[18px] sm:text-2xl border p-2 rounded-full"><FaLocationDot/></span>
         <div>
           <h4 className="text-black font-semibold mb-1">Location</h4>
-          <p className="text-black max-sm:text-[14px]">
-            P. O. Box 78, Kuala Belait KA 1189 <br />
-            Brunei Darussalam
+          <p className="text-black max-sm:text-[14px] ">
+           <span className='flex max-md:flex-col max-md:gap-2 max-md:mb-2'> P. O. Box 78, <span>Kuala Belait KA 1189</span></span> 
+           Brunei Darussalam
           </p>
         </div>
       </div>
@@ -45,7 +64,7 @@ export const HomeHeader = () => {
           <p className="text-black max-sm:text-[14px]">+673 3331001</p>
         </div>
       </div>
-    </div>
+    </div> */}
 </section>
   )
 }

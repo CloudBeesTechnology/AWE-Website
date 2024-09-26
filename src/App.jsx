@@ -9,6 +9,9 @@ import { About } from './pages/about/About';
 import { OurVision } from './pages/about/OurVision';
 import { AboutOurMission } from './pages/about/AboutOurMission';
 import { AboutService } from './pages/about/AboutService';
+import { Contact } from './pages/contact/Contact';
+import { Gallery } from './pages/gallery/Gallery';
+import { AboutValues } from './pages/about/AboutValues';
 
 
 export const App=()=> {
@@ -24,8 +27,11 @@ export const App=()=> {
     <Route path="/ourWorkForce" Component={OurWorkForce} />
     <Route path="/about" Component={About} />
     <Route path="/ourVision" Component={OurVision} />
+    <Route path="/values" Component={AboutValues} />
     <Route path="/ourMission" Component={AboutOurMission} />
     <Route path="/OurService" Component={AboutService} />
+    <Route path="/contact" Component={Contact} />
+    <Route path="/gallery" Component={Gallery} />
     <Route path="/organization" Component={Organization} />
 
     </Routes>

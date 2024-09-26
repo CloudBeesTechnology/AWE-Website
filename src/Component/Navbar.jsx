@@ -76,42 +76,42 @@ export const Navbar = () => {
         <div className="absolute top-8 -left-10 bg-white flex flex-col text-[18px] p-4 gap-1 w-[170px] shadow-md rounded-md font-medium">
           <NavLink
             to="/ourMission"
-            className="border-b border-grey p-1 text-dark_red"
+            className="border-b border-grey p-1 text-dark_red text-[14px]"
             onClick={closeServiceList}
           >
             MISSION
           </NavLink>
           <NavLink
             to="/ourVision"
-            className="border-b border-grey p-1 text-dark_red"
+            className="border-b border-grey p-1 text-dark_red text-[14px]"
             onClick={closeServiceList}
           >
             VISION
           </NavLink>
           <NavLink
             to="/values" // Add the missing `to` prop for VALUES
-            className="border-b border-grey p-1 text-dark_red"
+            className="border-b border-grey p-1 text-dark_red text-[14px]"
             onClick={closeServiceList}
           >
             VALUES
           </NavLink>
           <NavLink
             to="/OurService"
-            className="border-b border-grey p-1 text-dark_red"
+            className="border-b border-grey p-1 text-dark_red text-[14px]"
             onClick={closeServiceList}
           >
             SERVICES
           </NavLink>
           <NavLink
             to="/ourWorkForce"
-            className="border-b border-grey p-1 text-dark_red"
+            className="border-b border-grey p-1 text-dark_red text-[14px]"
             onClick={closeServiceList}
           >
             WORKFORCE
           </NavLink>
           <NavLink
             to="/awards" // Add the missing `to` prop for AWARDS
-            className="border-b border-grey p-1 text-dark_red"
+            className="border-b border-grey p-1 text-dark_red text-[14px]"
             onClick={closeServiceList}
           >
             AWARDS
@@ -135,7 +135,7 @@ export const Navbar = () => {
             to="/contact"
             className={({ isActive }) => (isActive ? "border-b-4 border-dark_red font-bold" : "")}
           >
-            Contact
+            Contact Us
           </NavLink>
 
           <NavLink to="/applyJob"             
