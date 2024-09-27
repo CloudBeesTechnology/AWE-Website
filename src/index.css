@@ -48,6 +48,9 @@
   background-image: url(./assets/home/bg-bottom.png);
   @apply  bg-no-repeat w-full bg-cover bg-center
 }
+.primary_btn{
+  @apply bg-yellow font-bold py-2 px-24 text-dark_grey rounded-md
+}
 }
 .custom-gradient {
   background: linear-gradient(to top right, #EEDAD9, #f3D3D3 );

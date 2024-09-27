@@ -1,4 +1,4 @@
-import {   Route, Routes } from 'react-router-dom';
+import {   Route, Routes, useLocation } from 'react-router-dom';
 import { Navbar } from './Component/Navbar';
 import { Helmet, HelmetProvider } from 'react-helmet-async';
 import { Home } from './pages/home/Home';
@@ -12,9 +12,17 @@ import { AboutService } from './pages/about/AboutService';
 import { Contact } from './pages/contact/Contact';
 import { Gallery } from './pages/gallery/Gallery';
 import { AboutValues } from './pages/about/AboutValues';
+import { CareerSection } from './pages/applyJob/CareerSection';
+import { AddCandidates } from './pages/applyJob/apply/AddCandidates';
+import { ApplicantDetails } from './pages/applyJob/apply/ApplicatDetails';
+import { EducationDetails } from './pages/applyJob/apply/EducationaDetails';
+import { OtherDetails } from './pages/applyJob/apply/OtherDetails';
+import { PersonalDetails } from './pages/applyJob/apply/PersonalDetails';
 
 
 export const App=()=> {
+  const location = useLocation();
+  const hideNavbar = ["/applyJob","/addCandidates","/addCandidates/personalDetails","/addCandidates/educationDetails","/addCandidates/otherDetails"];
   return (
     
     <HelmetProvider>
@@ -32,10 +40,18 @@ export const App=()=> {
     <Route path="/OurService" Component={AboutService} />
     <Route path="/contact" Component={Contact} />
     <Route path="/gallery" Component={Gallery} />
+    <Route path="/applyJob" Component={CareerSection} />
+    <Route path="/addCandidates" Component={AddCandidates}>
+            <Route index element={<ApplicantDetails />} />
+            <Route path="personalDetails" element={<PersonalDetails />} />
+            <Route path="educationDetails" element={<EducationDetails />} />
+            <Route path="otherDetails" element={<OtherDetails />} />
+          </Route>
     <Route path="/organization" Component={Organization} />
 
     </Routes>
-    <Footer/>
+    {!hideNavbar.includes(location.pathname) && <Footer />}
+    {/* <Footer/> */}
   </HelmetProvider>
   );
 }

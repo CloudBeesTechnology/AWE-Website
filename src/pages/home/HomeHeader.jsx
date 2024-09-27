@@ -27,8 +27,8 @@ export const HomeHeader = () => {
     </div>
 </div>
 
-<div className="absolute -bottom-24 flex max-md:items-start gap-2 text-sm bg-yellow max-w-[95%] w-full px-2 py-4 rounded-lg">
-      <div className="center text-center gap-2 max-md:flex-col">
+<div className="absolute -bottom-24 flex max-md:items-start justify-between gap-2 text-sm bg-[#FEF563] max-sm:max-w-[95%] right-0 px-1 sm:py-12  py-4 rounded-l-lg">
+      <div className="center text-center gap-2 max-md:flex-col p-2">
         <span className="text-black text-start sm:text-2xl border sm:p-2 p-1 rounded-full"><FaLocationDot/></span>
         <div>
           <h4 className="text-black font-semibold mb-1">Location</h4>
@@ -39,9 +39,9 @@ export const HomeHeader = () => {
         </div>
       </div>
       <div className=" center text-center max-md:flex-col">
-        <span className="text-black sm:text-2xl border p-2 rounded-full"><MdCall/></span>
+        <span className="text-black text-start sm:text-2xl border sm:p-2 p-1 rounded-full"><MdCall/></span>
         <div>
-          <h4 className="text-black font-semibold mb-2">Contact</h4>
+          <h4 className="text-black font-semibold mb-2 m-2">Contact</h4>
           <p className="text-black ">+673 3331001</p>
         </div>
       </div>
