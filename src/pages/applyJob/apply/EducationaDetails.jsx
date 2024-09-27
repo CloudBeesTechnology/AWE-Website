@@ -109,7 +109,7 @@ console.log("Successfully submitted Three Data:",navigateEduData);
           Characters Referees <span className="text-[#838383]">(Names of relatives should not be given)</span>
         </label>
         {referees.map((referee, index) => (
-          <div key={referee.id} className="flex gap-2 mb-7">
+          <div key={referee.id} className="grid sm:grid-cols-2 md:grid-cols-4 gap-2 mb-7">
             <Controller
               name={`referees.${index}.name`}
               control={control}
@@ -139,7 +139,7 @@ console.log("Successfully submitted Three Data:",navigateEduData);
                 <input
                   {...field}
                   placeholder="Telephone"
-                  className="mt-2 text_size_7 w-[150px] p-2.5 bg-lite_skyBlue border border-[#dedddd] text-dark_grey outline-none rounded"
+                  className="mt-2 text_size_7  p-2.5 bg-lite_skyBlue border border-[#dedddd] text-dark_grey outline-none rounded"
                 />
               )}
             />
@@ -169,7 +169,7 @@ console.log("Successfully submitted Three Data:",navigateEduData);
       <div className="relative">
         <label className="text_size_6 mb-3">Relatives Employed by the company</label>
         {relatives.map((relative, index) => (
-          <div key={relative.id} className="grid grid-cols-3 gap-4 mb-7">
+          <div key={relative.id} className="grid sm:grid-cols-3 gap-4 mb-7">
             <Controller
               name={`relatives.${index}.name`}
               control={control}
@@ -234,7 +234,7 @@ console.log("Successfully submitted Three Data:",navigateEduData);
       <div className="mb-4 relative text_size_6">
         <label className="block mb-1">In Case of Accident / Emergency</label>
         {emergencyContact.map((emergency, index) => (
-          <div key={emergency.id} className="grid grid-cols-5 gap-3 mb-2">
+          <div key={emergency.id} className="grid sm:grid-cols-3 md:grid-cols-5 gap-3 mb-2">
             <Controller
               name={`emergencyContact.${index}.name`}
               control={control}
@@ -347,11 +347,11 @@ console.log("Successfully submitted Three Data:",navigateEduData);
         { field: "liquor", label: "Were you ever an alcoholic or substance abuser?" },
         { field: "crime", label: "Have you ever been convicted of a crime?" },
       ].map((section, idx) => (
-        <div key={idx} className="grid grid-cols-1 gap-4 text_size_6 mt-5">
+        <div key={idx} className="grid grid-cols-1 gap-4 text_size_6 mt-5 ">
           <div>
             <label htmlFor={section.field} className="text_size_6 mb-2">{section.label}</label>
           </div>
-          <div className="flex justify-between items-center mb-5">
+          <div className="flex max-sm:flex-col justify-between items-center mb-5">
             <div className="flex items-center gap-4">
               <div className="flex items-center gap-2">
                 <Controller
@@ -397,8 +397,8 @@ console.log("Successfully submitted Three Data:",navigateEduData);
             </div>
 
             {/* Conditional Description Input */}
-            <div className="items-center">
-              <label htmlFor={`${section.field}Description`} className="text_size_7 mr-5 text-[#C7C7C7]">
+            <div className="items-center max-sm:mt-4">
+              <label htmlFor={`${section.field}Description`} className="text_size_7  text-[#C7C7C7]">
                 If yes, please provide details
               </label>
               <Controller
@@ -409,7 +409,7 @@ console.log("Successfully submitted Three Data:",navigateEduData);
                   <input
                     id={`${section.field}Description`}
                     {...field}
-                    className={`w-[450px] mt-2 text_size_7 p-2.5 bg-lite_skyBlue border border-[#dedddd] text-dark_grey outline-none rounded ${
+                    className={`w-full sm:w-[450px] mt-2 text_size_7 p-2.5 bg-lite_skyBlue border border-[#dedddd] text-dark_grey outline-none rounded ${
                       errors[`${section.field}Description`] ? "border-red-500" : ""
                     }`}
                     disabled={watch(section.field) !== "yes"} // Disable when "No" is selected

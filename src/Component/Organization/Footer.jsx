@@ -40,7 +40,7 @@ export const Footer = () => {
           <span>Privacy Policy</span>
         </article>
         <article>
-          <p>Copyright 2024 Adinin Works & Engineering</p>
+          <p>Copyright © 2024 Adinin Works & Engineering. All rights reserved.</p>
         </article>
        </div>
       </div>

@@ -3,10 +3,10 @@ import { useForm, Controller } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import { CandidatesSchema } from "../../services/Validation";
 import { generateClient } from "aws-amplify/api";
-// import {createCandidateApplicationForm} from "../../graphql/mutations";
 import { uploadData } from "aws-amplify/storage";
 import { GoUpload } from "react-icons/go"; // Ensure this import is correct
 import { useLocation } from "react-router-dom";
+import { useEffect } from "react";
 
 const client = generateClient();
 
@@ -24,6 +24,12 @@ export const OtherDetails = () => {
   const [updateCertificate, setUpdateCertificate] = useState("");
   const [updatePassport, setUpdatePassport] = useState("");
 
+  useEffect(()=>{
+    window.scrollTo({
+      top:0,
+      behavior:"smooth"
+    })
+      },[])
   const {
     register,
     control,
@@ -304,80 +310,12 @@ export const OtherDetails = () => {
         )}
       </div>
       {/* Interviewed Before */}
-      {/* <div className="mb-4">
-        <label className="text_size_6">
-          Have you been interviewed for a position at this company before?
-        </label>
-        <div className="flex justify-between items-center mt-2 mb-4">
-          <div>
-            <Controller
-              name="perInterviewStatus"
-              control={control}
-              render={({ field }) => (
-                <>
-                  <input
-                    type="radio"
-                    id="yes"
-                    {...field}
-                    value="yes"
-                    className="mr-2 p-3"
-                  />
-                  <label htmlFor="yes" className="mr-4 text_size_6">
-                    Yes
-                  </label>
-
-                  <input
-                    type="radio"
-                    id="no"
-                    {...field}
-                    value="no"
-                    className="mr-2 p-3"
-                    defaultChecked
-                  />
-                  <label htmlFor="no" className="text_size_6">
-                    No
-                  </label>
-                </>
-              )}
-            />
-            {errors.perInterviewStatus && (
-              <p className="text-[red] text-xs mt-1">
-                {errors.perInterviewStatus.message}
-              </p>
-            )}
-          </div>
-
-          <div>
-            <label className="w-[350px] text_size_7">
-              If yes, please give Details
-            </label>
-            <Controller
-              name="perInterviewDescription"
-              control={control}
-              render={({ field }) => (
-                <input
-                  {...field}
-                  disabled={watch("perInterviewStatus") !== "yes"}
-                  className={`mt-2 text_size_7 p-2.5 bg-lite_skyBlue border border-[#dedddd] text-dark_grey outline-none rounded w-full ${
-                    errors.perInterviewDescription ? "border-[red]" : ""
-                  }`}
-                />
-              )}
-            />
-            {errors.perInterviewDescription && (
-              <p className="text-[red] text-xs mt-4">
-                {errors.perInterviewDescription.message}
-              </p>
-            )}
-          </div>
-        </div>
-      </div> */}
 <div className="mb-4">
   <label className="text_size_6">
     Have you been interviewed for a position at this company before?
   </label>
-  <div className="flex justify-between items-center mt-2 mb-4">
-    <div>
+  <div className="flex justify-between items-center mt-2 mb-4 max-sm:flex-col">
+    <div className="mt-2">
       <Controller
         name="perInterviewStatus"
         control={control}
@@ -416,8 +354,8 @@ export const OtherDetails = () => {
       )}
     </div>
 
-    <div>
-      <label className="w-[350px] text_size_7">
+    <div className="mt-4">
+      <label className="w-full sm:w-[350px] text_size_7">
         If yes, please give Details
       </label>
       <Controller
@@ -458,10 +396,10 @@ export const OtherDetails = () => {
       {/* File Uploads */}
       <div className="my-5">
         <label className="text_size_6">Choose file</label>
-        <div className="flex items-center justify-between mt-3 mb-10">
+        <div className="flex items-center justify-between mt-3 mb-10 max-sm:flex-wrap">
           {/* Resume Upload */}
-          <div>
-            <label className="flex items-center px-3 py-2 text_size_7 p-2.5 bg-lite_skyBlue border border-[#dedddd] rounded-md cursor-pointer">
+          <div className="max-sm:w-full  mb-4">
+            <label className="flex justify-between items-center px-3 py-2 text_size_7 p-2.5 bg-lite_skyBlue border border-[#dedddd] rounded-md cursor-pointer">
               Upload Resume
               <input
                 type="file"
@@ -481,8 +419,8 @@ export const OtherDetails = () => {
           </div>
 
           {/* Certificate Upload */}
-          <div>
-            <label className="flex items-center px-3 py-2 text_size_7 p-2.5 bg-lite_skyBlue border border-[#dedddd] rounded-md cursor-pointer">
+          <div className="max-sm:w-full mb-4">
+            <label className="flex justify-between items-center px-3 py-2 text_size_7 p-2.5 bg-lite_skyBlue border border-[#dedddd] rounded-md cursor-pointer">
               Qualification Certificate
               <input
                 type="file"
@@ -502,8 +440,8 @@ export const OtherDetails = () => {
           </div>
 
           {/* Passport Upload */}
-          <div>
-            <label className="flex items-center px-3 py-2 text_size_7 p-2.5 bg-lite_skyBlue border border-[#dedddd] rounded-md cursor-pointer">
+          <div className="max-sm:w-full">
+            <label className="flex justify-between items-center px-3 py-2 text_size_7 p-2.5 bg-lite_skyBlue border border-[#dedddd] rounded-md cursor-pointer">
               Upload IC / Passport
               <input
                 type="file"
@@ -530,7 +468,7 @@ export const OtherDetails = () => {
           {...register('employeeStatement', { required: 'This field is required' })}
           className="w-5 h-5 border-medium_grey rounded"
         />
-        <label htmlFor="employeeStatement" className="ml-2 text-gray-700">
+        <label htmlFor="employeeStatement" className="ml-2 max-sm:text-[12px]">
           I Hereby Declare that every statement made by me in this form is true and correct and I understand and agree that any false declaration made by me may be ground for termination of my contract of employment without notice.
         </label>
       </div>

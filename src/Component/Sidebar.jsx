@@ -1,22 +1,44 @@
-import { Link, NavLink } from "react-router-dom";
+import { Link, NavLink, useLocation } from "react-router-dom";
 import { RiCloseFill } from "react-icons/ri"; // Corrected the import to the proper close icon
 import { useState } from "react";
 import { FaChevronDown } from "react-icons/fa";
 
 export const Sidebar = ({ showSidebar, toggleSidebar }) => {
+  const recruitmentPaths = [
+    "/applyJob",
+    "/addCandidates",
+    "/addCandidates/personalDetails",
+    "/addCandidates/educationDetails",
+    "/addCandidates/otherDetails",
+  ];
+  
+  const aboutPaths = [
+    "/ourWorkForce",
+    "/about",
+    "/values",
+    "/ourVision",
+    "/ourMission",
+    "/OurService",
+  ];
+
   const [showServicesList, setServicesList] = useState(false);
 
   const toggleServiceList = () => {
     setServicesList(!showServicesList);
   };
 
-
-
-
   const closeServiceList = () => {
     setServicesList(false);
   };
+  // Check if the current path is part of recruitmentPaths
+  const isRecruitmentActive = () => {
+    return recruitmentPaths.some(path => location.pathname.startsWith(path));
+  };
 
+  // Check if the current path is part of aboutPaths
+  const isAboutActive = () => {
+    return aboutPaths.some(path => location.pathname.startsWith(path));
+  };
   return (
     <>
       <div
@@ -40,20 +62,19 @@ export const Sidebar = ({ showSidebar, toggleSidebar }) => {
             className={({ isActive }) =>
               isActive ? " text-dark_red font-bold " : ""
             }
-          >
+            onClick={toggleSidebar}
+            >
             Home
           </NavLink>
           <div className="relative">
       {/* About Us text with NavLink */}
       <NavLink
         to="/about"
-        className={({ isActive }) =>
-          isActive ? "border-b-4 border-dark_red font-bold" : ""
-        }
+        className={isAboutActive() ? "text-dark_red font-bold" : ""}
+         onClick={toggleSidebar}
       >
         About Us
       </NavLink>
-
       {/* Icon to toggle the service list */}
       <button onClick={toggleServiceList} className="ml-2 focus:outline-none">
         <FaChevronDown className="inline text-dark_red" />
@@ -61,50 +82,32 @@ export const Sidebar = ({ showSidebar, toggleSidebar }) => {
 
       {/* Dropdown service list, shown only when showServicesList is true */}
       {showServicesList && (
-        <div className="absolute top-8 -left-4 bg-white flex flex-col text-[18px] p-4 gap-1 w-[170px] shadow-md rounded-md font-medium">
-          <NavLink
-            to="/ourMission"
-            className="border-b border-grey p-1 text-dark_red"
-            onClick={closeServiceList}
-          >
-            MISSION
-          </NavLink>
-          <NavLink
-            to="/ourVision"
-            className="border-b border-grey p-1 text-dark_red"
-            onClick={closeServiceList}
-          >
-            VISION
-          </NavLink>
-          <NavLink
-            to="/values" // Add the missing `to` prop for VALUES
-            className="border-b border-grey p-1 text-dark_red"
-            onClick={closeServiceList}
-          >
-            VALUES
-          </NavLink>
-          <NavLink
-            to="/OurService"
-            className="border-b border-grey p-1 text-dark_red"
-            onClick={closeServiceList}
-          >
-            SERVICES
-          </NavLink>
-          <NavLink
-            to="/ourWorkForce"
-            className="border-b border-grey p-1 text-dark_red"
-            onClick={closeServiceList}
-          >
-            WORKFORCE
-          </NavLink>
-          <NavLink
-            to="/awards" // Add the missing `to` prop for AWARDS
-            className="border-b border-grey p-1 text-dark_red"
-            onClick={closeServiceList}
-          >
-            AWARDS
-          </NavLink>
-        </div>
+        <div className=" top-8 -left-4 bg-white flex flex-col text-[18px] p-4 gap-1 w-[170px] shadow-md rounded-md font-medium">
+        <NavLink to="/ourMission" className="border-b border-grey p-1 text-dark_red text-[14px]" onClick={() => {
+  closeServiceList();
+  toggleSidebar();
+}} >MISSION</NavLink>
+                <NavLink to="/ourVision" className="border-b border-grey p-1 text-dark_red text-[14px]" onClick={() => {
+  closeServiceList();
+  toggleSidebar();
+}} >VISION</NavLink>
+                <NavLink to="/values" className="border-b border-grey p-1 text-dark_red text-[14px]" onClick={() => {
+  closeServiceList();
+  toggleSidebar();
+}} >VALUES</NavLink>
+                <NavLink to="/OurService" className="border-b border-grey p-1 text-dark_red text-[14px]" onClick={() => {
+  closeServiceList();
+  toggleSidebar();
+}} >SERVICES</NavLink>
+                <NavLink to="/ourWorkForce" className="border-b border-grey p-1 text-dark_red text-[14px]" onClick={() => {
+  closeServiceList();
+  toggleSidebar();
+}} >WORKFORCE</NavLink>
+                <NavLink to="/awards" className="border-b border-grey p-1 text-dark_red text-[14px]" onClick={() => {
+  closeServiceList();
+  toggleSidebar();
+}} >AWARDS</NavLink>
+              </div>
       )}
     </div>
 
@@ -112,7 +115,8 @@ export const Sidebar = ({ showSidebar, toggleSidebar }) => {
             to="/gallery"
             className={({ isActive }) =>
               isActive ? " text-dark_red font-bold" : ""
-            }
+            }          
+            onClick={toggleSidebar}
           >
             Gallery
           </NavLink>
@@ -121,6 +125,7 @@ export const Sidebar = ({ showSidebar, toggleSidebar }) => {
             className={({ isActive }) =>
               isActive ? " text-dark_red font-bold" : ""
             }
+            onClick={toggleSidebar}
           >
             Organization
           </NavLink>
@@ -129,14 +134,14 @@ export const Sidebar = ({ showSidebar, toggleSidebar }) => {
             className={({ isActive }) =>
               isActive ? " text-dark_red font-bold" : ""
             }
+            onClick={toggleSidebar}
           >
             Contact
           </NavLink>
           <NavLink
             to="/applyJob"
-            className={({ isActive }) =>
-              isActive ? " text-dark_red font-bold" : ""
-            }
+            className={isRecruitmentActive() ? "text-dark_red font-bold" : ""}
+            onClick={toggleSidebar}
           >
             Apply Job
           </NavLink>

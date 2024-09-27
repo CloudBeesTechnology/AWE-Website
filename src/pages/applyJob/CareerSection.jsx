@@ -7,7 +7,7 @@ export const CareerSection = () => {
   return (
     <section>
             <CommonBanner background={bg} />
-    <div className="flex flex-col md:flex-row center md:items-start sm:justify-between p-6 space-y-6 md:space-y-0 md:space-x-10 ">
+    <div className="flex flex-col md:flex-row center md:items-start sm:justify-between p-6 space-y-6 md:space-y-0 md:space-x-10 my-10">
       {/* Career Section */}
       <div className="flex-1">
         <h2 className="text-3xl font-bold">CAREER</h2>

@@ -78,9 +78,9 @@ export const ApplicantDetails = () => {
         className=""
         onSubmit={handleSubmit(onSubmit)}
       >
-        <div className="flex justify-between items-center flex-wrap">
+        <div className="flex justify-center sm:justify-between gap-5 items-center flex-wrap">
           {/* Position */}
-          <div className="mt-10 mb-5 text_size_6">
+          <div className="mt-10 mb-5 text_size_6 max-sm:w-full">
             <div>
               <label className="block">Applying for the position of</label>
               <input
@@ -158,7 +158,7 @@ export const ApplicantDetails = () => {
         </div>
 
         {/* Form Fields */}
-        <div className="grid grid-cols-2 gap-x-12 gap-y-5 mb-4 text_size_6">
+        <div className="grid  md:grid-cols-2 gap-x-12 gap-y-5 my-4 text_size_6">
           {[
                         { label: "Contract Type", name: "contractType",  type: "select", options: ["", "LPA","SAWP","BRUNEI"]  },
                         { label: "Agent", name: "agent", type: "text" },

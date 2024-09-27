@@ -99,7 +99,7 @@ export const PersonalDetails = () => {
     <form onSubmit={handleSubmit(onSubmit)} className=" mx-auto py-6">
       {/* h-screen overflow-y-auto scrollbar-hide */}
       {/* Passport No and Contact No */}
-      <div className="grid grid-cols-2 gap-4 mb-4 text_size_6">
+      <div className="grid sm:grid-cols-2 gap-4 mb-4 text_size_6">
         <div>
           <label className="block mb-1">Alternate Number</label>
           <input
@@ -127,7 +127,7 @@ export const PersonalDetails = () => {
       </div>
 
       {/* Present Address and Permanent Address */}
-      <div className="grid grid-cols-2 gap-4 mb-4 text_size_6">
+      <div className="grid sm:grid-cols-2 gap-4 mb-4 text_size_6">
         <div>
           <label className="block mb-1">Present Address</label>
           <input
@@ -155,7 +155,7 @@ export const PersonalDetails = () => {
       </div>
 
       {/* Driving License Class and Language Proficiency */}
-      <div className="grid grid-cols-2 gap-4 mb-4 text_size_6">
+      <div className="grid sm:grid-cols-2 gap-4 mb-4 text_size_6">
         <div>
           <label className="block mb-1">Driving License Class</label>
           <input
@@ -184,9 +184,9 @@ export const PersonalDetails = () => {
       </div>
 
       {/* I/C No and I/C Colour */}
-      <div className="grid grid-cols-3 gap-4 mb-4 text_size_6">
+      <div className="grid sm:grid-cols-3 gap-4 mb-4 text_size_6">
         <div>
-          <label className="block mb-1">I/C No</label>
+          <label className="block mb-1">Brunei I/C No</label>
           <input
             type="text"
             {...register("icNo")}
@@ -198,7 +198,7 @@ export const PersonalDetails = () => {
         </div>
 
         <div>
-          <label className="block mb-1">I/C Colour</label>
+          <label className="block mb-1">Brunei I/C Colour</label>
           <select
             {...register("icColour")}
             className="mt-2 p-2.5 text_size_9 bg-lite_skyBlue border border-[#dedddd] text-dark_grey outline-none rounded w-full"
@@ -213,7 +213,7 @@ export const PersonalDetails = () => {
           )}
         </div>
         <div>
-          <label className="block mb-1">I/C Expiry</label>
+          <label className="block mb-1">Brunei I/C Expiry</label>
           <input
             type="text"
             {...register("icExpiry")}
@@ -225,7 +225,7 @@ export const PersonalDetails = () => {
         </div>
       </div>
 
-      <div className="grid grid-cols-4 gap-4 mb-4 text_size_6">
+      <div className="grid sm:grid-cols-2 md:grid-cols-4 gap-4 mb-4 text_size_6">
         <div>
           <label className="block mb-1">Passport Number</label>
           <input
@@ -286,7 +286,7 @@ export const PersonalDetails = () => {
           Sisters)
         </label>
         {familyFields.map((family, index) => (
-          <div key={family.id} className="grid grid-cols-5 gap-4 mb-2">
+          <div key={family.id} className="grid sm:grid-cols-3 md:grid-cols-5 gap-4 mb-2">
             <input
               type="text"
               {...register(`familyDetails.${index}.name`)}
@@ -332,7 +332,7 @@ export const PersonalDetails = () => {
       <div className="mb-4 relative text_size_6">
         <label className="block mb-1">Education Details</label>
         {educationFields.map((education, index) => (
-          <div key={education.id} className="grid grid-cols-4 gap-4 mb-2">
+          <div key={education.id} className="grid sm:grid-cols-2 md:grid-cols-4  gap-4 mb-2">
             <Controller
               name={`educationDetails.${index}.university`}
               control={control}
@@ -425,7 +425,7 @@ export const PersonalDetails = () => {
           Previous Employment Including Temporary Work
         </label>
         {employmentFields.map((employment, index) => (
-          <div key={employment.id} className="grid grid-cols-6 gap-4 mb-2">
+          <div key={employment.id} className="grid sm:grid-cols-3 md:grid-cols-6 gap-4 mb-2">
             <input
               type="text"
               {...register(`workExperience.${index}.name`)}
