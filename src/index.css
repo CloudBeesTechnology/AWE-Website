@@ -49,7 +49,7 @@
   @apply  bg-no-repeat w-full bg-cover bg-center
 }
 .primary_btn{
-  @apply bg-yellow font-bold py-2 px-24 text-dark_grey rounded-md
+  @apply bg-yellow font-bold py-2 px-24  rounded-md
 }
 }
 .custom-gradient {
