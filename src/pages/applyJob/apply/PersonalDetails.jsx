@@ -105,7 +105,7 @@ export const PersonalDetails = () => {
           <input
             type="text"
             {...register("alternateNo")}
-            className="mt-2 p-2.5 text_size_9 bg-lite_skyBlue border border-[#dedddd]  text-dark_grey outline-none rounded w-full"
+            className="input-field"
           />
           {errors.alternateNo && (
             <p className="text-[red] text-[12px]">
@@ -118,7 +118,7 @@ export const PersonalDetails = () => {
           <input
             type="text"
             {...register("contactNo")}
-            className="mt-2 p-2.5 text_size_9 bg-lite_skyBlue border border-[#dedddd] text-dark_grey outline-none rounded w-full"
+            className="input-field"
           />
           {errors.contactNo && (
             <p className="text-[red] text-[12px]">{errors.contactNo.message}</p>
@@ -133,7 +133,7 @@ export const PersonalDetails = () => {
           <input
             type="text"
             {...register("presentAddress")}
-            className="mt-2 p-2.5 text_size_9 bg-lite_skyBlue border border-[#dedddd] text-dark_grey outline-none rounded w-full"
+            className="input-field"
           />
           {errors.presentAddress && (
             <p className="text-[red] text-[12px]">
@@ -146,7 +146,7 @@ export const PersonalDetails = () => {
           <input
             type="text"
             {...register("permanentAddress")}
-            className="mt-2 p-2.5 text_size_9 bg-lite_skyBlue border border-[#dedddd] text-dark_grey outline-none rounded w-full"
+            className="input-field"
           />
           <p className="text-[red] text-[12px]">
             {errors.permanentAddress?.message}
@@ -161,14 +161,14 @@ export const PersonalDetails = () => {
           <input
             type="text"
             {...register("drivingLicense")}
-            className="mt-2 p-2.5 text_size_9 bg-lite_skyBlue border border-[#dedddd] text-dark_grey outline-none rounded w-full"
+            className="input-field"
           />
         </div>
         <div>
           <label className="block mb-1">Language Proficiency</label>
           <select
             {...register("language")}
-            className="mt-2 p-2.5 text_size_9 bg-lite_skyBlue border border-[#dedddd] text-dark_grey outline-none rounded w-full"
+            className="input-field"
           >
             <option value=""></option>
             <option value="English">English</option>
@@ -190,7 +190,7 @@ export const PersonalDetails = () => {
           <input
             type="text"
             {...register("icNo")}
-            className="mt-2 p-2.5 text_size_9 bg-lite_skyBlue border border-[#dedddd] text-dark_grey outline-none rounded w-full"
+            className="input-field"
           />
           {errors.icNo && (
             <p className="text-[red] text-[12px] ">{errors.icNo.message}</p>
@@ -201,7 +201,7 @@ export const PersonalDetails = () => {
           <label className="block mb-1">Brunei I/C Colour</label>
           <select
             {...register("icColour")}
-            className="mt-2 p-2.5 text_size_9 bg-lite_skyBlue border border-[#dedddd] text-dark_grey outline-none rounded w-full"
+            className="input-field"
           >
             <option value=""></option>
             <option value="yellow">Yellow</option>
@@ -217,7 +217,7 @@ export const PersonalDetails = () => {
           <input
             type="text"
             {...register("icExpiry")}
-            className="mt-2 p-2.5 text_size_9 bg-lite_skyBlue border border-[#dedddd] text-dark_grey outline-none rounded w-full"
+            className="input-field"
           />
           {errors.icExpiry && (
             <p className="text-[red] text-[12px]">{errors.icExpiry.message}</p>
@@ -231,7 +231,7 @@ export const PersonalDetails = () => {
           <input
             type="text"
             {...register("passportNo")}
-            className="mt-2 p-2.5 text_size_9 bg-lite_skyBlue border border-[#dedddd] text-dark_grey outline-none rounded w-full"
+            className="input-field"
           />
           {errors.passportNo && (
             <p className="text-[red] text-[12px] ">
@@ -244,7 +244,7 @@ export const PersonalDetails = () => {
           <input
             type="text"
             {...register("passportIssued")}
-            className="mt-2 p-2.5 text_size_9 bg-lite_skyBlue border border-[#dedddd] text-dark_grey outline-none rounded w-full"
+            className="input-field"
           />
           {errors.passportIssued && (
             <p className="text-[red] text-[12px]">
@@ -257,7 +257,7 @@ export const PersonalDetails = () => {
           <input
             type="text"
             {...register("passportExpiry")}
-            className="mt-2 text_size_9 p-2.5 bg-lite_skyBlue border border-[#dedddd] text-dark_grey outline-none rounded w-full"
+            className="input-field"
           />
           {errors.passportExpiry && (
             <p className="text-[red] text-[12px]">
@@ -270,7 +270,7 @@ export const PersonalDetails = () => {
           <input
             type="text"
             {...register("passportDestination")}
-            className="mt-2 p-2.5 text_size_9 bg-lite_skyBlue border border-[#dedddd] text-dark_grey outline-none rounded w-full"
+            className="input-field"
           />
           {errors.passportDestination && (
             <p className="text-[red] text-[12px]">
@@ -291,31 +291,31 @@ export const PersonalDetails = () => {
               type="text"
               {...register(`familyDetails.${index}.name`)}
               placeholder="Name"
-              className="mt-2 p-2.5 text_size_9 bg-lite_skyBlue border border-[#dedddd] text-dark_grey outline-none rounded"
+              className="input-field"
             />
             <input
               type="text"
               {...register(`familyDetails.${index}.relationship`)}
               placeholder="Relationship"
-              className="mt-2 p-2.5 text_size_9 bg-lite_skyBlue border border-[#dedddd] text-dark_grey outline-none rounded"
+              className="input-field"
             />
             <input
               type="text"
               {...register(`familyDetails.${index}.age`)}
               placeholder="Age"
-              className="mt-2 p-2.5 text_size_9 bg-lite_skyBlue border border-[#dedddd] text-dark_grey outline-none rounded"
+              className="input-field"
             />
             <input
               type="text"
               {...register(`familyDetails.${index}.occupation`)}
               placeholder="Occupation"
-              className="mt-2 p-2.5 text_size_9 bg-lite_skyBlue border border-[#dedddd] text-dark_grey outline-none rounded"
+              className="input-field"
             />
             <input
               type="text"
               {...register(`familyDetails.${index}.placeOfOccupation`)}
               placeholder="Place of Occupation"
-              className="mt-2 p-2.5 text_size_9 bg-lite_skyBlue border border-[#dedddd] text-dark_grey outline-none rounded"
+              className="input-field"
             />
           </div>
         ))}
@@ -341,7 +341,7 @@ export const PersonalDetails = () => {
                   <textarea
                     {...field}
                     placeholder="School / University / Professional Institute"
-                    className="resize-none text_size_9 mt-2 p-2.5 bg-lite_skyBlue border border-[#dedddd] text-dark_grey outline-none rounded"
+                    className="resize-none input-field"
                   />
 
                   {errors.educationDetails?.[index]?.university && (
@@ -361,7 +361,7 @@ export const PersonalDetails = () => {
                     {...field}
                     type="date"
                     placeholder="From Date"
-                    className="resize-none mt-2 p-2.5 text_size_9  bg-lite_skyBlue border border-[#dedddd] text-dark_grey outline-none rounded"
+                    className="resize-none input-field"
                   ></textarea>
                   {errors.educationDetails?.[index]?.fromDate && (
                     <p className="text-[red] text-xs mt-1">
@@ -380,7 +380,7 @@ export const PersonalDetails = () => {
                     {...field}
                     type="date"
                     placeholder="To Date"
-                    className="resize-none mt-2 p-2.5 text_size_9  bg-lite_skyBlue border border-[#dedddd] text-dark_grey outline-none rounded"
+                    className="resize-none input-field"
                   ></textarea>
                   {errors.educationDetails?.[index]?.toDate && (
                     <p className="text-[red] text-xs mt-1">
@@ -398,7 +398,7 @@ export const PersonalDetails = () => {
                   <textarea
                     {...field}
                     placeholder="Highest Standard / Passed / Certificate / Degree / Professional Qualification"
-                    className="resize-none mt-2 p-2.5  bg-lite_skyBlue border border-[#dedddd] text-dark_grey outline-none rounded text_size_9"
+                    className="resize-none input-field"
                   />
                   {errors.educationDetails?.[index]?.degree && (
                     <p className="text-[red] text-xs mt-1">
@@ -430,37 +430,37 @@ export const PersonalDetails = () => {
               type="text"
               {...register(`workExperience.${index}.name`)}
               placeholder="Name and Address"
-              className="mt-2 p-2.5 text_size_9 bg-lite_skyBlue border border-[#dedddd] text-dark_grey outline-none rounded"
+              className="input-field"
             />
             <input
               type="text"
               {...register(`workExperience.${index}.position`)}
               placeholder="Position Held"
-              className="mt-2 p-2.5 text_size_9 bg-lite_skyBlue border border-[#dedddd] text-dark_grey outline-none rounded"
+              className="input-field"
             />
             <input
               type="date"
               {...register(`workExperience.${index}.from`)}
               placeholder="From"
-              className="mt-2 p-2.5 text_size_9 bg-lite_skyBlue border border-[#dedddd] text-dark_grey outline-none rounded"
+              className="input-field"
             />
             <input
               type="date"
               {...register(`workExperience.${index}.to`)}
               placeholder="To"
-              className="mt-2 p-2.5 text_size_9 bg-lite_skyBlue border border-[#dedddd] text-dark_grey outline-none rounded"
+              className="input-field"
             />
             <input
               type="text"
               {...register(`workExperience.${index}.salary`)}
               placeholder="Salary"
-              className="mt-2 p-2.5 text_size_9 bg-lite_skyBlue border border-[#dedddd] text-dark_grey outline-none rounded"
+              className="input-field"
             />
             <input
               type="text"
               {...register(`workExperience.${index}.reasonForLeaving`)}
               placeholder="Reason for Leaving"
-              className="mt-2 p-2.5 text_size_9 bg-lite_skyBlue border border-[#dedddd] text-dark_grey outline-none rounded"
+              className="input-field"
             />
           </div>
         ))}

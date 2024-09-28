@@ -117,7 +117,7 @@ console.log("Successfully submitted Three Data:",navigateEduData);
                 <input
                   {...field}
                   placeholder="Name"
-                  className="mt-2  text_size_7 p-2.5 bg-lite_skyBlue border border-[#dedddd] text-dark_grey outline-none rounded w-full"
+                  className="input-field"
                 />
               )}
             />
@@ -128,7 +128,7 @@ console.log("Successfully submitted Three Data:",navigateEduData);
                 <input
                   {...field}
                   placeholder="Address"
-                  className="mt-2  text_size_7 p-2.5 bg-lite_skyBlue border border-[#dedddd] text-dark_grey outline-none rounded w-full"
+                  className="input-field"
                 />
               )}
             />
@@ -139,7 +139,7 @@ console.log("Successfully submitted Three Data:",navigateEduData);
                 <input
                   {...field}
                   placeholder="Telephone"
-                  className="mt-2 text_size_7  p-2.5 bg-lite_skyBlue border border-[#dedddd] text-dark_grey outline-none rounded"
+                  className="input-field"
                 />
               )}
             />
@@ -150,7 +150,7 @@ console.log("Successfully submitted Three Data:",navigateEduData);
                 <input
                   {...field}
                   placeholder="Profession"
-                  className="mt-2 text_size_7 p-2.5 bg-lite_skyBlue border border-[#dedddd] text-dark_grey outline-none rounded w-full"
+                  className="input-field"
                 />
               )}
             />
@@ -177,7 +177,7 @@ console.log("Successfully submitted Three Data:",navigateEduData);
                 <input
                   {...field}
                   placeholder="Name"
-                  className="mt-2  text_size_7 p-2.5 bg-lite_skyBlue border border-[#dedddd] text-dark_grey outline-none rounded w-full"
+                  className="input-field"
                 />
               )}
             />
@@ -188,7 +188,7 @@ console.log("Successfully submitted Three Data:",navigateEduData);
                 <input
                   {...field}
                   placeholder="Position Held"
-                  className="mt-2  text_size_7 p-2.5 bg-lite_skyBlue border border-[#dedddd] text-dark_grey outline-none rounded w-full"
+                  className="input-field"
                 />
               )}
             />
@@ -199,7 +199,7 @@ console.log("Successfully submitted Three Data:",navigateEduData);
                 <input
                   {...field}
                   placeholder="Relationship"
-                  className="mt-2  text_size_7 p-2.5 bg-lite_skyBlue border border-[#dedddd] text-dark_grey outline-none rounded w-full"
+                  className="input-field"
                 />
               )}
             />
@@ -223,7 +223,7 @@ console.log("Successfully submitted Three Data:",navigateEduData);
           render={({ field }) => (
             <textarea
               {...field}
-              className="resize-none mt-2 text_size_7 p-2.5 bg-lite_skyBlue border border-[#dedddd] text-dark_grey outline-none rounded w-full"
+              className="resize-none input-field"
               rows="3"
             ></textarea>
           )}
@@ -243,7 +243,7 @@ console.log("Successfully submitted Three Data:",navigateEduData);
                   <input
                     {...field}
                     placeholder="Name of Person notify"
-                    className="resize-none text_size_9 mt-2   p-2.5 bg-lite_skyBlue border border-[#dedddd] text-dark_grey outline-none rounded"
+                    className="resize-none input-field"
                   />
                   {errors.emergencyContact?.[index]?.name && (
                     <p className="text-[red] text-xs mt-1">
@@ -261,7 +261,7 @@ console.log("Successfully submitted Three Data:",navigateEduData);
                   <input
                     {...field}
                     placeholder="Relationship"
-                    className="mt-2 p-2.5 text_size_9  bg-lite_skyBlue border border-[#dedddd] text-dark_grey outline-none rounded"
+                    className="input-field"
                   />
                   {errors.emergencyContact?.[index]?.relationship && (
                     <p className="text-[red] text-xs mt-1">
@@ -279,7 +279,7 @@ console.log("Successfully submitted Three Data:",navigateEduData);
                   <input
                     {...field}
                     placeholder="Address"
-                    className="mt-2 p-2.5 text_size_9 bg-lite_skyBlue border border-[#dedddd] text-dark_grey outline-none rounded"
+                    className="input-field"
                  
                   />
                   {errors.emergencyContact?.[index]?.address && (
@@ -298,7 +298,7 @@ console.log("Successfully submitted Three Data:",navigateEduData);
                   <input
                     {...field}
                     placeholder="Contant Number"
-                    className=" mt-2 p-2.5 bg-lite_skyBlue border border-[#dedddd] text-dark_grey outline-none rounded text_size_9"
+                    className="input-field"
                   />
                   {errors.emergencyContact?.[index]?.phoneNumber && (
                     <p className="text-[red] text-xs mt-1">
@@ -316,7 +316,7 @@ console.log("Successfully submitted Three Data:",navigateEduData);
                   <input
                     {...field}
                     placeholder="Blood Group"
-                    className=" mt-2 p-2.5 text_size_9 bg-lite_skyBlue border border-[#dedddd] text-dark_grey outline-none rounded"
+                    className=" input-field"
                   />
                   {errors.emergencyContact?.[index]?.bloodGroup && (
                     <p className="text-[red] text-xs mt-1">

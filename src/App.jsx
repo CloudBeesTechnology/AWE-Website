@@ -18,9 +18,16 @@ import { ApplicantDetails } from './pages/applyJob/apply/ApplicatDetails';
 import { EducationDetails } from './pages/applyJob/apply/EducationaDetails';
 import { OtherDetails } from './pages/applyJob/apply/OtherDetails';
 import { PersonalDetails } from './pages/applyJob/apply/PersonalDetails';
+import { useEffect } from 'react';
 
 
 export const App=()=> {
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  }, []);
   const location = useLocation();
   const hideNavbar = ["/applyJob","/addCandidates","/addCandidates/personalDetails","/addCandidates/educationDetails","/addCandidates/otherDetails"];
   return (

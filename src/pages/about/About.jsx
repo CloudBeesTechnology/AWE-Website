@@ -3,8 +3,17 @@ import bg from "../../assets/about/44_main01.jpg";
 import image from "../../assets/about/AboutImg.png";
 import { CommonBanner } from '../../Component/Organization/CommonBanner';
 import { TeamImage } from '../../Component/Organization/TeamImage';
+import { useEffect } from 'react';
 
 export const About = () => {
+
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  }, []);
+  
   return (
     <>
     <section>

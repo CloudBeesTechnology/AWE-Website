@@ -86,7 +86,7 @@ export const ApplicantDetails = () => {
               <input
                 {...register("position")}
                 type="text"
-                className="mt-2 p-2 text_size_7 bg-lite_skyBlue border border-[#dedddd] text-dark_grey outline-none rounded w-full"
+                className="input-field"
               />
               {errors.position && (
                 <p className="text-[red] text-[13px]">
@@ -195,7 +195,7 @@ export const ApplicantDetails = () => {
               {field.type === "select" ? (
                 <select
                   {...register(field.name)}
-                  className="mt-2 p-2.5 text_size_7 bg-lite_skyBlue border border-[#dedddd] text-dark_grey outline-none rounded w-full"
+                  className="input-field"
                 >
                   {(field.options || []).map((option, i) => (
                     <option key={i} value={option}>
@@ -210,7 +210,7 @@ export const ApplicantDetails = () => {
                   disabled={field.disabled}
                   min={field.min}
                   max={field.max}
-                  className="mt-2 p-2 text_size_7 bg-lite_skyBlue border border-[#dedddd] text-dark_grey   outline-none rounded w-full"
+                  className="input-field"
                 /> // border border-[#EAEAEA]
               )}
               {errors[field.name] && (

@@ -3,7 +3,16 @@ import bg from "../../assets/about/44_main01.jpg";
 import image1 from "../../assets/about/image 10.png";
 import image2 from "../../assets/about/imag11.png";
 import { CommonBanner } from '../../Component/Organization/CommonBanner';
+import { useEffect } from 'react';
 export const OurVision = () => {
+
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  }, []);
+  
   return (
     <section>
             <CommonBanner background={bg} title="Vision" />

@@ -1,9 +1,18 @@
 
+import { useEffect } from "react";
 import bg from "../../assets/about/44_main01.jpg";
 import { CommonBanner } from "../../Component/Organization/CommonBanner";
 import { TeamImage } from "../../Component/Organization/TeamImage";
 
 export const OurWorkForce = () => {
+
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  }, []);
+
   return (
     <section>
       <CommonBanner background={bg} title="Our Workforce" />

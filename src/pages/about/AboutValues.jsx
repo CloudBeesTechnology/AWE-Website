@@ -2,8 +2,17 @@ import React from 'react'
 import { CommonBanner } from '../../Component/Organization/CommonBanner';
 import bg from "../../assets/about/44_main01.jpg";
 import image from "../../assets/about/valuesImg.png";
+import { useEffect } from 'react';
 
 export const AboutValues = () => {
+
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  }, []);
+
   return (
     <section>
             <CommonBanner background={bg} title="Values" />
@@ -38,19 +47,19 @@ export const AboutValues = () => {
               className="rounded-lg  mb-7"
             />
           </div>
-          <p className="font-semibold  mb-4 ">TO be the professional contractor of choice</p>
-          <ul className="space-y-2 grid sm:grid-cols-2 ">
-            <li>Professionalism</li>
-            <li>Competency</li>
-            <li>Leading by Example</li>
-            <li>Effective Communication</li>
-            <li>Positive Attitude</li>
-            <li>Motivation</li>
-            <li>Promoting Diversity</li>
-            <li>Promoting Team Work</li>
-            <li>Developing Employees</li>
-            <li>Enjoying our Work</li>
-          </ul>
+          <p className="font-semibold text-[18px] mb-5 ">To be the professional contractor of choice</p>
+          <div className=" grid sm:grid-cols-2 gap-4">
+            <div>Professionalism</div>
+            <div>Competency</div>
+            <div>Leading by Example</div>
+            <div>Effective Communication</div>
+            <div>Positive Attitude</div>
+            <div>Motivation</div>
+            <div>Promoting Diversity</div>
+            <div>Promoting Team Work</div>
+            <div>Developing Employees</div>
+            <div>Enjoying our Work</div>
+          </div>
         </div>
       </div>
     </div>

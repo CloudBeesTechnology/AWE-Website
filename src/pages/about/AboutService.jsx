@@ -4,16 +4,25 @@ import bg from "../../assets/about/44_main01.jpg";
 import image1 from "../../assets/about/image4.png";
 import image2 from "../../assets/about/image5.png";
 import { HomeMS } from "../home/HomeMS";
+import { useEffect } from "react";
 
 
 
 export const AboutService = () => {
+
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  }, []);
+
   return (
     <section>
             <CommonBanner background={bg} title="Our Service" />
             <div className="screen-size bg-white pt-16 pb-12 px-2 lg:px-10 ">
       {/* Title Section */}
-      <div className=" flex-col max-sm:text-justify max-sm:mb-10">
+      <div className=" flex-col max-sm:text-justify sm:mb-12 mb-10">
         <h2 className="text-center text-[28px] font-semibold bg-[#FEF116] w-[250px] p-3">What we do...</h2>
         <p className=" text-[20px] mt-10">
           Adinin Works & Engineering Sdn. Bhd. (AWE) has extended its operation

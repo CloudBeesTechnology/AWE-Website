@@ -2,8 +2,17 @@ import React from 'react';
 import bg from "../../assets/about/44_main01.jpg";
 import image from "../../assets/about/image9.png";
 import { CommonBanner } from '../../Component/Organization/CommonBanner';
+import { useEffect } from 'react';
 
 export const AboutOurMission = () => {
+
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  }, []);
+  
   return (
     <section>
             <CommonBanner background={bg} title="Our Mission" />

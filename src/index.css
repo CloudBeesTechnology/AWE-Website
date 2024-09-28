@@ -51,7 +51,17 @@
 .primary_btn{
   @apply bg-yellow font-bold py-2 px-24  rounded-md
 }
+.input-field {
+  @apply w-full h-[45px]  px-3 mt-2 border outline-none border-[#dedddd] rounded bg-white max-sm:text-[14px]  ;
+} 
 }
 .custom-gradient {
   background: linear-gradient(to top right, #EEDAD9, #f3D3D3 );
+}
+.select-custom {
+  background: url('./assets/drop.png') no-repeat;
+  background-position: right 5% center;
+  background-color: #F5F7FB;
+  background-size: 18px 18px; /* Adjust size if needed */
+  appearance: none; /* Remove default arrow */
 }

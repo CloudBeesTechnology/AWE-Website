@@ -10,7 +10,7 @@ export const ContactSection = () => {
     <section>
             <CommonBanner background={bg} title="Contact Us" />
     <div className="screen-size flex flex-col items-center justify-center sm:py-20 py-16">
-      <div className="text-center mb-8">
+      <div className="text-center mb-8 space-y-2">
         <h1 className="text-3xl font-bold">Get in touch with us</h1>
         <p className="">We would like to know more about the needs of your business.</p>
       </div>

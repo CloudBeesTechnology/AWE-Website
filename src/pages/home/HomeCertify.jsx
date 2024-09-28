@@ -6,7 +6,10 @@ import { TiTickOutline } from "react-icons/ti";
 
 export const HomeCertify= () => {
   return (
-    <section className="bg-white screen-size sm:my-20 my-10 flex items-center justify-between max-md:flex-col w-full  gap-10 ">
+    <section className='bg-white screen-size sm:my-16 my-10'>
+      <h2 className="text-dark_red sm:my-10 mb-5 text-[20px] text-center sm:text-[34px] font-semibold relative"><span className=' sm:absolute sm:w-[350px] sm:h-4 sm:top-11  sm:border-b-4 border-dark_red '></span>
+      Powering a Sustainable Future</h2>
+      <div className=" flex items-center justify-evenly max-md:flex-col w-full  gap-10 ">
           {/* Left Image Section */}
       <div className="  ">
         <img
@@ -58,7 +61,9 @@ export const HomeCertify= () => {
         </div>
    
       </div>
+    </div>
     </section>
+ 
   );
 };
 

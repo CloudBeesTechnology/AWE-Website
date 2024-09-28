@@ -21,9 +21,9 @@ export const HomeNewEvent  = () => {
     <div className=" screen-size mx-auto sm:my-20 my-14">
       {/* Main Content */}
         {/* Left Image Section */}
-        <h2 className="text-center text-xl font-bold text-dark_red relative mb-4"><span className=' absolute w-[100px] h-4 top-4   border-b-2 border-dark_red '></span>
+        <h2 className="text-dark_red sm:my-10 mb-5 text-[20px] text-center sm:text-[34px] font-semibold relative"><span className=' sm:absolute sm:w-[200px] sm:h-4 sm:top-11  sm:border-b-4 border-dark_red '></span>
         NEWS & EVENTS</h2>
-       <div className='flex  items-center justify-between max-md:flex-col w-full  gap-10 my-10'>
+       <div className='flex  items-center justify-evenly max-md:flex-col w-full  gap-10 my-10'>
        <div >
           <img
             src={image} // Replace with your image URL

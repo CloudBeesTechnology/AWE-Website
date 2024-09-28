@@ -8,7 +8,7 @@ export const BusinessEnquiries = () => {
   return (
     <div className="screen-size flex flex-col items-center justify-center   sm:px-10 ">
       {/* Heading */}
-      <h2 className="text-3xl font-bold mb-6">Business Enquiries:</h2>
+      <h2 className="text-3xl font-bold mb-6">Business Enquiries</h2>
       
       {/* Top contact info */}
       <div className="center gap-5 p-2 mb-6 flex-wrap">
@@ -55,10 +55,10 @@ export const BusinessEnquiries = () => {
         <div className="">
           <h2 className="text-xl font-bold mb-2 flex ">
             <span role="img" aria-label="Location" className="mr-2 text-dark_red text-[30px]"><PiMapPinAreaLight /></span>
-            Registered Office 
+            Registered Office:
           </h2>
           <h3 className="text-[20px] font-semibold mt-5 mb-2 flex ">
-             (Seria-Workshop):
+             (Seria-Workshop)
           </h3>
           <p>G26, Jalan Tengah, Lorong Tiga Timor, Seria KB 1733</p>
           <p>Tel: +673 3223031 / 3224054 / 3222440</p>

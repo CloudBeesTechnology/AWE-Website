@@ -5,10 +5,10 @@ import { services } from './HomeDataDetails';
 export const HomeMS = () => {
   return (
     <div 
-      className=" screen-size center flex-col mb-10"
+      className=" screen-size center flex-col mb-10 "
     >
-        <h2 className='sm:my-10 mb-5 text-[22px] text-center sm:text-[38px] font-semibold
-        '>AWE’s major services consist of:</h2>
+              <h2 className="text-dark_red sm:mb-10 mb-5 text-[20px] text-center sm:text-[34px] font-semibold relative"><span className=' sm:absolute sm:w-[350px] sm:h-4 sm:top-11  sm:border-b-4 border-dark_red '></span>
+              AWE’s Major Services Consist Of</h2>
      <div className='w-full flex justify-center items-center flex-wrap  gap-5'>
      {services.map((service, index) => (
         <div 

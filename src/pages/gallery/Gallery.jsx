@@ -5,8 +5,16 @@ import image2 from "../../assets/gallery/gallery2.png";
 import image3 from "../../assets/gallery/gallery3.png";
 import image4 from "../../assets/gallery/gallery4.png";
 import { CommonBanner } from '../../Component/Organization/CommonBanner';
+import { useEffect } from 'react';
 
 export const Gallery = () => {
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  }, []);
+
   return (
     <section>
             <CommonBanner background={bg} title="Gallery" />
