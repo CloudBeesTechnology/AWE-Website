@@ -62,7 +62,7 @@ export const AddCandidates = () => {
         <h2 className="text-[20px] font-bold mb-4 text-center mt-10">Application Form</h2>
 
         {/* Tab Navigation */}
-        <div className="flex justify-between border-b mb-4 text-[14px] font-semibold">
+        <div className="flex justify-between border-b mb-4 text-[14px] font-semibold overflow-x-auto  whitespace-nowrap scroll-smooth scrollbar-hide">
           <button
             className={`py-2 px-4 focus:outline-none ${
               activeTab === "applicantDetails" ? "border-b-8 border-yellow" : ""

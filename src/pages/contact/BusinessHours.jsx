@@ -12,19 +12,19 @@ export const BusinessHours = () => {
         <div className=" p-4 border-r-2 ">
           <h3 className="text-[26px] font-bold mb-2">Head Office:</h3>
           <p className='text-[20px] font-semibold '>Monday – Friday</p>
-          <p className='text-[20px]'>0730 hrs – 1200 hrs</p>
-          <p className='text-[20px]'>1300 hrs – 1630 hrs</p>
+          <p className='text-[20px]'><i>0730 hrs – 1200 hrs</i></p>
+          <p className='text-[20px]'><i>1300 hrs – 1630 hrs</i></p>
           <br />
           <p className='text-[20px] font-semibold'>Saturday</p>
-          <p className='text-[20px]'>0730 hrs – 1200 hrs</p>
+          <p className='text-[20px]'><i>0730 hrs – 1200 hrs</i></p>
         </div>
 {/* <div className=' w-full h-full  center max-sm:hidden '><p className=' border w-0 text-grey h-full '></p></div> */}
         {/* Seria Workshop and Other Areas Hours */}
         <div className="p-4 ">
           <h3 className="text-[26px] font-bold mb-2">Seria Workshop and all other Construction areas:</h3>
           <p className='text-[20px] font-semibold sm:mt-3'>Monday – Saturday</p>
-          <p className='text-[20px]'>0700 hrs – 1200 hrs</p>
-          <p className='text-[20px]'>1300 hrs – 1800 hrs</p>
+          <p className='text-[20px] '><i>0700 hrs – 1200 hrs</i></p>
+          <p className='text-[20px]'><i>1300 hrs – 1800 hrs</i></p>
         </div>
       </div>
     </div>
