@@ -1,6 +1,6 @@
 import React from 'react';
 import image1 from "../../assets/contact/contactimg1.png";
-import image2 from "../../assets/contact/contactimg2.png";
+import image2 from "../../assets/contact/image-7.jpg";
 import bg from "../../assets/image capture/contact.png";
 import { CommonBanner } from '../../Component/Organization/CommonBanner';
 

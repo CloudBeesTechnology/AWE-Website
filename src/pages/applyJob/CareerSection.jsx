@@ -1,9 +1,9 @@
 import React from 'react';
 import { CommonBanner } from '../../Component/Organization/CommonBanner';
 import bg from "../../assets/applyJob/applyJob-1.png";
-import icon from "../../assets/applyJob/icon.png";
 import { Link } from 'react-router-dom';
 import { useEffect } from 'react';
+import { CareerData } from './CareerData';
 
 export const CareerSection = () => {
   useEffect(() => {
@@ -16,7 +16,7 @@ export const CareerSection = () => {
   return (
     <section>
             <CommonBanner background={bg} />
-    <div className="flex flex-col  center md:items-start sm:justify-evenly  p-4 sm:p-10 space-y-6 md:space-y-0 md:space-x-10 my-10">
+    <div className="flex flex-col  center   p-4 sm:p-10 space-y-6 md:space-y-0 md:space-x-10 my-10">
       {/* Career Section */}
       <div className=" mb-10">
         <h2 className="text-3xl font-bold">CAREER</h2>
@@ -31,9 +31,9 @@ export const CareerSection = () => {
 
       {/* Employment Application Form */}
 
-      <div className="flex-1 center  flex-col ">
-        <h3 className="font-bold text-lg mb-4"><span></span>JOB VACANCIES</h3>
-        <div className="space-y-4 p-2 sm:p-6 rounded-md shadow-md sm:w-[300px]">
+      {/* <div className="flex-1 center flex-col ">
+        <h3 className="font-bold text-lg mb-7"><span></span>JOB VACANCIES</h3>
+        <div className="space-y-4 p-2 rounded-md shadow-md sm:w-[300px] border-2 border-[red]">
 <div className='flex justify-evenly items-center'>
 
             <img 
@@ -55,7 +55,42 @@ export const CareerSection = () => {
             </div>
           </p>
         </div>
+      </div> */}
+
+<div className="space-y-4 ">
+      {/* Title and description section */}
+      <div className="text-center mb-6">
+        <h1 className="text-2xl font-bold mb-4">Available Job Listings</h1>
+        <p className="">Explore the latest job opportunities and find your next career move!</p>
       </div>
+
+    <div className='flex justify-evenly items-center flex-wrap gap-7 p-2'>
+    {CareerData.map((job) => (
+        <div key={job.id} className=" gap-7 space-y-4 p-2 rounded-md shadow-md sm:w-[300px] sm:h-[300px]  border-2 border-[red]">
+          <div className='flex justify-evenly items-center '>
+            <img 
+              src={job.icon} 
+              alt={job.title} 
+              className="object-cover w-16 h-16 text-[red] "
+            />
+            <p className="font-bold text-lg  ">{job.title}</p>
+          </div>          
+          <h4 className="font-semibold">Description</h4>
+          <p className="text-[12px] font-medium">{job.description}</p>
+          <div className='flex-wrap flex justify-between items-center gap-2'>
+            <p className='border py-1 px-2 text-[12px]'>{job.experience}</p>
+            <p className='border py-1 px-4 text-[12px]'>{job.lpa}</p>
+            <p className='border py-1 px-3 text-[12px]'>{job.type}</p>
+          </div>
+          <div className='center py-2'>
+            <Link to="/addCandidates" className="bg-[#FEF116] text-black center font-bold py-1 px-4 rounded">
+              APPLY JOB
+            </Link>
+          </div>
+        </div>
+      ))}
+    </div>
+    </div>
     </div>
     </section>
   );

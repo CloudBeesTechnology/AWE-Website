@@ -6,7 +6,7 @@ import { MdCall } from "react-icons/md";
 export const HomeHeader = () => {
   return (
     <section className="max-sm:pt-14 max-sm:pb-10 sm:center homeHeader-bg min-h-screen py-28 relative mb-20">
-<div className="screen-size  max-sm:mt-20">
+<div className="screen-size  max-sm:mt-32">
     <div className="flex overflow-hidden  justify-start items-start md:ml-20 ">
           <div className="w-full flex items-center max-sm:gap-2 max-sm:flex-col ">
             <div className="space-y-10 ">
@@ -17,7 +17,7 @@ export const HomeHeader = () => {
               <p className="max-sm:center max-md:text-center text-[16px] sm:para text-white ">We Stand as the ultimate link to excellence in the oil energy sector,
              <br className='max-md:hidden block' /> driving intellectual progress for sustainable future.</p>
               <div className="my-5 flex max-md:justify-center">
-                <button className="btn-header">
+                <button className="btn-header max-sm:text-[16px]">
                 DISCOVER MORE
                 </button>
               </div>

@@ -75,7 +75,7 @@ export const OurVision = () => {
                 <span className="text-dark_red">⦿</span>
                 <div>
                   <p className="font-medium text-[20px] mb-2">TO OUR SUPPLIERS</p>
-                  <p>We honor our commitment and are a vehicle for their long-term growth.</p>
+                  <p>We honor our commitment and we are a vehicle for their long-term growth.</p>
                 </div>
               </div>
             </li>

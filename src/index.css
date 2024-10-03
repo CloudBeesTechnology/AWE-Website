@@ -48,6 +48,10 @@
   background-image: url(./assets/home/bg-bottom.png);
   @apply  bg-no-repeat w-full bg-cover bg-center
 }
+.bg-contact{
+  background-image: url(./assets/machines/img-5.png);
+  @apply  bg-no-repeat w-full bg-cover bg-center
+}
 .primary_btn{
   @apply bg-yellow font-bold py-2 px-24  rounded-md
 }
