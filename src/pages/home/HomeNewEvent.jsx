@@ -28,7 +28,7 @@ export const HomeNewEvent  = () => {
           <img
             src={image} // Replace with your image URL
             alt="Event"
-            className="w-[500px] sm:w-[400px] h-auto object-cover"
+            className="w-[500px]  h-auto object-cover"
           />
         </div>
 
