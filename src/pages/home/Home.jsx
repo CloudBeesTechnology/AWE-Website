@@ -19,7 +19,7 @@ export const Home = () => {
   return (
     <section >
 <HomeHeader/>
-<HomeCertify/>
+{/* <HomeCertify/> */}
 <HomeMS/>
 <HomeNewEvent/>
 <HomeCelebration/>

@@ -9,18 +9,17 @@ export const HomeHeader = () => {
 <div className="screen-size  max-sm:mt-32">
     <div className="flex overflow-hidden  justify-start items-start md:ml-20 ">
           <div className="w-full flex items-center max-sm:gap-2 max-sm:flex-col ">
-            <div className="space-y-10 ">
-              <h1 className="text-white max-sm:center max-md:text-center max-sm:text-[25px] text-[60px] font-bold ">
-              Industrial<br/>
-              Resource & Oil Exploration.
+            <div className="space-y-10 sm:absolute bottom-20 right-14">
+              <h1 className="text-white max-sm:center max-md:text-center max-sm:text-[20px] text-[30px] font-medium ">
+              The Professional Contractor Of Choice.
               </h1>
-              <p className="max-sm:center max-md:text-center text-[16px] sm:para text-white ">We Stand as the ultimate link to excellence in the oil energy sector,
+              {/* <p className="max-sm:center max-md:text-center text-[16px] sm:para text-white ">We Stand as the ultimate link to excellence in the oil energy sector,
              <br className='max-md:hidden block' /> driving intellectual progress for sustainable future.</p>
               <div className="my-5 flex max-md:justify-center">
                 <button className="btn-header max-sm:text-[16px]">
                 DISCOVER MORE
                 </button>
-              </div>
+              </div> */}
             </div>
           </div>
           
