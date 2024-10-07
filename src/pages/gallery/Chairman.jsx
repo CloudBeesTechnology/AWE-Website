@@ -68,17 +68,17 @@ export const Chairman = () => {
       <div className="p-2  center flex-col">
         <h2 className='text-[18px] mb-4'>CHAIRMAN 90TH BIRTHDAY 2022</h2>
         <div className=' border rounded-md border-[#A2EA94]  max-w-md w-full max-h-[275px] h-full overflow-hidden '>
-      <div className='p-2 rounded-md border-t-4 border-[#53FB5E] grid grid-cols-3 gap-2   '>
+      <div className='p-2 rounded-md border-t-4 border-[#53FB5E] grid max-[450px]:grid-cols-2  grid-cols-3 gap-2   '>
         {images.map((image, index) => (
            <div 
            key={index}
-           className={`center  ${ index === 3  ? "md:col-span-2 md:row-span-2 max-w-[250px] max-h-[165px] h-full object-center " : "max-w-[120px] w-full max-h-[80px] h-full"}`}
+           className={`center  ${ index === 3  ? "md:col-span-2 md:row-span-2 sm:max-w-[250px] max-h-[165px] h-full object-center " : "sm:max-w-[120px] w-full max-h-[80px] h-full"}`}
          >
             <img
             key={index}
             src={image}
             alt={`Image ${index + 1}`}
-            className="cursor-pointer rounded shadow-lg object-cover min-w-[120px] w-full h-full"
+            className="cursor-pointer rounded shadow-lg object-cover sm:min-w-[120px] w-full h-full"
             onClick={() => openModal(index)}
           />
           </div>

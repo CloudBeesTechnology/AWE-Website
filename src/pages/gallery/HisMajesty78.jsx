@@ -55,7 +55,7 @@ export const HisMajesty78 = () => {
       <div className="p-2 center flex-col">
         <h2 className='text-[18px] mb-4'>HIS MAJESTY 78TH BIRTHDAY 2024</h2>
        <div className=' border rounded-md border-[#F19797] max-w-lg w-full max-h-[350px] h-full overflow-hidden'>
-       <div className='p-2 rounded-md border-t-4 border-[#F36B21] grid grid-cols-3 gap-2   '>
+       <div className='p-2 rounded-md border-t-4 border-[#F36B21] grid max-[450px]:grid-cols-2  grid-cols-3 gap-2  '>
         {images.map((image, index) => (
            <div 
            key={index}

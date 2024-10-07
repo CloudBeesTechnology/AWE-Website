@@ -54,7 +54,7 @@ export const HariRayaCelebrati = () => {
       <div className="p-2  center flex-col">
         <h2 className='text-[18px] mb-4'>HARI RAYA CELEBRATION 2023</h2>
        <div className=' border rounded-md border-[#4C79DA] max-w-lg w-full max-h-[350px] h-full overflow-hidden'>
-       <div className='p-2 rounded-md border-t-4 border-[#5138DF] grid grid-cols-3 gap-2   '>
+       <div className='p-2 rounded-md border-t-4 border-[#5138DF] grid max-[450px]:grid-cols-2  grid-cols-3 gap-2   '>
        {images.map((image, index) => (
            <div 
            key={index}

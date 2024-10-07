@@ -11,7 +11,7 @@ export const Gallery = () => {
   return (
     <section>
       <CommonBanner background={bg} title="Gallery" />
-      <div className=" screen-size flex justify-between items-center  flex-wrap my-20 gap-y-10">
+      <div className=" screen-size flex  justify-center max-[878]:justify-between items-center  flex-wrap my-20 gap-y-10">
         <LtiMillion/>
         <Chairman/>
         <HariRayaCelebrati />

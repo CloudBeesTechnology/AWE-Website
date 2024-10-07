@@ -59,7 +59,7 @@ export const LtiMillion = () => {
       <div className="p-2  center flex-col">
         <h2 className='text-[18px] mb-4'>25 MILLION HOUR WITHOUT LTI</h2>
        <div className=' border rounded-md border-[#f7c8c8]  max-w-lg w-full max-h-[275px] h-full overflow-hidden '>
-      <div className='p-2 rounded-md border-t-4 border-[#F93131] grid grid-cols-3 gap-2   '>
+      <div className='p-2 rounded-md border-t-4 border-[#F93131] grid max-[450px]:grid-cols-2  grid-cols-3 gap-2   '>
         {images.map((image, index) => (
            <div 
            key={index}
