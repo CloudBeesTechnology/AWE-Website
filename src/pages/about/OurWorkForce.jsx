@@ -1,6 +1,6 @@
 
 import { useEffect } from "react";
-import bg from "../../assets/about/44_main01.jpg";
+import bg from "../../assets/about/aboutUS.jpg";
 import { CommonBanner } from "../../Component/Organization/CommonBanner";
 import { TeamImage } from "../../Component/Organization/TeamImage";
 

@@ -1,6 +1,6 @@
 import React from 'react';
 import { CommonBanner } from '../../Component/Organization/CommonBanner';
-import bg from "../../assets/applyJob/applyJob-1.png";
+import bg from "../../assets/applyJob/applyJob-1.jpeg";
 import { Link } from 'react-router-dom';
 import { useEffect } from 'react';
 import { CareerData } from './CareerData';
@@ -15,7 +15,7 @@ export const CareerSection = () => {
 
   return (
     <section>
-            <CommonBanner background={bg} />
+            <CommonBanner background={bg}  title="Apply Job" />
     <div className="flex flex-col  center   p-4 sm:p-10 space-y-6 md:space-y-0 md:space-x-10 my-10">
       {/* Career Section */}
       <div className=" mb-10">

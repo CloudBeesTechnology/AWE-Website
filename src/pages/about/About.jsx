@@ -1,6 +1,6 @@
 import React from 'react';
-import bg from "../../assets/about/44_main01.jpg";
-import image from "../../assets/about/AboutImg.png";
+import bg from "../../assets/about/aboutUS.jpg";
+import image from "../../assets/about/AboutImg.jpg";
 import { CommonBanner } from '../../Component/Organization/CommonBanner';
 import { TeamImage } from '../../Component/Organization/TeamImage';
 import { useEffect } from 'react';

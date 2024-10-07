@@ -1,8 +1,8 @@
 import React from "react";
 import { CommonBanner } from "../../Component/Organization/CommonBanner";
-import bg from "../../assets/about/44_main01.jpg";
-import image1 from "../../assets/about/image4.png";
-import image2 from "../../assets/about/image5.png";
+import bg from "../../assets/about/aboutUS.jpg";
+// import image1 from "../../assets/about/image4.png";
+// import image2 from "../../assets/about/image5.png";
 import { HomeMS } from "../home/HomeMS";
 import { useEffect } from "react";
 
@@ -34,7 +34,7 @@ export const AboutService = () => {
 <HomeMS />
 
       {/* Image Section */}
-      <div className=" flex justify-center gap-4 max-w-6xl mx-auto pt-5">
+      {/* <div className=" flex justify-center gap-4 max-w-6xl mx-auto pt-5">
         <img
           src={image1}
           alt="Image 1"
@@ -45,7 +45,8 @@ export const AboutService = () => {
           alt="Image 2"
           className="w-1/2  rounded-lg shadow-md"
         />
-      </div></div>
+      </div> */}
+      </div>
     </section>
   );
 };

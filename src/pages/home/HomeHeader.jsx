@@ -9,9 +9,9 @@ export const HomeHeader = () => {
 <div className="screen-size  max-sm:mt-32">
     <div className="flex overflow-hidden  justify-start items-start md:ml-20 ">
           <div className="w-full flex items-center max-sm:gap-2 max-sm:flex-col ">
-            <div className="space-y-10 absolute bottom-20 sm:right-14">
-              <h1 className="text-white max-sm:center max-md:text-center max-sm:text-[20px] text-[30px] font-medium ">
-              The Professional Contractor Of Choice.
+            <div className="space-y-10 absolute bottom-10 sm:bottom-20 sm:left-12">
+              <h1 className="text-white max-sm:center max-md:text-center max-sm:text-[30px] text-[50px] font-semibold max-sm:font-medium ">
+              The Professional Contractor  Of Choice.
               </h1>
               {/* <p className="max-sm:center max-md:text-center text-[16px] sm:para text-white ">We Stand as the ultimate link to excellence in the oil energy sector,
              <br className='max-md:hidden block' /> driving intellectual progress for sustainable future.</p>

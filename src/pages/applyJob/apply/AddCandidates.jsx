@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Outlet, useNavigate, useLocation } from "react-router-dom";
 import { CommonBanner } from "../../../Component/Organization/CommonBanner";
-import bg from "../../../assets/applyJob/applyJob-1.png";
+import bg from "../../../assets/applyJob/applyJob-1.jpeg";
 
 export const AddCandidates = () => {
   useEffect(()=>{
@@ -55,7 +55,7 @@ export const AddCandidates = () => {
 
   return (
     <section>
-            <CommonBanner background={bg} />
+            <CommonBanner background={bg}  title="Apply Form"/>
     <section className="  w-full bg-[#F5F6F1] ">
       {/* min-h-screen overflow-y-auto */}
       <div className="screen-sizew-11/12 relative mx-auto p-8 ">

@@ -37,7 +37,7 @@
   @apply text-[18px] bg-yellow rounded-full px-6 py-2;
 }
 .homeHeader-bg {
-  background-image: url(./assets/home/home-header.png);
+  background-image: url(./assets/home/home-header.jpg);
   @apply  bg-no-repeat w-full bg-cover bg-center
 }
 .homeMs-bg{
@@ -55,7 +55,9 @@
 .primary_btn{
   @apply bg-yellow font-bold py-2 px-24  rounded-md
 }
-
+.primary_btn1{
+  @apply bg-yellow font-bold py-2 px-5  rounded-md
+}
 .input-field {
   @apply w-full h-[45px]  px-3 mt-2 border outline-none border-[#dedddd] rounded bg-white max-sm:text-[14px]  ;
 } 

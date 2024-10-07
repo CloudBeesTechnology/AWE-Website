@@ -1,6 +1,6 @@
 import React from 'react';
-import bg from "../../assets/about/44_main01.jpg";
-import image from "../../assets/about/image9.png";
+import bg from "../../assets/about/aboutUS.jpg";
+// import image from "../../assets/about/image9.png";
 import { CommonBanner } from '../../Component/Organization/CommonBanner';
 import { useEffect } from 'react';
 
@@ -57,13 +57,13 @@ export const AboutOurMission = () => {
         </div>
 
         {/* Image Section */}
-        <div className="mt-10 lg:w-full">
+        {/* <div className="mt-10 lg:w-full">
           <img 
             src={image}
             alt="Mission Image" 
             className="rounded-lg shadow-lg object-cover w-full h-48 lg:h-64"
           />
-        </div>
+        </div> */}
       </div>
     </div></section>
   );

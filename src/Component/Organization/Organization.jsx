@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import bg from "../../assets/machines/44_main00.jpg";
+import bg from "../../assets/machines/Organization.jpg";
 import { CommonBanner } from "./CommonBanner";
 import { TeamImage } from "./TeamImage";
 

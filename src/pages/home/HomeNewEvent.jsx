@@ -2,6 +2,7 @@
 import React from 'react';
 import image from "../../assets/home/homeImg-1.jpg"
 import { TiTickOutline } from "react-icons/ti";
+import { Link } from 'react-router-dom';
 
 
 export const HomeNewEvent  = () => {
@@ -33,8 +34,8 @@ export const HomeNewEvent  = () => {
         </div>
 
         {/* Right Event List Section */}
-        <div className="bg-white shadow shadow-dark_red  p-6 rounded-lg">
-          <ul className="space-y-4">
+        <div className="bg-white shadow shadow-dark_red  p-6 rounded-lg border">
+          <ul className="space-y-4 mb-5">
             {events.map((event, index) => (
               <li key={index} className="flex items-center space-x-2">
                 <span className="text-dark_red font-bold"><TiTickOutline/></span>
@@ -42,6 +43,10 @@ export const HomeNewEvent  = () => {
               </li>
             ))}
           </ul>
+          <div className='center'>
+            <Link to="/gallery" className='primary_btn1 '>View More
+            </Link>
+          </div>
         </div>
        </div>
        

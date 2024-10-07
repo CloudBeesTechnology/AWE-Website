@@ -1,7 +1,7 @@
 import React from 'react';
-import bg from "../../assets/about/44_main01.jpg";
-import image1 from "../../assets/about/image 10.png";
-import image2 from "../../assets/about/imag11.png";
+import bg from "../../assets/about/aboutUS.jpg";
+// import image1 from "../../assets/about/image 10.png";
+// import image2 from "../../assets/about/imag11.png";
 import { CommonBanner } from '../../Component/Organization/CommonBanner';
 import { useEffect } from 'react';
 export const OurVision = () => {
@@ -92,8 +92,7 @@ export const OurVision = () => {
         </div>
 
         {/* Image Section */}
-        <div className="lg:w-1/3 center md:flex-col gap-4 mt-8 lg:mt-0">
-          {/* First Image */}
+        {/* <div className="lg:w-1/3 center md:flex-col gap-4 mt-8 lg:mt-0">
           <div className="relative">
             <img 
               src={image1}
@@ -102,15 +101,14 @@ export const OurVision = () => {
             />
           </div>
           
-          {/* Second Image */}
-          <div className="relative">
+\          <div className="relative">
             <img 
               src={image2} 
               alt="Contractor Image 2" 
               className="rounded-lg shadow-lg w-full"
             />
           </div>
-        </div>
+        </div> */}
       </div>
     </div>    </section>
 

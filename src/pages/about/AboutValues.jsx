@@ -1,7 +1,7 @@
 import React from 'react'
 import { CommonBanner } from '../../Component/Organization/CommonBanner';
-import bg from "../../assets/about/44_main01.jpg";
-import image from "../../assets/about/valuesImg.png";
+import bg from "../../assets/about/aboutUS.jpg";
+import image from "../../assets/about/OurGuidingPrinciples.png";
 import { useEffect } from 'react';
 
 export const AboutValues = () => {
@@ -22,13 +22,13 @@ export const AboutValues = () => {
         {/* Left Column (Our Values) */}
         <div className="w-full md:w-1/2  p-8 rounded-l-lg min-[768px]:border-r-2 border-[grey]">
           <h2 className="text-2xl font-bold mb-4">OUR VALUES</h2>
-          <p className="font-semibold">We believe in:</p>
-          <ul className="mt-4 space-y-2">
-            <li><strong>SAFETY</strong> <br />Protecting our employees, assets & environment</li>
-            <li><strong>QUALITY</strong> <br />Meeting requirements</li>
-            <li><strong>COMMITMENTS</strong> <br />Keeping Promises</li>
-            <li><strong>INTEGRITY</strong> <br />Adhering to ethical standards</li>
-          </ul>
+          <p className="font-semibold text-xl">We believe in :</p>
+          <div className="mt-4 space-y-2">
+            <p className='flex flex-col gap-2 pt-2'><strong>SAFETY</strong><span className='text-[17px]'>Protecting our employees, assets & environment</span></p>
+            <p className='flex flex-col gap-2 pt-3 '><strong>QUALITY</strong> <span className='text-[17px]'>Meeting requirements</span> </p>
+            <p className='flex flex-col gap-2 pt-3'><strong>COMMITMENTS</strong> <span className='text-[17px]'>Keeping Promises</span> </p>
+            <p className='flex flex-col gap-2 pt-3'><strong>INTEGRITY</strong> <span className='text-[17px]'>Adhering to ethical standards</span></p>
+          </div>
 
           <h2 className="text-2xl font-bold mt-8 mb-4">OUR GOALS</h2>
           <ul className="space-y-2">
@@ -40,11 +40,11 @@ export const AboutValues = () => {
 
         {/* Right Column (Our Guiding Principles) */}
         <div className="w-full md:w-1/2  p-8 rounded-r-lg max-sm:pt-5">
-          <div className="flex justify-center">
+          <div className="flex justify-center ">
             <img
               src={image} // Replace with the actual image path
               alt="Guiding Principles"
-              className="rounded-lg  mb-7"
+              className="rounded-lg  "
             />
           </div>
           <p className="font-semibold text-[18px] mb-5 ">To be the professional contractor of choice</p>
