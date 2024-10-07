@@ -80,7 +80,7 @@ export const ApplicantDetails = () => {
       >
         <div className="flex justify-center sm:justify-between gap-5 items-center flex-wrap">
           {/* Position */}
-          <div className="mt-10 mb-5 text_size_6 max-sm:w-full">
+          <div className="mt-10 mb-5 text_size_6 max-w-[650px] w-full">
             <div>
               <label className="block">Applying for the position of</label>
               <input
@@ -98,7 +98,7 @@ export const ApplicantDetails = () => {
 
        
 
-
+{/* 
           <div>
             <div className="flex justify-center items-center gap-5">
               <input
@@ -121,7 +121,7 @@ export const ApplicantDetails = () => {
                 {errors.employeeType.message}
               </p>
             )}
-          </div>
+          </div> */}
 
           {/* Upload Photo */}
           <div className="py-2 center flex-col max-w-[160px]">
@@ -160,8 +160,8 @@ export const ApplicantDetails = () => {
         {/* Form Fields */}
         <div className="grid  md:grid-cols-2 gap-x-12 gap-y-5 my-4 text_size_6">
           {[
-                        { label: "Contract Type", name: "contractType",  type: "select", options: ["", "LPA","SAWP","BRUNEI"]  },
-                        { label: "Agent", name: "agent", type: "text" },
+                        // { label: "Contract Type", name: "contractType",  type: "select", options: ["", "LPA","SAWP","BRUNEI"]  },
+                        // { label: "Agent", name: "agent", type: "text" },
 
             { label: "Name", name: "name", type: "text" },
             { label: "Chinese characters (if applicable)", name: "chinese", type: "text" },

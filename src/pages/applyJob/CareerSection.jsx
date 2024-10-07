@@ -64,8 +64,8 @@ export const CareerSection = () => {
         <p className="">Explore the latest job opportunities and find your next career move!</p>
       </div>
 
-    <div className='flex justify-evenly items-center flex-wrap gap-7 p-2'>
-    {CareerData.map((job) => (
+    <div className='flex max-[742px]:justify-center justify-between items-center flex-wrap gap-7 p-2 gap-y-10'>
+    {/* {CareerData.map((job) => (
         <div key={job.id} className=" gap-7 space-y-4 p-2 rounded-md shadow-md sm:w-[300px] sm:h-[300px]  border-2 border-[red]">
           <div className='flex justify-evenly items-center '>
             <img 
@@ -76,9 +76,9 @@ export const CareerSection = () => {
             <p className="font-bold text-lg  ">{job.title}</p>
           </div>          
           <h4 className="font-semibold">Description</h4>
-          <p className="text-[12px] font-medium">{job.description}</p>
+          <p className="text-[12px] font-medium h-[60px]">{job.description}</p>
           <div className='flex-wrap flex justify-between items-center gap-2'>
-            <p className='border py-1 px-2 text-[12px]'>{job.experience}</p>
+            <p className='border py-1 px-2 text-[12px]  '>{job.experience}</p>
             <p className='border py-1 px-4 text-[12px]'>{job.lpa}</p>
             <p className='border py-1 px-3 text-[12px]'>{job.type}</p>
           </div>
@@ -88,7 +88,31 @@ export const CareerSection = () => {
             </Link>
           </div>
         </div>
-      ))}
+      ))} */}
+      {CareerData.map((job, index) => (
+  <div key={`${job.id}-${index}`} className="gap-7 space-y-4 p-2 rounded-md shadow-md sm:w-[300px] sm:h-[300px] border-2 border-[red]">
+    <div className='flex justify-evenly items-center '>
+      <img 
+        src={job.icon} 
+        alt={job.title} 
+        className="object-cover w-16 h-16 text-[red]"
+      />
+      <p className="font-bold text-lg">{job.title}</p>
+    </div>          
+    <h4 className="font-semibold">Description</h4>
+    <p className="text-[12px] font-medium h-[60px]">{job.description}</p>
+    <div className='flex-wrap flex justify-between items-center gap-2'>
+      <p className='border py-1 px-2 text-[12px]'>{job.experience}</p>
+      <p className='border py-1 px-4 text-[12px]'>{job.lpa}</p>
+      <p className='border py-1 px-3 text-[12px]'>{job.type}</p>
+    </div>
+    <div className='center py-2'>
+      <Link to="/addCandidates" className="bg-[#FEF116] text-black center font-bold py-1 px-4 rounded">
+        APPLY JOB
+      </Link>
+    </div>
+  </div>
+))}
     </div>
     </div>
     </div>
