@@ -33,7 +33,7 @@ export const HomeNR = () => {
             <div className=" rounded-full px-2 py-1 center text-[16px] bg-white text-dark_red">➤</div>
             <div className="ml-4">
               <h3 className="text-xl sm:text-[24px] font-semibold">Vision</h3>
-              <p className="text-[14px] sm:text-[16px] mt-2 sm:mt-4">Metus montes cras massa venenatis id dignissim suspendisse purus nibh. Mollis sapien facilisis luctus.
+              <p className="text-[14px] sm:text-[16px] mt-2 sm:mt-4">We deliver consistent services and excellent solutions.
                 <span className=' text-[14px] text-yellow border-b'> <Link to="/ourVision" >Read More</Link></span></p>
             </div>
           </div>
@@ -42,7 +42,7 @@ export const HomeNR = () => {
             <div className=" rounded-full px-2 py-1 center text-[16px] bg-white text-dark_red">➤</div>
             <div className="ml-4">
               <h3 className="text-xl sm:text-[24px] font-semibold">Mission</h3>
-              <p className="text-[14px] sm:text-[16px] mt-2 sm:mt-4">Metus montes cras massa venenatis id dignissim suspendisse purus nibh. Mollis sapien facilisis luctus.
+              <p className="text-[14px] sm:text-[16px] mt-2 sm:mt-4">To proactively engage our customers to seek better ways to serve their business needs.
               <span className=' text-[14px] text-yellow border-b'> <Link to="/ourMission" >Read More</Link></span>
               </p>
             </div>
