@@ -3,7 +3,7 @@
 export const CommonBanner = ({background,title}) => {
   return (
     <div
-        className={`bg-cover bg-center bg-no-repeat py-20 relative -z-10`}
+        className={`bg-cover bg-center bg-no-repeat py-6 relative -z-10`}
         style={{ backgroundImage: `url(${background})` }}
       >
         <div className="h-full w-full absolute top-0 left-0 bg-[#0000004D] -z-10" ></div>

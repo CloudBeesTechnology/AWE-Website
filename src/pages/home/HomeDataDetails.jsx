@@ -53,3 +53,26 @@ export const services = [
     title: 'Rotating Equipment Overhauls',
   },
 ];
+
+import slide1 from "../../assets/home/home-header.jpg"
+import slide2 from "../../assets/home/home-header.jpg"
+import slide3 from "../../assets/home/home-header.jpg"
+
+
+export const HSDetail = [
+    {
+        img:slide1,
+        title:<p> FROM <span className='text-primary'>OUR</span> KITCHEN <br/> TO  YOUR TABLE</p>,
+        desc: "Life is uncertain. Eat dessert first.",
+    },
+    {
+        img:slide2,
+        title: <p>DELICIOUS <span className='text-primary'>CHICKEN</span>  <br/>BIRIYANI</p>,
+        desc: "LIMITED TIME ONLY!",
+    },
+    {
+        img:slide3,
+        title: <p>FRIED <span className='text-primary'>MUTTON</span>  <br/>TO YOUR TABLE</p>,
+        desc: "Life is uncertain. Eat dessert first.",
+    },
+]

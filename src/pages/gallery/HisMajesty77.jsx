@@ -91,7 +91,7 @@ export const HisMajesty77 = () => {
             <img
               src={images[selectedImageIndex]}
               alt="Selected"
-              className="rounded  h-[500px]"
+              className="rounded  w-full max-w-[600px]"
             />
             <button
               className="absolute top-1/2 right-20 transform -translate-y-1/2 text-white text-[40px]"
