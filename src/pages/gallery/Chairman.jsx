@@ -106,7 +106,7 @@ export const Chairman = () => {
             <img
               src={images[selectedImageIndex]}
               alt="Selected"
-              className="rounded w-full max-w-[600px]"
+              className="rounded w-full max-w-[850px] h-full"
             />
             <button
               className="absolute top-1/2 right-20 transform -translate-y-1/2 text-white text-[40px]"
