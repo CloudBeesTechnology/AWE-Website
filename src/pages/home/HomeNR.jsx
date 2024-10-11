@@ -14,9 +14,9 @@ export const HomeNR = () => {
           <h1 className="text-[24px] md:text-[36px] font-extrabold mt-4">A Vital Energy Resource For A Better Tomorrow</h1>
           <p className="mt-4 text-[12px] sm:text-[14px]">Energy is the capacity to do work and is required for life processes. An energy resource is something that can produce heat, move objects, or produce electricity.</p>
           
-          <button className=" mt-4 sm:mt-8 bg-yellow text-black max-sm:text-[14px] font-semibold py-2 px-6 rounded-lg ">
+          {/* <button className=" mt-4 sm:mt-8 bg-yellow text-black max-sm:text-[14px] font-semibold py-2 px-6 rounded-lg ">
             DISCOVER MORE
-          </button>
+          </button> */}
         </div>
 
         {/* Right Section - Aspiration, Vision, Mission */}

@@ -54,7 +54,7 @@ export const services = [
   },
 ];
 
-import slide1 from "../../assets/home/home-header.jpg"
+import slide1 from "../../assets/home/Home-header2.png"
 import slide2 from "../../assets/home/home-header.jpg"
 import slide3 from "../../assets/home/home-header.jpg"
 

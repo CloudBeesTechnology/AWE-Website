@@ -81,7 +81,7 @@ export const LtiMillion = () => {
       {/* Modal */}
       {selectedImageIndex !== null && (
         <div className="fixed inset-0 bg-[#848282] border bg-opacity-95 flex items-center justify-center z-50">
-          <div className="bg-white p-4 rounded shadow-lg ">
+          <div className=" p-4 rounded shadow-lg ">
             <button
               className="absolute top-2 right-24 text-white text-[50px]"
               onClick={closeModal}
@@ -97,7 +97,7 @@ export const LtiMillion = () => {
             <img
               src={images[selectedImageIndex]}
               alt="Selected"
-              className="rounded w-full max-w-[850px] h-full"
+              className="rounded w-full max-w-[850px] h-full max-h-[900px]"
             />
             <button
               className="absolute top-1/2 right-20 transform -translate-y-1/2 text-white text-[40px]"

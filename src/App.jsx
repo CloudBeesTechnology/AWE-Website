@@ -39,7 +39,7 @@ export const App=()=> {
     <Navbar />
     <Routes>
     <Route path="/" Component={Home} />
-    <Route path="/ourWorkForce" Component={OurWorkForce} />
+    {/* <Route path="/ourWorkForce" Component={OurWorkForce} /> */}
     <Route path="/about" Component={About} />
     <Route path="/ourVision" Component={OurVision} />
     <Route path="/values" Component={AboutValues} />

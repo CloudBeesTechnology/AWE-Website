@@ -98,12 +98,12 @@ export const Navbar = () => {
 
             {showServicesList && (
               <div className="absolute top-8 -left-10 bg-white flex flex-col text-[18px] p-4 gap-1 w-[170px] shadow-md rounded-md font-medium">
-                <NavLink to="/ourMission" className="border-b border-grey p-1 text-dark_red text-[14px]" onClick={closeServiceList}>MISSION</NavLink>
-                <NavLink to="/ourVision" className="border-b border-grey p-1 text-dark_red text-[14px]" onClick={closeServiceList}>VISION</NavLink>
+                <NavLink to="/ourMission" className="border-b border-grey p-1 text-dark_red text-[14px]" onClick={closeServiceList}>MISSION & VISION</NavLink>
+                {/* <NavLink to="/ourVision" className="border-b border-grey p-1 text-dark_red text-[14px]" onClick={closeServiceList}>VISION</NavLink> */}
                 <NavLink to="/values" className="border-b border-grey p-1 text-dark_red text-[14px]" onClick={closeServiceList}>VALUES</NavLink>
                 <NavLink to="/OurService" className="border-b border-grey p-1 text-dark_red text-[14px]" onClick={closeServiceList}>SERVICES</NavLink>
-                <NavLink to="/ourWorkForce" className="border-b border-grey p-1 text-dark_red text-[14px]" onClick={closeServiceList}>WORKFORCE</NavLink>
-                <NavLink to="/awards" className="border-b border-grey p-1 text-dark_red text-[14px]" onClick={closeServiceList}>AWARDS</NavLink>
+                {/* <NavLink to="/ourWorkForce" className="border-b border-grey p-1 text-dark_red text-[14px]" onClick={closeServiceList}>WORKFORCE</NavLink> */}
+                <NavLink to="/certification" className="border-b border-grey p-1 text-dark_red text-[14px]" onClick={closeServiceList}>Achievements & Certification</NavLink>
               </div>
             )}
           </div>
@@ -147,7 +147,7 @@ export const Navbar = () => {
           </div>
         </div>
 
-        <div className="text-[24px] font-bold [@media(min-width:1030px)]:hidden block px-3" onClick={toggleSidebar}>
+        <div className="text-[24px] font-bold [@media(min-width:1230px)]:hidden block px-3" onClick={toggleSidebar}>
           <RiMenuAddFill />
         </div>
       </div>

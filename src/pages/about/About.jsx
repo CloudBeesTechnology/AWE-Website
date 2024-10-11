@@ -17,7 +17,7 @@ export const About = () => {
   return (
     <>
     <section>
-      <CommonBanner background={bg} title="About" />
+      <CommonBanner background={bg} title="About Us" />
 
       <section className="screen-size mx-auto my-10">
       <div className="bg-white py-10  lg:px-10">
