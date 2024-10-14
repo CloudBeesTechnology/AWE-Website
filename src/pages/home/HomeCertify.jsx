@@ -13,7 +13,7 @@ export const HomeCertify= () => {
           {/* Left Image Section */}
       <div className="  ">
         <img
-          src={image} // image URL
+          src={image} 
           alt="Energy"
           className="w-[500px]  h-auto "
         />
@@ -30,7 +30,7 @@ export const HomeCertify= () => {
              {/* Company Info */}
         <div className="w-[150px] h-[150px] center flex-col bg-white border-2 border-dark_red p-2 rounded-md text-center">
             <img
-              src={image1} // image URL
+              src={image1} 
               alt="Company certify img"
               className="w-12 h-12 mx-auto "
             />

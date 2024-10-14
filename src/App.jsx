@@ -1,4 +1,4 @@
-import {   Route, Routes, useLocation } from 'react-router-dom';
+import { Route, Routes, useLocation } from 'react-router-dom';
 import { Navbar } from './Component/Navbar';
 import { Helmet, HelmetProvider } from 'react-helmet-async';
 import { Home } from './pages/home/Home';
@@ -19,9 +19,11 @@ import { EducationDetails } from './pages/applyJob/apply/EducationaDetails';
 import { OtherDetails } from './pages/applyJob/apply/OtherDetails';
 import { PersonalDetails } from './pages/applyJob/apply/PersonalDetails';
 import { useEffect } from 'react';
+import { ImageGrid } from './pages/gallery/ImageGrid';
+import Achievements from './Component/Organization/Achievements';
 
 
-export const App=()=> {
+export const App = () => {
   useEffect(() => {
     window.scrollTo({
       top: 0,
@@ -29,37 +31,39 @@ export const App=()=> {
     });
   }, []);
   const location = useLocation();
-  const hideNavbar = ["/applyJob","/addCandidates","/addCandidates/personalDetails","/addCandidates/educationDetails","/addCandidates/otherDetails"];
+  const hideNavbar = ["/applyJob", "/addCandidates", "/addCandidates/personalDetails", "/addCandidates/educationDetails", "/addCandidates/otherDetails"];
   return (
-    
-    <HelmetProvider>
-    <Helmet>
-      <link rel="canonical" href={window.location.href} />
-    </Helmet>
-    <Navbar />
-    <Routes>
-    <Route path="/" Component={Home} />
-    <Route path="/ourWorkForce" Component={OurWorkForce} />
-    <Route path="/about" Component={About} />
-    <Route path="/ourVision" Component={OurVision} />
-    <Route path="/values" Component={AboutValues} />
-    <Route path="/ourMission" Component={AboutOurMission} />
-    <Route path="/OurService" Component={AboutService} />
-    <Route path="/contact" Component={Contact} />
-    <Route path="/gallery" Component={Gallery} />
-    <Route path="/applyJob" Component={CareerSection} />
-    <Route path="/addCandidates" Component={AddCandidates}>
-            <Route index element={<ApplicantDetails />} />
-            <Route path="personalDetails" element={<PersonalDetails />} />
-            <Route path="educationDetails" element={<EducationDetails />} />
-            <Route path="otherDetails" element={<OtherDetails />} />
-          </Route>
-    <Route path="/organization" Component={Organization} />
 
-    </Routes>
-    {!hideNavbar.includes(location.pathname) && <Footer />}
-    {/* <Footer/> */}
-  </HelmetProvider>
+    <HelmetProvider>
+      <Helmet>
+        <link rel="canonical" href={window.location.href} />
+      </Helmet>
+      <Navbar />
+      <Routes>
+        <Route path="/" Component={Home} />
+        {/* <Route path="/ourWorkForce" Component={OurWorkForce} /> */}
+        <Route path="/about" Component={About} />
+        <Route path="/ourVision" Component={OurVision} />
+        <Route path="/values" Component={AboutValues} />
+        <Route path="/ourMission" Component={AboutOurMission} />
+        <Route path="/OurService" Component={AboutService} />
+        <Route path="/contact" Component={Contact} />
+        <Route path="/gallery" Component={Gallery} />
+        <Route path="/images" Component={ImageGrid} />
+        <Route path="/applyJob" Component={CareerSection} />
+        <Route path="/addCandidates" Component={AddCandidates}>
+          <Route index element={<ApplicantDetails />} />
+          <Route path="personalDetails" element={<PersonalDetails />} />
+          <Route path="educationDetails" element={<EducationDetails />} />
+          <Route path="otherDetails" element={<OtherDetails />} />
+        </Route>
+        <Route path="/organization" Component={Organization} />
+        <Route path="/certification" Component={Achievements} />
+
+      </Routes>
+      {!hideNavbar.includes(location.pathname) && <Footer />}
+      {/* <Footer/> */}
+    </HelmetProvider>
   );
 }
 

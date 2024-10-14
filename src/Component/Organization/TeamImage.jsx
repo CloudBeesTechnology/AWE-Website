@@ -1,4 +1,4 @@
-import team from "../../assets/WEbimage/WEbimage/team.png";
+import team from "../../assets/WEbimage/WEbimage/teamTwo.png";
 
 export const TeamImage = () => {
   return (

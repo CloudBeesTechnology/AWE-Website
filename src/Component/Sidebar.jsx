@@ -42,7 +42,7 @@ export const Sidebar = ({ showSidebar, toggleSidebar }) => {
   return (
     <>
       <div
-        className={`fixed top-0 bg-white bg-gradient-1 h-screen z-50 p-5 block min-[1030px]:hidden ${
+        className={`fixed top-0 bg-white bg-gradient-1 h-screen z-50 p-5 block min-[1230px]:hidden ${
           showSidebar
             ? "right-0 transition-all duration-700 ease-out"
             : "-right-64 transition-all duration-700 ease-out"
@@ -86,11 +86,11 @@ export const Sidebar = ({ showSidebar, toggleSidebar }) => {
         <NavLink to="/ourMission" className="border-b border-grey p-1 text-dark_red text-[14px]" onClick={() => {
   closeServiceList();
   toggleSidebar();
-}} >MISSION</NavLink>
-                <NavLink to="/ourVision" className="border-b border-grey p-1 text-dark_red text-[14px]" onClick={() => {
+}} >MISSION & VISION</NavLink>
+                {/* <NavLink to="/ourVision" className="border-b border-grey p-1 text-dark_red text-[14px]" onClick={() => {
   closeServiceList();
   toggleSidebar();
-}} >VISION</NavLink>
+}} >VISION</NavLink> */}
                 <NavLink to="/values" className="border-b border-grey p-1 text-dark_red text-[14px]" onClick={() => {
   closeServiceList();
   toggleSidebar();
@@ -99,14 +99,14 @@ export const Sidebar = ({ showSidebar, toggleSidebar }) => {
   closeServiceList();
   toggleSidebar();
 }} >SERVICES</NavLink>
-                <NavLink to="/ourWorkForce" className="border-b border-grey p-1 text-dark_red text-[14px]" onClick={() => {
+                {/* <NavLink to="/ourWorkForce" className="border-b border-grey p-1 text-dark_red text-[14px]" onClick={() => {
   closeServiceList();
   toggleSidebar();
-}} >WORKFORCE</NavLink>
-                <NavLink to="/awards" className="border-b border-grey p-1 text-dark_red text-[14px]" onClick={() => {
+}} >WORKFORCE</NavLink> */}
+                <NavLink to="/certification" className="border-b border-grey p-1 text-dark_red text-[14px]" onClick={() => {
   closeServiceList();
   toggleSidebar();
-}} >AWARDS</NavLink>
+}} >Achievements & Certification</NavLink>
               </div>
       )}
     </div>

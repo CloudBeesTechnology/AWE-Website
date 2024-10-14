@@ -9,9 +9,17 @@ export default {
       grey:"#959595",
       yellow:"#FEF563",
       darkyellow:"FEF116",
-      dark_red:"#7F0000"
+      dark_red:"#7F0000",
+      light_yellow:"#FFF4A5"
     },
-    extend: {},
+   
+    extend: {
+      fontFamily: {
+        poppins: ['Poppins', 'sans-serif'],
+        minionPro: ['font-family: minion-pro, serif'],
+        crimson: ['"Crimson Pro"', 'serif'],
+      },
+    },
   },
   plugins: [require('tailwind-scrollbar-hide')],
 };

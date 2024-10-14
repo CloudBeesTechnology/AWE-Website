@@ -1,15 +1,16 @@
 import React from 'react';
-import image1 from "../../assets/home/icon/Group1.png"
-import image2 from "../../assets/home/icon/Group2.png"
-import image3 from "../../assets/home/icon/Group3.png"
-import image4 from "../../assets/home/icon/Group4.png"
-import image5 from "../../assets/home/icon/Group5.png"
-import image6 from "../../assets/home/icon/Group6.png"
-import image7 from "../../assets/home/icon/Group7.png"
-import image8 from "../../assets/home/icon/Group8.png"
-import image9 from "../../assets/home/icon/Group9.png"
-import image10 from "../../assets/home/icon/Group10.png"
+// import image1 from "../../assets/home/icon/Group1.png"
 
+import image1 from "../../assets/home/AWE Services Consist of/Project Management and Manpower Logistics.jpg";
+import image2 from "../../assets/home/AWE Services Consist of/Fabrication & Erection of Structural Steel.jpg";
+import image3 from "../../assets/home/AWE Services Consist of/Fabrication & Erection of Piping.jpg";
+import image4 from "../../assets/home/AWE Services Consist of/Post Weld Heat Treatment.png.jpg";
+import image5 from "../../assets/home/AWE Services Consist of/Plant Maintenance.jpg";
+import image6 from "../../assets/home/AWE Services Consist of/Machining.jpg";
+import image7 from "../../assets/home/AWE Services Consist of/Blasting & Coating.jpg";
+import image8 from "../../assets/home/AWE Services Consist of/Insulation Services.jpg";
+import image9 from "../../assets/home/AWE Services Consist of/Electrical & Intrumentation.jpg";
+import image10 from "../../assets/home/AWE Services Consist of/Rotating Equipment Overhauls.jpg";
 
 export const services = [
   {
@@ -54,7 +55,7 @@ export const services = [
   },
 ];
 
-import slide1 from "../../assets/home/home-header.jpg"
+import slide1 from "../../assets/home/Home-header2.png"
 import slide2 from "../../assets/home/home-header.jpg"
 import slide3 from "../../assets/home/home-header.jpg"
 
