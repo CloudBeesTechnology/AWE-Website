@@ -63,7 +63,7 @@ body {
   @apply  bg-no-repeat w-full bg-cover bg-center
 }
 .bg-contact{
-  background-image: url(./assets/machines/img-5.png);
+  background-image: url(./assets/contact/office.png);
   @apply  bg-no-repeat w-full bg-cover bg-center
 }
 .primary_btn{

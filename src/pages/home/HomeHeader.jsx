@@ -10,6 +10,8 @@ export const HomeHeader = () => {
     <main>
         <section className=" max-sm:pt-2  max-sm:pb-10 sm:center relative ">
           <div className=" max-w-screen-2xl w-[100%] mx-auto ">
+        <section className=" max-sm:pt-2  max-sm:pb-10 sm:center relative ">
+          <div className=" max-w-screen-2xl w-[100%] mx-auto ">
             <Swiper
               className="w-full"
               modules={[Pagination, Autoplay]}
@@ -41,6 +43,8 @@ export const HomeHeader = () => {
               </div>
             </Swiper>
           </div>
+        </section>
+        </div>
         </section>
     </main>
   );

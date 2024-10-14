@@ -16,8 +16,8 @@ export const Contact = () => {
   return (
     <div>
         <ContactSection/>
+        {/* <BusinessHours/> */}
         <BusinessEnquiries/>
-        <BusinessHours/>
     </div>
   )
 }

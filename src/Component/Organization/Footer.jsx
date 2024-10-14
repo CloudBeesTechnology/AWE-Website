@@ -48,7 +48,7 @@ export const Footer = () => {
             {/* Logo Section */}
             <div className="text-white text-center">
               <img src={image34} className="w-20 h-14 mx-auto mb-4" alt="logo" />
-              <h1 className="italic text-[12px] font-semibold lg:text-[20px] lg:font-bold">
+              <h1 className=" capitalize italic text-[12px] font-semibold lg:text-[20px] lg:font-bold">
                 The professional
                 <span className="block">contractor of choice</span>
               </h1>
