@@ -14,7 +14,7 @@ export const ContactSection = () => {
           <p className="text-[18px] text-[#303030] font medium">We would like to know more about the needs of your business.</p>
         </div>
 
-        <div className="px-4 lg:px-24 md:px-16px flex justify-evenly items-center w-full max-[900px]:flex-col">
+        <div className="px-4 gap-4 lg:px-24 md:px-16px flex justify-evenly items-center w-full max-[900px]:flex-col">
           {/* Left Image Section */}
           <div className="w-full sm:w-2/4 flex items-center">
             <img
