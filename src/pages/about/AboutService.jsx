@@ -21,7 +21,7 @@ export const AboutService = () => {
     <>
 
       <section>
-        <CommonBanner background={bg} title="Our Service" />
+        <CommonBanner background={bg} title="Our Services" />
         <div className="screen-size bg-white pt-16 px-2 lg:px-10 ">
           {/* Title Section */}
           <div className=" flex-col max-sm:text-justify sm:mb-12 mb-10">

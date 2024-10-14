@@ -43,11 +43,11 @@ export const Footer = () => {
       <section className="flex flex-col space-y-12 bg-[#313038] mt-20">
 
         <section className="flex flex-col space-y-12 bg-[#313038]">
-          <div className="px-4 lg:px-52 flex flex-col lg:flex-row  justify-center lg:justify-between gap-12 mt-12">
+          <div className="px-4 lg:px-36 flex flex-col lg:flex-row  justify-center lg:justify-between gap-12 mt-12">
 
             {/* Logo Section */}
             <div className="text-white text-center">
-              <img src={image34} className="w-20 h-14 mx-auto mb-4" alt="logo" />
+              <img src={image34} className="w-28 h-24 mx-auto mb-4" alt="logo" />
               <h1 className=" capitalize italic text-[12px] font-semibold lg:text-[20px] lg:font-bold">
                 The professional
                 <span className="block">contractor of choice</span>
@@ -123,9 +123,9 @@ export const Footer = () => {
               {FooterData.map((val, index) => (
                 <SwiperSlide key={index}>
                   <div className="center">
-                    <div className="max-w-[190px] h-[190px] border ">
+                    <div className="max-w-[180px] h-[170px] border ">
                       <img
-                        className="object-cover w-[200px] h-full "
+                        className="object-cover w-[180px] h-full "
                         src={val.img}
                         alt={`${index} not found`}
                       />

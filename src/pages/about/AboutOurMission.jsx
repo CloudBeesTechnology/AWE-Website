@@ -16,7 +16,7 @@ export const AboutOurMission = () => {
   return (
     <section>
       <CommonBanner background={bg} title="Our Mission & Vision" />
-      <div className="screen-size bg-white pt-16 pb-12 px-2 lg:px-10">
+      <div className="screen-size bg-white pt-16 pb-12 px-2 lg:px-32">
         {/* Title */}
         <div className="mb-8">
           <h2 className="text-[28px] font-semibold bg-[#FEF116] text-center w-[220px] p-3">
