@@ -23,7 +23,7 @@ export const Gallery = () => {
   return (
     <section className="">
       <CommonBanner background={bg} title="Gallery" />
-      <div className="px-24 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-6 my-16">
+      <div className="px-2 lg:px-24 md:px-12 sm:px-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-6 my-16">
 
         <div className="p-2">
           <LtiMillion
