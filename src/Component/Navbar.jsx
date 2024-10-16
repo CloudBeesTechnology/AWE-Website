@@ -13,7 +13,7 @@ export const Navbar = () => {
     "/addCandidates/educationDetails",
     "/addCandidates/otherDetails",
   ];
-  
+
   const aboutPaths = [
     "/ourWorkForce",
     "/about",
@@ -27,7 +27,7 @@ export const Navbar = () => {
   const [showSidebar, setShowSidebar] = useState(false);
   const dropdownRef = useRef(null); // Define the ref for the dropdown
   const location = useLocation(); // Hook to get the current path
-  
+
   // Toggle service list
   const toggleServiceList = () => {
     setServicesList(!showServicesList);
@@ -84,7 +84,7 @@ export const Navbar = () => {
           >
             Home
           </NavLink>
-          
+
           <div className="relative" ref={dropdownRef}>
             <NavLink
               to="/about"
@@ -110,7 +110,12 @@ export const Navbar = () => {
 
           <NavLink
             to="/gallery"
-            className={({ isActive }) => (isActive ? "border-b-4 border-dark_red font-bold" : "")}
+            className={() => {
+              const isGalleryActive =
+                location.pathname === "/gallery" ||
+                location.pathname.startsWith("/images");
+              return isGalleryActive ? "border-b-4 border-dark_red font-bold" : "";
+            }}
           >
             Gallery
           </NavLink>
