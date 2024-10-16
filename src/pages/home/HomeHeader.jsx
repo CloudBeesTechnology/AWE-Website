@@ -26,13 +26,13 @@ export const HomeHeader = () => {
                   <SwiperSlide key={index}>
                     <div className=" ">
                     <div className="space-y-10 absolute bottom-3 left-2 sm:bottom-16 sm:left-7">
-              <h1 id="headCrimson" className="font-crimson text-white max-sm:center max-md:text-center max-sm:text-[20px] text-[50px] font-semibold max-sm:font-medium ">
+              <h1 id="headCrimson" className="font-crimson text-white bg-black bg-opacity-50  max-sm:center max-md:text-center max-sm:text-[20px] text-[50px] font-semibold max-sm:font-medium ">
              <i>"The Professional Contractor  Of Choice"</i>
               </h1>
             </div>
                       <div className=" w-full ">
                         <img
-                          className="object-cover w-full sm:h-[500px] "
+                          className="object-cover w-full sm:h-[618px] "
                           src={val.img}
                           alt={`${index} not found`}
                         />

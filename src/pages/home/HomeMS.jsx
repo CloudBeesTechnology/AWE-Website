@@ -12,11 +12,11 @@ export const HomeMS = () => {
       <div>
 
 
-        <div className="px-4 sm:px-0 flex justify-between flex-wrap items-center gap-5 w-full  px-24">
+        <div className="px-4 sm:px-0 flex  flex-wrap items-center gap-5 w-full  px-24">
           {services.map((service, index) => (
             <div
               key={index}
-              className="bg-light_yellow w-full sm:max-w-[224px] h-auto rounded-lg flex-col center text-center "
+              className="bg-light_yellow w-full sm:max-w-[224px] h-[220px] rounded-lg flex-col center text-center "
             >
               <div className="rounded-md overflow-hidden  w-full">
                 <img

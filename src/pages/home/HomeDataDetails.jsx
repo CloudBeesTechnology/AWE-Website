@@ -11,6 +11,8 @@ import image7 from "../../assets/home/AWE Services Consist of/Blasting & Coating
 import image8 from "../../assets/home/AWE Services Consist of/Insulation Services.jpg";
 import image9 from "../../assets/home/AWE Services Consist of/Electrical & Intrumentation.jpg";
 import image10 from "../../assets/home/AWE Services Consist of/Rotating Equipment Overhauls.jpg";
+import image11 from "../../assets/home/AWE Services Consist of/Flange Management Services.jpg";
+import image12 from "../../assets/home/AWE Services Consist of/Scaffolding Services.jpg"
 
 export const services = [
   {
@@ -27,11 +29,11 @@ export const services = [
   },
   {
     icon: image5, // Replace with your icon image URL
-    title: 'Post Weld Heat Treatment Services',
+    title: 'Plant Maintenance  ',
   },
   {
     icon: image4, // Replace with your icon image URL
-    title: 'Plant Maintenance',
+    title: 'Post Weld Heat Treatment Services',
   },
   {
     icon: image6, // Replace with your icon image URL
@@ -53,11 +55,19 @@ export const services = [
     icon: image10, // Replace with your icon image URL
     title: 'Rotating Equipment Overhauls',
   },
+  {
+    icon:image11,
+    title: "Flange Management Services",
+  },
+  {
+    icon: image12,
+    title: "Scaffolding Services",
+  }
 ];
 
-import slide1 from "../../assets/home/Home-header2.png"
-import slide2 from "../../assets/home/home-header.jpg"
-import slide3 from "../../assets/home/home-header.jpg"
+import slide1 from "../../assets/home/Home1.jpg"
+import slide2 from "../../assets/home/Home2.jpg"
+import slide3 from "../../assets/home/Home3.jpg"
 
 
 export const HSDetail = [
@@ -77,3 +87,4 @@ export const HSDetail = [
         desc: "Life is uncertain. Eat dessert first.",
     },
 ]
+//need some chnages if i hover the links on right the image have to come in left and if click the image it have to route based on link category
