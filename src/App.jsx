@@ -21,6 +21,8 @@ import { PersonalDetails } from './pages/applyJob/apply/PersonalDetails';
 import { useEffect } from 'react';
 import { ImageGrid } from './pages/gallery/ImageGrid';
 import Achievements from './Component/Organization/Achievements';
+import { workersSlides, chairmanSlides, hariRayaSlides, hisMajesty77Slides, hlpSlides, hisMajesty78Slides } from "./pages/gallery/ImageContainer"; // Ensure the correct path
+
 
 
 export const App = () => {
@@ -48,8 +50,15 @@ export const App = () => {
         <Route path="/ourMission" Component={AboutOurMission} />
         <Route path="/OurService" Component={AboutService} />
         <Route path="/contact" Component={Contact} />
-        <Route path="/gallery" Component={Gallery} />
-        <Route path="/images" Component={ImageGrid} />
+        {/* <Route path="/gallery" Component={Gallery} />
+        <Route path="/images" Component={ImageGrid} /> */}
+        <Route path="/gallery" element={<Gallery />} />
+        <Route path="/images/lti" element={<ImageGrid images={workersSlides} title="25 Million Hour Without LTI" color="#F93131" />} />
+        <Route path="/images/chairman" element={<ImageGrid images={chairmanSlides} title="Chairman Gallery" color="#53FB5E" />} />
+        <Route path="/images/hari-raya" element={<ImageGrid images={hariRayaSlides} title="Hari Raya Celebration" color="#4C79DA" />} />
+        <Route path="/images/his-majesty-77" element={<ImageGrid images={hisMajesty77Slides} title="His Majesty 77" color="#F148E5" />} />
+        <Route path="/images/hlp" element={<ImageGrid images={hlpSlides} title="HLP Gallery" color="#C9C900" />} />
+        <Route path="/images/his-majesty-78" element={<ImageGrid images={hisMajesty78Slides} title="His Majesty 78" color="#F36B21" />} />
         <Route path="/applyJob" Component={CareerSection} />
         <Route path="/addCandidates" Component={AddCandidates}>
           <Route index element={<ApplicantDetails />} />
