@@ -1,5 +1,5 @@
 // workers.js (1 to 10)
-import slide1 from "../../assets/gallery/workers/image1.jpg";
+// import slide1 from "../../assets/gallery/workers/image1.jpg";
 import slide2 from "../../assets/gallery/workers/image2.jpg";
 import slide3 from "../../assets/gallery/workers/image3.jpg";
 import slide4 from "../../assets/gallery/workers/image4.jpg";
@@ -11,7 +11,7 @@ import slide9 from "../../assets/gallery/workers/image9.jpg";
 import slide10 from "../../assets/gallery/workers/image10.jpg";
 
 export const workersSlides = [
-  slide1,
+//   slide1,
   slide2,
   slide3,
   slide4,
@@ -130,12 +130,14 @@ export const hlpSlides = [
 ];
 
 // HisMajesty78.js (54 to 68)
-import slide54 from "../../assets/gallery/HisMajesty78/78_1.JPG";
+import slide54 from "../../assets/gallery/HisMajesty78/78_6.JPG";
+
 import slide55 from "../../assets/gallery/HisMajesty78/78_2.JPG";
 import slide56 from "../../assets/gallery/HisMajesty78/78_3.JPG";
 import slide57 from "../../assets/gallery/HisMajesty78/78_4.JPG";
 import slide58 from "../../assets/gallery/HisMajesty78/78_5.JPG";
-import slide59 from "../../assets/gallery/HisMajesty78/78_6.JPG";
+
+import slide59 from "../../assets/gallery/HisMajesty78/78_1.JPG";
 import slide60 from "../../assets/gallery/HisMajesty78/78_10.JPG";
 import slide61 from "../../assets/gallery/HisMajesty78/78_8.JPG";
 import slide62 from "../../assets/gallery/HisMajesty78/78_9.JPG";
