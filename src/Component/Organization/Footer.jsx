@@ -1,20 +1,18 @@
 import React, { useState, useEffect } from "react";
-import image from "../../assets/footer/fb.png";
-import image1 from "../../assets/footer/insta.png";
-import image2 from "../../assets/footer/linkedIn.png";
+import image from "../../assets/footer/fbNew.png";
+import image1 from "../../assets/footer/instaNew.png";
+import image2 from "../../assets/footer/linkedinNew.png";
 import leftArrow from "../../assets/machines/leftarrow.png";
 import rightArrow from "../../assets/machines/rightarrow.png";
-import "swiper/css";
-import 'swiper/css/pagination';
 import { FooterData } from "./FooterData";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Autoplay } from "swiper/modules";
 import { Link } from "react-router-dom";
 import image34 from "../../assets/logo/logo.png"
-
+import "swiper/css";
+import 'swiper/css/pagination';
 
 export const Footer = () => {
-
 
   return (
     <>
@@ -65,7 +63,7 @@ export const Footer = () => {
                   <Link to="/about" className="text-white">About us</Link>
                 </li>
                 <li className="py-2">
-                  <Link to="/services" className="text-white">Services</Link>
+                  <Link to="/OurService" className="text-white">Services</Link>
                 </li>
                 <li className="py-2">
                   <Link to="/gallery" className="text-white">Gallery</Link>
@@ -80,14 +78,14 @@ export const Footer = () => {
                 <div className="border-b-4 border-light_yellow w-[80px] lg:w-[120px] mt-2"></div>
               </div>
               <div className="flex justify-center gap-6 mt-8">
-                <Link to="https://www.facebook.com/profile.php?id=100093301044365&mibextid=LQQJ4d" target="_blank" className="center gap-2 bg-light_yellow rounded-full p-2">
-                  <img className="object-cover w-[18px] lg:w-[26px] h-auto" src={image} alt={`not found`} />
+                <Link to="https://www.facebook.com/profile.php?id=100093301044365&mibextid=LQQJ4d" target="_blank" className="center gap-2 ">
+                  <img className="object-cover w-[18px] lg:w-[46px] h-auto" src={image} alt={`not found`} />
                 </Link>
-                <Link to="https://www.instagram.com/awe_adininworks?igsh=MTZnZWthYzg1cGNrZA%3D%3D&utm_source=qr" target="_blank" className="center gap-2 bg-light_yellow rounded-full p-2">
-                  <img className="object-cover w-[18px] lg:w-[26px] h-auto" src={image1} alt={`not found`} />
+                <Link to="https://www.instagram.com/awe_adininworks?igsh=MTZnZWthYzg1cGNrZA%3D%3D&utm_source=qr" target="_blank" className="center gap-2">
+                  <img className="object-cover w-[18px] lg:w-[46px] h-auto" src={image1} alt={`not found`} />
                 </Link>
-                <Link to="https://www.linkedin.com/company/adinin-works-&-engineering-sdn-bhd/" target="_blank" className="center gap-2 bg-light_yellow rounded-full p-2">
-                  <img className="object-cover w-[18px] lg:w-[26px] h-auto" src={image2} alt={`not found`} />
+                <Link to="https://www.linkedin.com/company/adinin-works-&-engineering-sdn-bhd/" target="_blank" className="center gap-2">
+                  <img className="object-cover w-[18px] lg:w-[46px] h-auto" src={image2} alt={`not found`} />
                 </Link>
               </div>
             </div>
@@ -103,7 +101,8 @@ export const Footer = () => {
                 Lot 3038, Jalan Setia Di-Raja,<br />
                 Kuala Belait KA3131,<br />
                 Brunei Darussalam<br />
-                Fax: +673 3334543
+                Fax: +673 3334543<br />
+                Tel: +673 3331001
               </address>
             </div>
           </div>
