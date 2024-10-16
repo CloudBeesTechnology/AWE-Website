@@ -68,6 +68,7 @@ export const services = [
 import slide1 from "../../assets/home/Home1.jpg"
 import slide2 from "../../assets/home/Home2.jpg"
 import slide3 from "../../assets/home/Home3.jpg"
+import slide4 from "../../assets/home/Home4.jpg"
 
 
 export const HSDetail = [
@@ -86,5 +87,10 @@ export const HSDetail = [
         title: <p>FRIED <span className='text-primary'>MUTTON</span>  <br/>TO YOUR TABLE</p>,
         desc: "Life is uncertain. Eat dessert first.",
     },
+    {
+      img:slide4,
+      title: <p>FRIED <span className='text-primary'>MUTTON</span>  <br/>TO YOUR TABLE</p>,
+      desc: "Life is uncertain. Eat dessert first.",
+  },
 ]
 //need some chnages if i hover the links on right the image have to come in left and if click the image it have to route based on link category
