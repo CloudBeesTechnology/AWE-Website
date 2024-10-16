@@ -1,11 +1,8 @@
-import React from 'react';
-import bg from "../../assets/about/aboutUS.jpg";
-// import image from "../../assets/about/image9.png";
+import React, { useEffect } from 'react';
 import { CommonBanner } from '../../Component/Organization/CommonBanner';
-import { useEffect } from 'react';
+import bg from "../../assets/about/aboutUS.jpg";
 
 export const AboutOurMission = () => {
-
   useEffect(() => {
     window.scrollTo({
       top: 0,
@@ -14,134 +11,131 @@ export const AboutOurMission = () => {
   }, []);
 
   return (
-    <section>
+    <section className="overflow-x-hidden">
+      {/* Common Banner Section */}
       <CommonBanner background={bg} title="Our Mission & Vision" />
-      <div className="screen-size bg-white pt-16 pb-12 px-2 lg:px-32">
-        {/* Title */}
-        <div className="mb-8">
-          <h2 className="text-[28px] font-semibold bg-[#FEF116] text-center w-[220px] p-3">
-            Our Mission...
-          </h2>
+
+      {/* Main Content */}
+      <div className="w-full py-16 px-8 lg:px-32">
+
+        {/* Mission Section */}
+        <h2 className="text-lg lg:text-2xl bg-[#fef116] w-[180px] font-semibold mb-4">
+          Our Mission...
+        </h2>
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+          {[
+            {
+              num: 1,
+              text: "To proactively engage our customers to seek better ways to serve their business needs.",
+              bgColor: "bg-[#15B392]",
+              textColor: "text-white"
+            },
+            {
+              num: 2,
+              text: "To create an environment for employees to realize their full potential.",
+              bgColor: "bg-[#FF8400]",
+              textColor: "text-white"
+            },
+            {
+              num: 3,
+              text: "To build long term relationships with business partners, suppliers, and financiers.",
+              bgColor: "bg-[#379237]",
+              textColor: "text-white"
+            }
+          ].map((mission, index) => (
+            <div key={index} className="flex items-center border py-6 px-8 rounded-lg">
+              <p className={`p-4 rounded-full h-10 w-10 flex items-center justify-center ${mission.bgColor} ${mission.textColor}`}>
+                {mission.num}
+              </p>
+              <p className="text-sm lg:text-base text-[#2a4255] leading-relaxed ml-4">
+                {mission.text}
+              </p>
+            </div>
+          ))}
         </div>
 
-        {/* Content Section */}
-        <div className="lg:flex lg:flex-col lg:items-start">
-          {/* Text Content */}
-          <div className="lg:w-full">
-            <ul className="space-y-8 ">
-              <li>
-                <div className="flex items-start gap-2">
-                  <span className="text-dark_red ">⦿</span>
-                  <div>
-                    <p>To proactively engage our customers to seek better ways to serve their business needs.</p>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div className="flex items-start gap-2">
-                  <span className="text-dark_red ">⦿</span>
-                  <div>
-                    <p>To create an environment for employees to realize their full potential.</p>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div className="flex items-start gap-2">
-                  <span className="text-dark_red ">⦿</span>
-                  <div>
-                    <p>To build long term relationships with business partners, suppliers, and financiers.</p>
-                  </div>
-                </div>
-              </li>
-            </ul>
-          </div>
-
-          {/* Image Section */}
-          {/* <div className="mt-10 lg:w-full">
-          <img 
-            src={image}
-            alt="Mission Image" 
-            className="rounded-lg shadow-lg object-cover w-full h-48 lg:h-64"
-          />
-        </div> */}
+        {/* Vision Section */}
+        <h2 className="mt-16 text-lg lg:text-2xl font-semibold bg-[#fef116] w-[180px] mb-4">
+          Our Vision...
+        </h2>
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+          {[
+            {
+              title: "TO OUR CUSTOMERS",
+              num: 1,
+              text: "We deliver consistent services and excellent solutions.",
+              bgColor: "bg-[#836FFF]",
+              textColor: "text-white"
+            },
+            {
+              title: "TO OUR EMPLOYEES",
+              num: 2,
+              text: "We are an environment where employees feel secure to release their aspirations.",
+              bgColor: "bg-[#15133C]",
+              textColor: "text-white"
+            },
+            {
+              title: "TO OUR INVESTORS",
+              num: 3,
+              text: "We achieve attractive shareholder returns.",
+              bgColor: "bg-[#16423C]",
+              textColor: "text-white"
+            }
+          ].map((vision, index) => (
+            <div key={index} className="flex flex-col items-center border py-6 px-8 rounded-lg">
+              <h2 className="text-center font-bold mb-2">{vision.title}</h2>
+              <div className="flex justify-center">
+                <p className={`p-4 rounded-full h-10 w-10 flex items-center justify-center ${vision.bgColor} ${vision.textColor}`}>
+                  {vision.num}
+                </p>
+                <p className="text-sm lg:text-base text-[#2a4255] leading-relaxed ml-4">
+                  {vision.text}
+                </p>
+              </div>
+            </div>
+          ))}
         </div>
 
-        <div className="mb-8 mt-16">
-          <h2 className="text-[28px] font-semibold bg-[#FEF116] text-center w-[220px] p-3">
-            Our Vision...
-          </h2>
-        </div>
-
-        {/* Content Section */}
-        <div className="lg:flex lg:justify-between lg:gap-12">
-          {/* Text Content */}
-          <div className="lg:w-2/3">
-            <h3 className="sm:text-[30px] text-[24px] font-medium mb-4 max-sm:text-center">
-              To be the professional contractor of choice
-            </h3>
-
-            <ul className="space-y-8 ">
-              <li>
-                <div className="flex items-start gap-2">
-                  <span className="text-dark_red ">⦿</span>
-                  <div>
-                    <p className="font-medium text-[20px] mb-2">TO OUR CUSTOMERS</p>
-                    <p className='ml-8'>We deliver consistent services and excellent solutions.</p>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div className="flex items-start gap-2">
-                  <span className="text-dark_red">⦿</span>
-                  <div>
-                    <p className="font-medium text-[20px] mb-2">TO OUR EMPLOYEES</p>
-                    <p className='ml-8'>We are an environment where employees feel secure to release their aspirations.</p>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div className="flex items-start gap-2">
-                  <span className="text-dark_red">⦿</span>
-                  <div>
-                    <p className="font-medium text-[20px] mb-2">TO OUR INVESTORS</p>
-                    <p className='ml-8'>We achieve attractive shareholder returns.</p>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div className="flex items-start gap-2">
-                  <span className="text-dark_red">⦿</span>
-                  <div>
-                    <p className="font-medium text-[20px] mb-2">TO OUR FINANCIERS</p>
-                    <p className='ml-8'>We are a growing, well-managed, and diversified business entity.</p>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div className="flex items-start gap-2">
-                  <span className="text-dark_red">⦿</span>
-                  <div>
-                    <p className="font-medium text-[20px] mb-2">TO OUR SUPPLIERS</p>
-                    <p className='ml-8'>We honor our commitment and we are a vehicle for their long-term growth.</p>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div className="flex items-start gap-2">
-                  <span className="text-dark_red">⦿</span>
-                  <div>
-                    <p className="font-medium text-[20px] mb-2">TO OUR BUSINESS PARTNERS</p>
-                    <p className='text-[16px] ml-8'>We are trustworthy to our partners to achieve their business goals.</p>
-                  </div>
-                </div>
-              </li>
-            </ul>
-          </div>
+        {/* Additional Vision Section */}
+        <div className="mt-8 grid grid-cols-1 lg:grid-cols-3 gap-8">
+          {[
+            {
+              title: "TO OUR FINANCIERS",
+              num: 4,
+              text: "We are a growing, well-managed, and diversified business entity.",
+              bgColor: "bg-[#FFC700]",
+              textColor: "text-white"
+            },
+            {
+              title: "TO OUR SUPPLIERS",
+              num: 5,
+              text: "We honor our commitment and we are a vehicle for their long-term growth.",
+              bgColor: "bg-[#9BEC00]",
+              textColor: "text-white"
+            },
+            {
+              title: "TO OUR BUSINESS PARTNERS",
+              num: 6,
+              text: "We are trustworthy to our partners to achieve their business goals.",
+              bgColor: "bg-[#CF4DCE]",
+              textColor: "text-white"
+            }
+          ].map((vision, index) => (
+            <div key={index} className="flex flex-col items-center border py-6 px-8 rounded-lg">
+              <h2 className="text-center font-bold mb-2">{vision.title}</h2>
+              <div className="flex justify-center">
+                <p className={`p-4 rounded-full h-10 w-10 flex items-center justify-center ${vision.bgColor} ${vision.textColor}`}>
+                  {vision.num}
+                </p>
+                <p className="text-sm lg:text-base text-[#2a4255] leading-relaxed ml-4">
+                  {vision.text}
+                </p>
+              </div>
+            </div>
+          ))}
         </div>
 
       </div>
     </section>
   );
 };
-
-
