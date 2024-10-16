@@ -26,8 +26,8 @@ import certificate18 from "../../assets/achievements/certificate18.jpg";
 const certificates = [
 //   certificate1,
   certificate2,
-  certificate13,
   certificate3,
+  certificate13,
   certificate4,
   certificate5,
   certificate6,
@@ -65,6 +65,12 @@ const certificateDescriptions = [
     "Pesta Convo IBTE 2023", 
   ];
 
+  const isoCertification = [
+    "ISO 14001:2015",
+    "ISO 9001:2015",
+    "ISO 45001:2018",
+  ]
+
 const Achievements = () => {
 
     useEffect(() => {
@@ -84,18 +90,21 @@ const Achievements = () => {
         {/* <h2 className="text-center text-3xl font-bold mb-8">Our Achievements</h2> */}
 
         {/* First row: 4 certificates */}
-        <h2 className="text-xl font-bold py-4">ISO Certicates</h2>
+        <h2 className="text-xl font-bold py-4">ISO Certificates</h2>
         <div className="grid grid-cols-2 lg:grid-cols-3 md:grid-cols-2 gap-12 mb-8">
           {certificates.slice(0, 3).map((certificate, index) => (
             <div
               key={index}
-              className="flex justify-center shadow-lg rounded-lg overflow-hidden hover:shadow-xl transition-shadow duration-300"
+              className="flex items-center flex-col bg-white shadow-lg mb-6 p-4 rounded-lg overflow-hidden hover:shadow-2xl transition-shadow duration-300"
             >
               <img
                 src={certificate}
                 alt={`Certificate ${index + 1}`}
                 className="w-[270px] h-[223px] sm:h-[250px] md:h-[300px] object-fit"
               />
+                <div className="text-center mt-4">
+                <p>{isoCertification[index]}</p>
+              </div>
             </div>
           ))} 
         </div>

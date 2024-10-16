@@ -56,7 +56,7 @@ export const services = [
     title: 'Rotating Equipment Overhauls',
   },
   {
-    icon:image11,
+    icon: image11,
     title: "Flange Management Services",
   },
   {
@@ -72,25 +72,26 @@ import slide4 from "../../assets/home/Home4.jpg"
 
 
 export const HSDetail = [
-    {
-        img:slide1,
-        title:<p> FROM <span className='text-primary'>OUR</span> KITCHEN <br/> TO  YOUR TABLE</p>,
-        desc: "Life is uncertain. Eat dessert first.",
-    },
-    {
-        img:slide2,
-        title: <p>DELICIOUS <span className='text-primary'>CHICKEN</span>  <br/>BIRIYANI</p>,
-        desc: "LIMITED TIME ONLY!",
-    },
-    {
-        img:slide3,
-        title: <p>FRIED <span className='text-primary'>MUTTON</span>  <br/>TO YOUR TABLE</p>,
-        desc: "Life is uncertain. Eat dessert first.",
-    },
-    {
-      img:slide4,
-      title: <p>FRIED <span className='text-primary'>MUTTON</span>  <br/>TO YOUR TABLE</p>,
-      desc: "Life is uncertain. Eat dessert first.",
+  {
+    img: slide1,
+    title: <p> FROM <span className='text-primary'>OUR</span> KITCHEN <br /> TO  YOUR TABLE</p>,
+    desc: "Life is uncertain. Eat dessert first.",
   },
+  {
+    img: slide4,
+    title: <p>FRIED <span className='text-primary'>MUTTON</span>  <br />TO YOUR TABLE</p>,
+    desc: "Life is uncertain. Eat dessert first.",
+  },
+  {
+    img: slide2,
+    title: <p>DELICIOUS <span className='text-primary'>CHICKEN</span>  <br />BIRIYANI</p>,
+    desc: "LIMITED TIME ONLY!",
+  },
+  {
+    img: slide3,
+    title: <p>FRIED <span className='text-primary'>MUTTON</span>  <br />TO YOUR TABLE</p>,
+    desc: "Life is uncertain. Eat dessert first.",
+  },
+
 ]
 //need some chnages if i hover the links on right the image have to come in left and if click the image it have to route based on link category

@@ -16,16 +16,16 @@ export const HomeMS = () => {
           {services.map((service, index) => (
             <div
               key={index}
-              className="bg-light_yellow w-full sm:max-w-[224px] h-[220px] rounded-lg flex-col center text-center "
+              className="bg-light_yellow w-full sm:max-w-[224px] h-[260px] rounded-lg flex-col center text-center "
             >
               <div className="rounded-md overflow-hidden  w-full">
                 <img
                   src={service.icon}
                   alt={service.title}
-                  className="object-cover sm:max-w-[224px] w-full h-[205px]"
+                  className="object-cover sm:max-w-[224px] w-full h-[250px]"
                 />
               </div>
-              <div className="mt-4 w-full h-[108px] bg-light_yellow rounded-lg p-2">
+              <div className="text-center w-full h-[80px] bg-light_yellow rounded-lg p-2">
                 <h3 className="text-[16px] font-medium">{service.title}</h3>
               </div>
             </div>

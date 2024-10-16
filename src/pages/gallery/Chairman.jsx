@@ -11,7 +11,7 @@ export const Chairman = ({ images = [], onClick }) => {
         <div className='rounded-md  flex flex-col h-full'>
           {imageSrc && (
             <img
-              src={imageSrc}
+              src={imageSrc} 
               alt="Chairman 90th Birthday"
               className="cursor-pointer rounded shadow-lg object-fit min-w-[120px] w-full h-[275px]"
             />
