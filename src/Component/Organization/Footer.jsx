@@ -45,7 +45,7 @@ export const Footer = () => {
 
             {/* Logo Section */}
             <div className="text-white text-center">
-              <img src={image34} className="w-28 h-24 mx-auto mb-4" alt="logo" />
+              <img src={image34} className="w-[90px] h-24 mx-auto mb-4" alt="logo" />
               <h1 className=" capitalize italic text-[12px] font-semibold lg:text-[20px] lg:font-bold">
                 The professional
                 <span className="block">contractor of choice</span>
@@ -101,8 +101,8 @@ export const Footer = () => {
                 Lot 3038, Jalan Setia Di-Raja,<br />
                 Kuala Belait KA3131,<br />
                 Brunei Darussalam<br />
-                Fax: +673 3334543<br />
-                Tel: +673 3331001
+                Tel: +673 3331001<br />
+                Fax: +673 3334543
               </address>
             </div>
           </div>

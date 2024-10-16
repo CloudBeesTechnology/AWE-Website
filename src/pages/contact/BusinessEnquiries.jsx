@@ -112,10 +112,10 @@ export const BusinessEnquiries = () => {
               <span role="img" aria-label="Location" className="mr-2 text-dark_red text-[30px]"><PiMapPinAreaLight /></span>
               Head Office:
             </h2>
-            <div className="max-sm:mt-5 mt-2">
-              <p className='mt-5'>
-                F118 1st Floor, Komplek Harapan
-                Lot 3038, Jalan Setia Di-Raja,
+            <div className="max-sm:mt-5">
+              <p className=''>
+                F118 1st Floor, Komplek Harapan <br />
+                Lot 3038, Jalan Setia Di-Raja, <br />
                 Kuala Belait, Brunei Darussalam, KA 3131
               </p>
             </div>
@@ -127,8 +127,8 @@ export const BusinessEnquiries = () => {
               <span role="img" aria-label="Location" className="mr-2 text-dark_red text-[30px]"><PiMapPinAreaLight /></span>
               Sungai Bera Workshop:
             </h3>
-            <p>Lot 55, 56, 57 & 63, Tapak <br />
-              Perindustrian Sungai Bera, Seria, <br />
+            <p>Lot 55, 56, 57 & 63, <br />
+              Tapak Perindustrian Sungai Bera, Seria, <br />
               Kuala Belait, Brunei Darussalam.</p>
 
           </div>
@@ -139,7 +139,8 @@ export const BusinessEnquiries = () => {
               <span role="img" aria-label="Location" className="mr-2 text-dark_red text-[30px]"><PiMapPinAreaLight /></span>
               Postal Address:
             </h3>
-            <p>P.O. Box 78, Kuala Belait KA 1189, Brunei Darussalam</p>
+            <p>P.O. Box 78, Kuala Belait KA 1189, <br />
+              Brunei Darussalam.</p>
           </div>
         </div>
       </div>
