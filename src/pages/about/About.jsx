@@ -1,5 +1,5 @@
 import React from 'react';
-import bg from "../../assets/about/aboutUS.jpg";
+import bg from "../../assets/about/AboutNew.jpg";
 import image from "../../assets/about/AboutImg.jpg";
 import { CommonBanner } from '../../Component/Organization/CommonBanner';
 import { TeamImage } from '../../Component/Organization/TeamImage';

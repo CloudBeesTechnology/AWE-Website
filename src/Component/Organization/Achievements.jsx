@@ -2,18 +2,18 @@ import { useEffect } from "react";
 import { CommonBanner } from "./CommonBanner";
 import bg from "../../assets/machines/Organization.jpg";
 import certificate1 from "../../assets/achievements/certificate1.png";
-import certificate2 from "../../assets/achievements/certificate2.png";
-import certificate3 from "../../assets/achievements/certificate3.png";
-import certificate13 from "../../assets/achievements/certificate13.png";
-import certificate4 from "../../assets/achievements/certificate4.png";
-import certificate5 from "../../assets/achievements/certificate5.png";
-import certificate6 from "../../assets/achievements/certificate6.png";
-import certificate7 from "../../assets/achievements/certificate7.png";
-import certificate8 from "../../assets/achievements/certificate8.png";
-import certificate9 from "../../assets/achievements/certificate9.png";
-import certificate10 from "../../assets/achievements/certificate10.png";
-import certificate11 from "../../assets/achievements/certificate11.png";
-import certificate12 from "../../assets/achievements/certificate12.png";
+import certificate2 from "../../assets/achievements/certificate2.jpg";
+import certificate3 from "../../assets/achievements/certificate3.jpg";
+import certificate13 from "../../assets/achievements/certificate13.jpg";
+import certificate4 from "../../assets/achievements/certificate4.jpeg";
+import certificate5 from "../../assets/achievements/certificate5.jpeg";
+import certificate6 from "../../assets/achievements/certificate6.jpeg";
+import certificate7 from "../../assets/achievements/certificate7.jpeg";
+import certificate8 from "../../assets/achievements/certificate8.jpeg";
+import certificate9 from "../../assets/achievements/certificate9.jpeg";
+import certificate10 from "../../assets/achievements/certificate10.jpg";
+import certificate11 from "../../assets/achievements/certificate11.jpeg";
+import certificate12 from "../../assets/achievements/certificate12.jpeg";
 import certificate17 from "../../assets/achievements/certificate17.jpg";
 import certificate14 from "../../assets/achievements/certificate14.jpg";
 import certificate15 from "../../assets/achievements/certificate15.jpg";
@@ -66,7 +66,7 @@ const certificateDescriptions = [
   ];
 
 const Achievements = () => {
-    
+
     useEffect(() => {
         window.scrollTo({
           top: 0,
@@ -89,12 +89,12 @@ const Achievements = () => {
           {certificates.slice(0, 3).map((certificate, index) => (
             <div
               key={index}
-              className="shadow-lg rounded-lg overflow-hidden hover:shadow-xl transition-shadow duration-300"
+              className="flex justify-center shadow-lg rounded-lg overflow-hidden hover:shadow-xl transition-shadow duration-300"
             >
               <img
                 src={certificate}
                 alt={`Certificate ${index + 1}`}
-                className="w-full h-[200px] sm:h-[250px] md:h-[300px] object-fit"
+                className="w-[270px] h-[223px] sm:h-[250px] md:h-[300px] object-fit"
               />
             </div>
           ))} 

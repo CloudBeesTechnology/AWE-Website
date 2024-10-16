@@ -13,7 +13,7 @@ export const Chairman = ({ images = [], onClick }) => {
             <img
               src={imageSrc}
               alt="Chairman 90th Birthday"
-              className="cursor-pointer rounded shadow-lg object-cover min-w-[120px] w-full h-[275px]"
+              className="cursor-pointer rounded shadow-lg object-fit min-w-[120px] w-full h-[275px]"
             />
           )}
           <div className='text-light_yellow font-bold text-center p-6 bg-dark_gray'>

@@ -1,5 +1,5 @@
 import React from "react";
-import bg from "../../assets/about/aboutUS.jpg";
+import bg from "../../assets/about/ServicesNew.jpg";
 import { CommonBanner } from "../../Component/Organization/CommonBanner";
 import { HomeMS } from "../home/HomeMS";
 import { useEffect } from "react";

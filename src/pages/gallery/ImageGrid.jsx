@@ -94,7 +94,7 @@ export const ImageGrid = ({ images, title, color }) => {
                                         key={index}
                                         src={img}
                                         alt={`Image ${index + 1}`}
-                                        className={`max-h-[600px] ${isWider ? 'w-auto lg:w-[1100px] md:w-[500px] sm:w-[600px]' : 'w-auto'} rounded mx-2 ${index === selectedImageIndex ? 'block' : 'hidden'}`}
+                                        className={`max-h-[570px] ${isWider ? 'w-auto lg:w-[800px] md:w-[500px] sm:w-[600px]' : 'w-auto'} rounded mx-2 ${index === selectedImageIndex ? 'block' : 'hidden'}`}
                                     />
                                 );
                             })}

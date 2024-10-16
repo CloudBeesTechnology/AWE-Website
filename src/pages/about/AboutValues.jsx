@@ -1,6 +1,6 @@
 import React from 'react'
 import { CommonBanner } from '../../Component/Organization/CommonBanner';
-import bg from "../../assets/about/aboutUS.jpg";
+import bg from "../../assets/about/ValuesNew.jpg";
 import image from "../../assets/about/OurGuidingPrinciples.png";
 import { useEffect } from 'react';
 

@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { CommonBanner } from '../../Component/Organization/CommonBanner';
-import bg from "../../assets/about/aboutUS.jpg";
+import bg from "../../assets/about/missionVision.jpg";
 
 export const AboutOurMission = () => {
   useEffect(() => {
@@ -16,13 +16,13 @@ export const AboutOurMission = () => {
       <CommonBanner background={bg} title="Our Mission & Vision" />
 
       {/* Main Content */}
-      <div className="w-full py-16 px-8 lg:px-32">
+      <div className="w-full mt-12 px-8 lg:px-32">
 
         {/* Mission Section */}
-        <h2 className="text-lg lg:text-2xl bg-[#fef116] w-[180px] font-semibold mb-4">
+        <h2 className="text-center py-4 px-2 text-lg lg:text-2xl bg-[#fef116] w-[190px]  font-semibold mb-4">
           Our Mission...
         </h2>
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+        <div className="mt-8 grid grid-cols-1 lg:grid-cols-3 gap-8">
           {[
             {
               num: 1,
@@ -55,10 +55,10 @@ export const AboutOurMission = () => {
         </div>
 
         {/* Vision Section */}
-        <h2 className="mt-16 text-lg lg:text-2xl font-semibold bg-[#fef116] w-[180px] mb-4">
+        <h2 className="text-center p-4 px-2 mt-16 text-lg lg:text-2xl font-semibold bg-[#fef116] w-[190px] mb-4">
           Our Vision...
         </h2>
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+        <div className="mt-8 grid grid-cols-1 lg:grid-cols-3 gap-8">
           {[
             {
               title: "TO OUR CUSTOMERS",
