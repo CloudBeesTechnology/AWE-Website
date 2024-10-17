@@ -14,7 +14,7 @@ export const Chairman = ({ images = [], onClick }) => {
               src={imageSrc} 
               alt="Chairman 90th Birthday"
               className="cursor-pointer shadow-lg object-cover h-[275px] w-[900px]"
-            />99
+            />
           )}
           <div className='text-light_yellow font-bold  bg-dark_gray h-[95px] center'>
             <p>CHAIRMAN 90TH BIRTHDAY 2022</p>

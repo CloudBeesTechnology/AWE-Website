@@ -100,13 +100,14 @@ export const Gallery = () => {
           />
         </div>
         <div className="p-2">
-        <div className="p-2">
           <HisMajesty78
             images={hisMajesty78Slides}
             onClick={() => navigateToImageGrid("/images/his-majesty-78")}
             className="h-64"
           />
         </div>
+        <div className="p-2">
+      
           <HLP
             images={hlpSlides}
             onClick={() => navigateToImageGrid("/images/hlp")}
