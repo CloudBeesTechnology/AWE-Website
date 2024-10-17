@@ -16,9 +16,9 @@ export const CareerSection = () => {
   return (
     <section>
             <CommonBanner background={bg}  title="Apply Job" />
-    <div className="flex flex-col  center   p-4 sm:p-10 space-y-6 md:space-y-0 md:space-x-10 my-10">
+    <div className="flex flex-col  center   p-4 sm:p-10 space-y-6 md:space-y-0 md:space-x-10 max-sm:my-2 my-10">
       {/* Career Section */}
-      <div className=" mb-10">
+      <div className=" max-sm:my-2 mb-10">
         <h2 className="text-3xl max-sm:text-[20px] font-bold">CAREER</h2>
         <p className="mt-4 text-[]18px] max-sm:text-[14px] max-sm:text-justify">
           It sounds like you're looking for information on career requirements.
@@ -30,7 +30,6 @@ export const CareerSection = () => {
       </div>
 
       {/* Employment Application Form */}
-
       {/* <div className="flex-1 center flex-col ">
         <h3 className="font-bold text-lg mb-7"><span></span>JOB VACANCIES</h3>
         <div className="space-y-4 p-2 rounded-md shadow-md sm:w-[300px] border-2 border-[red]">
