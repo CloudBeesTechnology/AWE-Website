@@ -89,16 +89,16 @@ export const BusinessEnquiries = () => {
       {/* Contact Info & Office Details */}
       <div className='border border-[#E2D82D] center flex-col p-4 lg:p-12 sm:p-5'>
         {/* Top contact info */}
-        <div className='flex flex-col lg:flex-row gap-6 mb-6'>
-          <div className=' bg-white p-6  rounded-lg shadow-md flex items-center'>
+        <div className='flex flex-col md:flex-row sm:gap-6 lg:gap-56 mb-6'>
+          <div className=' bg-white p-6  rounded-lg flex items-center'>
             <span role="img" aria-label="Phone" className="text-dark_red text-[30px]"><FaPhoneVolume /></span>
             <p className="ml-4 ">+673 3331001</p>
           </div>
-          <div className=' bg-white p-6 rounded-lg shadow-md flex items-center'>
+          <div className=' bg-white p-6 rounded-lg flex items-center'>
             <span role="img" aria-label="Phone" className="text-dark_red text-[30px]"><FaBlenderPhone /></span>
             <p className="ml-4">673 3334543</p>
           </div>
-          <div className=' bg-white p-6 rounded-lg shadow-md flex items-center'>
+          <div className=' bg-white p-6 rounded-lg flex items-center'>
             <span role="img" aria-label="Email" className="text-dark_red text-[30px]"><FaMessage /></span>
             <p className="ml-4">awe@adininworks.com</p>
           </div>

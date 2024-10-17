@@ -101,11 +101,11 @@ const Achievements = () => {
       <CommonBanner background={bg} title="Achievements & Certification" />
 
       {/* First Row for the First 4 Images */}
-      <div className="container mx-auto py-8 px-4  lg:px-56">
+      <div className="container mx-auto py-8 px-4 max-sm:px-0  lg:px-56">
         {/* <h2 className="text-center text-3xl font-bold mb-8">Our Achievements</h2> */}
 
         {/* First row: 4 certificates */}
-        <h2 className="text-xl font-bold py-4">ISO Certificates</h2>
+        <h2 className="max-sm:center text-xl font-bold py-4">ISO Certificates</h2>
         <div className="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 gap-12 mb-8">
           {certificates.slice(0, 3).map((certificate, index) => (
             <div
@@ -125,17 +125,17 @@ const Achievements = () => {
         </div>
 
         {/* Remaining rows: Polaroid style for images after the 4th */}
-        <h2 className="text-xl font-bold py-4">Awards</h2>
+        <h2 className="max-sm:center text-xl font-bold py-4">Awards</h2>
         <div className="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 gap-6">
           {certificates.slice(3).map((certificate, index) => (
             <div
               key={index}
-              className="bg-white shadow-lg mb-6 p-4 rounded-lg overflow-hidden hover:shadow-2xl transition-shadow duration-300"
+              className="flex items-center flex-col bg-white shadow-lg mb-6 p-4 rounded-lg overflow-hidden hover:shadow-2xl transition-shadow duration-300"
             >
               <img
                 src={certificate}
                 alt={`Certificate ${index + 5}`}
-                className="w-full h-[200px] sm:h-[250px] md:h-[300px] object-fit"
+                className="h-[223px] sm:h-[250px] md:h-[300px] object-fit"
               />
               <div className="text-center text-[18px] max-sm:text-[14px] mt-4">
                 <p>{certificateDescriptions[index]}</p>
