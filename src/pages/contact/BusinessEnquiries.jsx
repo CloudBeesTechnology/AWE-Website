@@ -87,18 +87,18 @@ export const BusinessEnquiries = () => {
       <h2 className="text-[30px] text-[#303030] font-semibold mb-16">Business Enquiries</h2>
 
       {/* Contact Info & Office Details */}
-      <div className='border border-[#E2D82D] center flex-col p-2 lg:p-12 sm:p-5'>
+      <div className='border border-[#E2D82D] center flex-col p-4 lg:p-12 sm:p-5'>
         {/* Top contact info */}
         <div className='flex flex-col lg:flex-row gap-6 mb-6'>
-          <div className='w-[411px] h-[100px] bg-white p-6 rounded-lg shadow-md flex items-center'>
+          <div className=' bg-white p-6  rounded-lg shadow-md flex items-center'>
             <span role="img" aria-label="Phone" className="text-dark_red text-[30px]"><FaPhoneVolume /></span>
-            <p className="ml-4">+673 3331001</p>
+            <p className="ml-4 ">+673 3331001</p>
           </div>
-          <div className='w-[411px] h-[100px] bg-white p-6 rounded-lg shadow-md flex items-center'>
+          <div className=' bg-white p-6 rounded-lg shadow-md flex items-center'>
             <span role="img" aria-label="Phone" className="text-dark_red text-[30px]"><FaBlenderPhone /></span>
             <p className="ml-4">673 3334543</p>
           </div>
-          <div className='w-[411px] h-[100px] bg-white p-6 rounded-lg shadow-md flex items-center'>
+          <div className=' bg-white p-6 rounded-lg shadow-md flex items-center'>
             <span role="img" aria-label="Email" className="text-dark_red text-[30px]"><FaMessage /></span>
             <p className="ml-4">awe@adininworks.com</p>
           </div>
@@ -107,7 +107,7 @@ export const BusinessEnquiries = () => {
         {/* Office Details */}
         <div className='flex flex-col lg:flex-row gap-6'>
           {/* Registered Office */}
-          <div className='w-[411px] h-[267px] bg-white p-6 rounded-lg shadow-md'>
+          <div className='w-full sm:w-[411px] h-[267px] max-sm:h-[180px] bg-white p-6 rounded-lg shadow-md'>
             <h2 className="text-xl font-bold mb-2 flex">
               <span role="img" aria-label="Location" className="mr-2 text-dark_red text-[30px]"><PiMapPinAreaLight /></span>
               Head Office:
@@ -122,7 +122,7 @@ export const BusinessEnquiries = () => {
           </div>
 
           {/* Head Office */}
-          <div className='w-[411px] h-[267px] bg-white p-6 rounded-lg shadow-md'>
+          <div className='w-full sm:w-[411px] h-[267px]  max-sm:h-[180px] bg-white p-6 rounded-lg shadow-md'>
             <h3 className="text-xl font-bold mb-2 flex items-center">
               <span role="img" aria-label="Location" className="mr-2 text-dark_red text-[30px]"><PiMapPinAreaLight /></span>
               Sungai Bera Workshop:
@@ -134,7 +134,7 @@ export const BusinessEnquiries = () => {
           </div>
 
           {/* Postal Address */}
-          <div className='w-[411px] h-[267px] bg-white p-6 rounded-lg shadow-md'>
+          <div className='w-full sm:w-[411px] h-[267px] max-sm:h-[180px] bg-white p-6 rounded-lg shadow-md'>
             <h3 className="text-xl font-bold mb-2 flex items-center">
               <span role="img" aria-label="Location" className="mr-2 text-dark_red text-[30px]"><PiMapPinAreaLight /></span>
               Postal Address:

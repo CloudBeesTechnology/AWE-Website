@@ -7,17 +7,17 @@ export const HariRayaCelebrati = ({ images = [], onClick }) => {
   return (
     <section className="p-2 center flex-col" onClick={onClick} style={{ cursor: 'pointer' }}>
       <h2 className='text-[18px] mb-4'></h2>
-      <div className='bg-white shadow-lg  rounded-lg overflow-hidden hover:shadow-2xl transition-shadow duration-300'>
-        <div className='rounded-md  flex flex-col h-full'>
+      <div className='rounded-md  max-w-lg w-full max-h-[315px] h-full overflow-hidden'>
+        <div className='p-2 rounded-md flex flex-col justify-center items-center h-full'>
           {imageSrc && (
             <img
               src={imageSrc}
               alt="Hari Raya Celebration"
-              className="cursor-pointer shadow-lg object-cover h-[275px] w-[900px]"
+              className="cursor-pointer shadow-lg object-cover w-full h-[220px]"
             />
           )}
 
-          <div className='text-light_yellow font-bold  bg-dark_gray h-[95px] center'>
+          <div className='text-light_yellow font-bold bg-dark_gray w-full text-center h-[85px] flex items-center justify-center'>
             <p >HARI RAYA CELEBRATION 2023</p>
           </div>
         </div>

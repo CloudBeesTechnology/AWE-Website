@@ -3,7 +3,7 @@ import { services } from './HomeDataDetails';
 
 export const HomeMS = () => {
   return (
-    <div className="text-center screen-size center flex-col mb-10 sm:mt-20 md:px-24">
+    <div className="text-center screen-size center flex-col mb-10  md:px-24">
     
      <h2 className="mb-12 text-black sm:my-10 mb-5 text-[20px] text-center sm:text-[34px] font-semibold relative">
         <span className='w-full sm:absolute sm:w-[200px] sm:h-4 sm:top-11 sm:border-b-4 border-dark_red'></span>
@@ -12,7 +12,7 @@ export const HomeMS = () => {
       <div>
 
 
-        <div className="px-4 sm:px-0 flex  flex-wrap items-center gap-5 w-full  px-24">
+        <div className="px-4 sm:px-0 flex  flex-wrap items-center center gap-5 w-full  px-24">
           {services.map((service, index) => (
             <div
               key={index}
@@ -26,7 +26,7 @@ export const HomeMS = () => {
                 />
               </div>
               <div className="text-center center w-full h-[80px] bg-light_yellow rounded-lg p-2">
-                <h3 className="text-[16px] font-medium">{service.title}</h3>
+                <h3 className="max-sm:text-[14px] text-[16px] font-medium">{service.title}</h3>
               </div>
             </div>
           ))}

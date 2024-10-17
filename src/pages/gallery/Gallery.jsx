@@ -15,12 +15,18 @@ import { workersSlides, chairmanSlides, hariRayaSlides, hisMajesty77Slides, hlpS
 export const Gallery = () => {
   const navigate = useNavigate();
 
+  const navigateToImageGrid = (path) => {
+    navigate(path);
+  };
+
   useEffect(() => {
     window.scrollTo({
       top: 0,
       behavior: "smooth",
     });
   }, []);
+
+  
 
 
   //   const navigateToImageGrid = (images, title, color) => {
@@ -84,14 +90,12 @@ export const Gallery = () => {
   //     </section>
   //   );
   // };
-  const navigateToImageGrid = (path) => {
-    navigate(path);
-  };
+ 
 
   return (
     <section className="">
       <CommonBanner background={bg} title="Gallery" />
-      <div className="px-2 lg:px-4 md:px-12 sm:px-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-6 my-16">
+      <div className="px-2 lg:px-24 md:px-12 sm:px-4 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 my-16">
         <div className="p-2">
           <LtiMillion
             images={workersSlides}

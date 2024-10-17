@@ -24,10 +24,10 @@ export const HomeNR = () => {
 
           {/* Left Section - Main Heading */}
           <div className="font-poppins text-white">
-            <div className='text-4xl font-poppins font-extrabold'>{mainContent.heading}</div>
+            <div className='max-sm:text-center text-4xl font-poppins font-extrabold'>{mainContent.heading}</div>
             <div className="mt-8 text-[12px] font-poppins sm:text-[14px]">{mainContent.description}</div>
-            <div className='mt-16'>
-              <Link to="/about" className='py-4 px-6 text-black font-lg w-[211px] h-[56px] bg-[#FEF116] '>DISCOVER MORE</Link>
+            <div className='mt-16 max-sm:center'>
+              <Link to="/about" className=' py-4 px-6 text-black font-lg w-[211px] h-[56px] bg-[#FEF116] '>DISCOVER MORE</Link>
             </div>
           </div>
 

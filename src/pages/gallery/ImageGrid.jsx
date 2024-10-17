@@ -56,14 +56,14 @@ export const ImageGrid = ({ images, title, color }) => {
             <header>
                 <h1 className="px-12 mt-4 uppercase text-2xl font-semibold" style={{ color }}>{title}</h1>
             </header>
-            <div className="px-12 p-4 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+            <div className="px-12 p-4 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4">
 
                 {images.map((image, index) => (
                     <div key={index} className="relative cursor-pointer" onClick={() => openModal(index)}>
                         <img
                             src={image}
                             alt={`Image ${index + 1}`}
-                            className="rounded-md object-cover w-full h-52 transition-opacity duration-300 ease-in-out hover:opacity-90"
+                            className="rounded-md object-fit w-full h-56 transition-opacity duration-300 ease-in-out hover:opacity-90"
                         />
                     </div>
                 ))}

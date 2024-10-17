@@ -44,7 +44,7 @@ export const AboutValues = () => {
               <img
                 src={image} 
                 alt="Guiding Principles"
-                className="rounded-lg w-[440px] h-[368px]"
+                className="rounded-lg w-[440px] max-sm:w-full h-[368px] max-sm:h-full"
               />
             </div>
             <p className="font-semibold text-[20px] mb-5 mt-6">To be the professional contractor of choice</p>
