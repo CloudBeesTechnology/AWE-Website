@@ -16,7 +16,7 @@ export const CareerSection = () => {
   return (
     <section>
             <CommonBanner background={bg}  title="Apply Job" />
-    <div className="flex flex-col  center   p-4 sm:p-10 space-y-6 md:space-y-0 md:space-x-10 max-sm:my-2 my-10">
+    <div className="flex flex-col  center   p-4 sm:p-10 space-y-6 md:space-y-0 md:space-x-10 max-sm:my-2 apply my-10">
       {/* Career Section */}
       <div className=" max-sm:my-2 mb-10">
         <h2 className="text-3xl max-sm:text-[20px] font-bold">CAREER</h2>
