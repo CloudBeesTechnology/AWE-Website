@@ -175,7 +175,7 @@ export const HomeNewEvent = () => {
         NEWS & EVENTS
       </h2>
 
-      <div className='flex flex-col sm:flex-row items-center justify-evenly w-full gap-2 lg:gap-10 my-2 lg:my-10'>
+      <div className='px-4 flex flex-col sm:flex-row items-center justify-evenly w-full gap-10 lg:gap-10 my-2 lg:my-10'>
         {/* Left Image Section */}
         <div className="flex justify-center w-full sm:w-[450px] lg:w-[600px] h-[300px] sm:h-[490px] overflow-hidden cursor-pointer">
           <img

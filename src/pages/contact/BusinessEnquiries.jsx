@@ -84,7 +84,7 @@ export const BusinessEnquiries = () => {
   return (
     <div className="screen-size flex flex-col items-center justify-center sm:px-10">
       {/* Heading */}
-      <h2 className="text-[30px] text-[#303030] font-semibold mb-16">Business Enquiries</h2>
+      <h2 className="text-[30px] max-sm:text-[20px] text-[#303030] font-semibold max-sm:mb-4 mb-8">Business Enquiries</h2>
 
       {/* Contact Info & Office Details */}
       <div className='border border-[#E2D82D] center flex-col p-4 lg:p-12 sm:p-5'>
@@ -107,8 +107,8 @@ export const BusinessEnquiries = () => {
         {/* Office Details */}
         <div className='flex flex-col lg:flex-row gap-6'>
           {/* Registered Office */}
-          <div className='w-full sm:w-[411px] h-[267px] max-sm:h-[180px] bg-white p-6 rounded-lg shadow-md'>
-            <h2 className="text-xl font-bold mb-2 flex">
+          <div className='w-full sm:w-[411px] h-[267px] max-sm:h-auto bg-white p-6 rounded-lg shadow-md'>
+            <h2 className="text-xl font-bold mb-2 flex items-center justify-center">
               <span role="img" aria-label="Location" className="mr-2 text-dark_red text-[30px]"><PiMapPinAreaLight /></span>
               Head Office:
             </h2>
@@ -122,8 +122,8 @@ export const BusinessEnquiries = () => {
           </div>
 
           {/* Head Office */}
-          <div className='w-full sm:w-[411px] h-[267px]  max-sm:h-[180px] bg-white p-6 rounded-lg shadow-md'>
-            <h3 className="text-xl font-bold mb-2 flex items-center">
+          <div className='w-full sm:w-[411px] h-[267px]  max-sm:h-auto bg-white p-6 rounded-lg shadow-md'>
+            <h3 className="text-xl font-bold mb-2 flex items-center justify-center">
               <span role="img" aria-label="Location" className="mr-2 text-dark_red text-[30px]"><PiMapPinAreaLight /></span>
               Sungai Bera Workshop:
             </h3>
@@ -134,8 +134,8 @@ export const BusinessEnquiries = () => {
           </div>
 
           {/* Postal Address */}
-          <div className='w-full sm:w-[411px] h-[267px] max-sm:h-[180px] bg-white p-6 rounded-lg shadow-md'>
-            <h3 className="text-xl font-bold mb-2 flex items-center">
+          <div className='w-full sm:w-[411px] h-[267px] max-sm:h-auto bg-white p-6 rounded-lg shadow-md'>
+            <h3 className="text-xl font-bold mb-2 flex items-center justify-center">
               <span role="img" aria-label="Location" className="mr-2 text-dark_red text-[30px]"><PiMapPinAreaLight /></span>
               Postal Address:
             </h3>

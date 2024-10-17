@@ -63,7 +63,7 @@ export const ImageGrid = ({ images, title, color }) => {
                         <img
                             src={image}
                             alt={`Image ${index + 1}`}
-                            className="rounded-md object-fit w-full h-56 transition-opacity duration-300 ease-in-out hover:opacity-90"
+                            className="rounded-md object-cover w-full h-56 transition-opacity duration-300 ease-in-out hover:opacity-90"
                         />
                     </div>
                 ))}

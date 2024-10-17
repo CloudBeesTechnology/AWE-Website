@@ -103,7 +103,7 @@ export const Sidebar = ({ showSidebar, toggleSidebar }) => {
   closeServiceList();
   toggleSidebar();
 }} >WORKFORCE</NavLink> */}
-                <NavLink to="/certification" className="border-b border-grey p-1 text-dark_red text-[14px]" onClick={() => {
+                <NavLink to="/certification" className=" p-1 text-dark_red text-[14px]" onClick={() => {
   closeServiceList();
   toggleSidebar();
 }} >Achievements & Certification</NavLink>

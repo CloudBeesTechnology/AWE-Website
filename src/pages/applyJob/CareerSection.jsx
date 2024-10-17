@@ -19,8 +19,8 @@ export const CareerSection = () => {
     <div className="flex flex-col  center   p-4 sm:p-10 space-y-6 md:space-y-0 md:space-x-10 my-10">
       {/* Career Section */}
       <div className=" mb-10">
-        <h2 className="text-3xl font-bold">CAREER</h2>
-        <p className="mt-4 text-lg max-sm:text-justify">
+        <h2 className="text-3xl max-sm:text-[20px] font-bold">CAREER</h2>
+        <p className="mt-4 text-[]18px] max-sm:text-[14px] max-sm:text-justify">
           It sounds like you're looking for information on career requirements.
           Could you specify which career or industry you're interested in?
           Different careers have varying requirements, such as specific
@@ -60,8 +60,8 @@ export const CareerSection = () => {
 <div className="space-y-4 ">
       {/* Title and description section */}
       <div className="text-center mb-6">
-        <h1 className="text-2xl font-bold mb-4">Available Job Listings</h1>
-        <p className="">Explore the latest job opportunities and find your next career move!</p>
+        <h1 className="text-2xl  max-sm:text-[20px] font-bold mb-4">Available Job Listings</h1>
+        <p className="text-[18px] max-sm:text-[14px] ">Explore the latest job opportunities and find your next career move!</p>
       </div>
 
     <div className='flex max-[742px]:justify-center justify-between items-center flex-wrap gap-7 p-2 gap-y-10'>
