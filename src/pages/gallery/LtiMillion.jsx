@@ -14,10 +14,10 @@ export const LtiMillion = ({ images = [], onClick }) => {
           <img
             src={imageSrc}
             alt="LTI Achievement"
-            className="cursor-pointer rounded shadow-lg object-cover  w-full h-[275px]"
+            className="cursor-pointer rounded shadow-lg object-cover h-[275px] w-[900px]"
           />
         )}
-           <div className='text-light_yellow font-bold text-center p-6 bg-dark_gray'>
+           <div className='text-light_yellow font-bold  bg-dark_gray h-[95px] center'>
             <p>25 MILLION HOURS WITHOUT LTI</p>
           </div>
     

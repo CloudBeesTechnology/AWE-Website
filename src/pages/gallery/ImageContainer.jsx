@@ -109,14 +109,17 @@ export const hisMajesty77Slides = [
 ];
 
 // HLP.js (46 to 53)
-import slide46 from "../../assets/gallery/HLP/image1.jpg";
+import slide46 from "../../assets/gallery/HLP/image9.jpg";
+
 import slide47 from "../../assets/gallery/HLP/image2.jpg";
 import slide48 from "../../assets/gallery/HLP/image3.jpg";
-import slide49 from "../../assets/gallery/HLP/image4.jpg";
+import slide49 from "../../assets/gallery/HLP/image1.jpg";
+
+
 import slide50 from "../../assets/gallery/HLP/image5.jpg";
 import slide51 from "../../assets/gallery/HLP/image6.jpg";
 import slide52 from "../../assets/gallery/HLP/image7.jpg";
-import slide53 from "../../assets/gallery/HLP/image9.jpg";
+import slide53 from "../../assets/gallery/HLP/image.jpg";
 
 export const hlpSlides = [
   slide46,

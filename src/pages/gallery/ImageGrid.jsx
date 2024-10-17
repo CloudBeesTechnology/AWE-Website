@@ -63,7 +63,7 @@ export const ImageGrid = ({ images, title, color }) => {
                         <img
                             src={image}
                             alt={`Image ${index + 1}`}
-                            className="rounded-md object-cover w-full h-48 transition-opacity duration-300 ease-in-out hover:opacity-90"
+                            className="rounded-md object-cover w-full h-52 transition-opacity duration-300 ease-in-out hover:opacity-90"
                         />
                     </div>
                 ))}
@@ -94,7 +94,7 @@ export const ImageGrid = ({ images, title, color }) => {
                                         key={index}
                                         src={img}
                                         alt={`Image ${index + 1}`}
-                                        className={`max-h-[570px] ${isWider ? 'w-auto lg:w-[800px] md:w-[500px] sm:w-[600px]' : 'w-auto'} rounded mx-2 ${index === selectedImageIndex ? 'block' : 'hidden'}`}
+                                        className={`max-h-[570px] ${isWider ? 'w-auto lg:w-[900px] md:w-[500px] sm:w-[600px]' : 'w-auto'} rounded mx-2 ${index === selectedImageIndex ? 'block' : 'hidden'}`}
                                     />
                                 );
                             })}

@@ -25,7 +25,7 @@ export const HomeMS = () => {
                   className="object-cover sm:max-w-[224px] w-full h-[250px]"
                 />
               </div>
-              <div className="text-center w-full h-[80px] bg-light_yellow rounded-lg p-2">
+              <div className="text-center center w-full h-[80px] bg-light_yellow rounded-lg p-2">
                 <h3 className="text-[16px] font-medium">{service.title}</h3>
               </div>
             </div>

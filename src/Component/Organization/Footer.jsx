@@ -45,7 +45,7 @@ export const Footer = () => {
 
             {/* Logo Section */}
             <div className="text-white text-center">
-              <img src={image34} className="w-[90px] h-24 mx-auto mb-4" alt="logo" />
+              <img src={image34} className="w-24 h-24 mx-auto mb-4" alt="logo" />
               <h1 className=" capitalize italic text-[12px] font-semibold lg:text-[20px] lg:font-bold">
                 The professional
                 <span className="block">contractor of choice</span>
@@ -54,7 +54,7 @@ export const Footer = () => {
 
             {/* Quick Links Section */}
             <div className="text-center lg:text-start">
-              <h1 className="text-white text-[12px] font-semibold lg:text-[20px] lg:font-bold">Quick Links</h1>
+              <h1 className="text-white text-[12px] font-semibold lg:text-[20px] md:text-[14px] lg:font-bold">Quick Links</h1>
               <div className="flex justify-center lg:justify-start">
                 <div className="border-b-4 border-light_yellow w-[80px] mt-2"></div>
               </div>

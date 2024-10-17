@@ -29,7 +29,7 @@ export const About = () => {
             </div>
 
             {/* Content Section */}
-            <div className="px-24 lg:flex lg:justify-between lg:gap-20">
+            <div className="lg:flex lg:justify-between lg:gap-20">
               {/* Text Content */}
               <div className="lg:w-3/3">
                 <p className=" mb-4">

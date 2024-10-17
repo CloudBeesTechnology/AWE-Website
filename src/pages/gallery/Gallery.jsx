@@ -91,7 +91,7 @@ export const Gallery = () => {
   return (
     <section className="">
       <CommonBanner background={bg} title="Gallery" />
-      <div className="px-2 lg:px-24 md:px-12 sm:px-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-6 my-16">
+      <div className="px-2 lg:px-4 md:px-12 sm:px-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-6 my-16">
         <div className="p-2">
           <LtiMillion
             images={workersSlides}
@@ -100,9 +100,24 @@ export const Gallery = () => {
           />
         </div>
         <div className="p-2">
+        <div className="p-2">
+          <HisMajesty78
+            images={hisMajesty78Slides}
+            onClick={() => navigateToImageGrid("/images/his-majesty-78")}
+            className="h-64"
+          />
+        </div>
           <HLP
             images={hlpSlides}
             onClick={() => navigateToImageGrid("/images/hlp")}
+            className="h-64"
+          />
+        </div>
+
+        <div className="p-2">
+          <HisMajesty77
+            images={hisMajesty77Slides}
+            onClick={() => navigateToImageGrid("/images/his-majesty-77")}
             className="h-64"
           />
         </div>
@@ -113,20 +128,8 @@ export const Gallery = () => {
             className="h-64"
           />
         </div>
-        <div className="p-2">
-          <HisMajesty77
-            images={hisMajesty77Slides}
-            onClick={() => navigateToImageGrid("/images/his-majesty-77")}
-            className="h-64"
-          />
-        </div>
-        <div className="p-2">
-          <HisMajesty78
-            images={hisMajesty78Slides}
-            onClick={() => navigateToImageGrid("/images/his-majesty-78")}
-            className="h-64"
-          />
-        </div>
+      
+     
         <div className="p-2">
           <Chairman
             images={chairmanSlides}

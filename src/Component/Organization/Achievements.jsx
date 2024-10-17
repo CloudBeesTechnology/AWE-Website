@@ -86,7 +86,7 @@ const Achievements = () => {
       <CommonBanner background={bg} title="Achievements & Certification" />
 
       {/* First Row for the First 4 Images */}
-      <div className="container mx-auto py-8 px-4 md:px-56">
+      <div className="container mx-auto py-8 px-4">
         {/* <h2 className="text-center text-3xl font-bold mb-8">Our Achievements</h2> */}
 
         {/* First row: 4 certificates */}
