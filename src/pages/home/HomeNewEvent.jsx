@@ -192,9 +192,9 @@ export const HomeNewEvent = () => {
           setSelectedEvent(events[nextIndex]);
           return nextIndex;
         });
-      }, 3000); // Change image every 3 seconds
+      }, 3000); 
 
-      return () => clearInterval(interval); // Cleanup on unmount
+      return () => clearInterval(interval); 
     }
   }, [events]);
 

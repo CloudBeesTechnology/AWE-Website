@@ -113,13 +113,7 @@ export const AboutOurMission = () => {
               bgColor: "bg-[#9BEC00]",
               textColor: "text-white"
             },
-            {
-              title: "TO OUR BUSINESS PARTNERS",
-              num: 6,
-              text: "We are trustworthy to our partners to achieve their business goals.",
-              bgColor: "bg-[#CF4DCE]",
-              textColor: "text-white"
-            }
+       
           ].map((vision, index) => (
             <div key={index} className="flex flex-col items-center border py-6 px-8 rounded-lg">
               <h2 className="text-center font-bold mb-2">{vision.title}</h2>
@@ -131,7 +125,34 @@ export const AboutOurMission = () => {
                   {vision.text}
                 </p>
               </div>
+            </div>    
+          ))}
+        </div>
+        <div className="mt-8 grid grid-cols-1 lg:grid-cols-3 gap-8">
+          {[
+            {
+              title: "TO OUR BUSINESS PARTNERS",
+              num: 6,
+              text: "We are trustworthy to our partners to achieve their business goals.",
+              bgColor: "bg-[#CF4DCE]",
+              textColor: "text-white"
+            }
+          ].map((vision, index) => (
+            <div key={index} className="flex flex-col items-center border py-6 px-8 rounded-lg">
+              <div>
+              <h2 className="text-center font-bold mb-2 w-[200px]">{vision.title}</h2>
+              </div>
+              
+              <div className="flex justify-center">
+                <p className={`p-4 rounded-full h-10 w-10 flex items-center justify-center ${vision.bgColor} ${vision.textColor}`}>
+                  {vision.num}
+                </p>
+                <p className="text-sm lg:text-base text-[#2a4255] leading-relaxed ml-4">
+                  {vision.text}
+                </p>
+              </div>
             </div>
+            
           ))}
         </div>
 

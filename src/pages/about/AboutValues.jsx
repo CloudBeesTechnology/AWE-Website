@@ -47,7 +47,7 @@ export const AboutValues = () => {
                 className="rounded-lg w-[440px] max-sm:w-full h-[368px] max-sm:h-full"
               />
             </div>                                                       
-            <p className="font-semibold text-[20px] mb-5 mt-6">to be the Professional Contractor of Choice</p>
+            <p className="font-semibold text-[20px] mb-5 mt-6">To be the Professional Contractor of Choice</p>
             <div className="ml-6 grid sm:grid-cols-2 gap-4 text-[17px] font-semibold">
               <div>Professionalism</div>
               <div>Motivation</div>
