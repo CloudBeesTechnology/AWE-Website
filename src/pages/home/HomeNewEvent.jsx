@@ -169,15 +169,15 @@ export const HomeNewEvent = () => {
 
 
   return (
-    <div className="screen-size mx-auto sm:my-20 my-14">
-      <h2 className="mb-12 text-black sm:my-10 mb-5 text-[20px] text-center sm:text-[34px] font-semibold relative">
+    <div className="screen-size mx-auto sm:mb-10 mb-14">
+      <h2 className=" text-black sm:my-10 mb-5 text-[20px] text-center sm:text-[34px] font-semibold relative">
         <span className='sm:absolute sm:w-[200px] sm:h-4 sm:top-11 sm:border-b-4 border-dark_red'></span>
         NEWS & EVENTS
       </h2>
 
-      <div className='px-4 flex flex-col sm:flex-row items-center justify-evenly w-full gap-10 lg:gap-10 my-2 lg:my-10'>
+      <div className='flex flex-col sm:flex-row items-center justify-evenly w-full gap-2 lg:gap-10 my-2 lg:my-10'>
         {/* Left Image Section */}
-        <div className="flex justify-center w-full sm:w-[450px] lg:w-[600px] h-[300px] sm:h-[490px] overflow-hidden cursor-pointer">
+        <div className="flex justify-center w-full sm:w-[380px] lg:w-[600px] h-[300px] sm:h-[490px] overflow-hidden cursor-pointer">
           <img
             src={selectedEvent.image}
             alt={selectedEvent.name}
@@ -187,16 +187,17 @@ export const HomeNewEvent = () => {
 
 
         {/* Right Event List Section */}
-        <div className="flex justify-evenly gap-5 items-center bg-white shadow shadow-dark_red px-6 py-6 rounded-lg border w-full sm:w-[380px] h-[350px] flex flex-col">
-          <ul className="space-y-4">
+        <div className="justify-evenly gap-5 items-center bg-white shadow shadow-dark_red px-6 py-6 rounded-lg border w-full sm:w-[380px] h-[490px] max-sm:h-[380px] flex flex-col">
+          <ul className="space-y-10 max-sm:space-y-6">
             {events.map((event, index) => (
               <li
                 key={index}
                 className={`flex gap-2 cursor-pointer ${activeIndex === index ? 'text-dark_red font-bold' : 'text-[#50A5EB]'}`}
                 onMouseEnter={() => handleEventHover(event, index)}
+                onClick={handleImageClick} 
               >
                 <span className="text-xl"><TiTickOutline /></span>
-                <span onClick={handleImageClick} className={`text-sm transition ${activeIndex === index ? 'hover:text-dark_red' : 'hover:text-dark_red'}`}>{event.name}</span>
+                <span className={`text-sm transition ${activeIndex === index ? 'hover:text-dark_red' : 'hover:text-dark_red'}`}>{event.name}</span>
               </li>
             ))}
           </ul>

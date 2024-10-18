@@ -122,7 +122,7 @@ export const Footer = () => {
               {FooterData.map((val, index) => (
                 <SwiperSlide key={index}>
                   <div className="center">
-                    <div className="max-w-[180px] h-[170px] max-sm:h-[120px] border  ">
+                    <div className="max-w-[180px] h-[170px] max-sm:h-[120px]">
                       <img
                         className="object-cover w-full h-full "
                         src={val.img}

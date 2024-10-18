@@ -20,6 +20,7 @@ export const ApplicantDetails = () => {
   const [profileUpdate,setProfileUpdate]=useState("")
   const location = useLocation();
   const data = location.state?.editingData;
+  const jobTitle = location.state?.position;
 
   const {
     register,
@@ -87,6 +88,7 @@ export const ApplicantDetails = () => {
                 {...register("position")}
                 type="text"
                 className="input-field"
+                value={jobTitle || ''}
               />
               {errors.position && (
                 <p className="text-[red] text-[13px]">

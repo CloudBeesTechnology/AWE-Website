@@ -24,10 +24,10 @@ export const AboutValues = () => {
             <h2 className="text-[32px] font-extrabold mb-4">OUR VALUES</h2>
             <p className="ml-6 text-[20px] font-semibold">We believe in :</p>
             <div className="ml-6 mt-2 space-y-2">
-              <p className='flex flex-col text-[20px]  gap-2 pt-2 font-bold'>SAFETY<span className='text-[17px] font-semibold'>Protecting our employees,<br /> assets & environment</span></p>
-              <p className='flex flex-col text-[20px]  gap-2 pt-3 font-bold'>QUALITY<span className='text-[17px] font-semibold'>Meeting requirements</span> </p>
-              <p className='flex flex-col text-[20px]  gap-2 pt-3 font-bold'>COMMITMENTS<span className='text-[17px] font-semibold'>Keeping Promises</span> </p>
-              <p className='flex flex-col text-[20px]  gap-2 pt-3 font-bold'>INTEGRITY<span className='text-[17px] font-semibold'>Adhering to ethical standards</span></p>
+              <p className='flex flex-col text-[20px]  gap-2 pt-2 font-bold'>SAFETY<span className='text-[17px] font-medium'>Protecting our employees,<br /> assets & environment</span></p>
+              <p className='flex flex-col text-[20px]  gap-2 pt-3 font-bold'>QUALITY<span className='text-[17px] font-medium'>Meeting requirements</span> </p>
+              <p className='flex flex-col text-[20px]  gap-2 pt-3 font-bold'>COMMITMENTS<span className='text-[17px] font-medium'>Keeping Promises</span> </p>
+              <p className='flex flex-col text-[20px]  gap-2 pt-3 font-bold'>INTEGRITY<span className='text-[17px] font-medium'>Adhering to ethical standards</span></p>
             </div>
 
             <h2 className="text-[32px] font-extrabold mt-8 mb-4">OUR GOALS</h2>
@@ -47,7 +47,7 @@ export const AboutValues = () => {
                 className="rounded-lg w-[440px] max-sm:w-full h-[368px] max-sm:h-full"
               />
             </div>                                                       
-            <p className="capitalize font-semibold text-[20px] mb-5 mt-6">to be the professional contractor of choice</p>
+            <p className="font-semibold text-[20px] mb-5 mt-6">to be the Professional Contractor of Choice</p>
             <div className="ml-6 grid sm:grid-cols-2 gap-4 text-[17px] font-semibold">
               <div>Professionalism</div>
               <div>Motivation</div>

@@ -106,7 +106,9 @@ export const CareerSection = () => {
       <p className='border py-1 px-3 text-[12px]'>{job.type}</p>
     </div>
     <div className='center py-2'>
-      <Link to="/addCandidates" className="bg-[#FEF116] text-black center font-bold py-1 px-4 rounded">
+      <Link to="/addCandidates" 
+       state={{ position: job.title }}
+      className="bg-[#FEF116] text-black center font-bold py-1 px-4 rounded">
         APPLY JOB
       </Link>
     </div>
