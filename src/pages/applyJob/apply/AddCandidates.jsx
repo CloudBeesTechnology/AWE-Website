@@ -59,7 +59,7 @@ export const AddCandidates = () => {
     <section className="  w-full bg-[#F5F6F1] ">
       {/* min-h-screen overflow-y-auto */}
       <div className="screen-sizew-11/12 relative mx-auto p-8 ">
-        <h2 className="text-[20px] font-bold mb-4 text-center mt-10">Application Form</h2>
+        <h2 className="text-[20px] font-bold mb-4 text-center mt-10 max-sm:mt-2 ">Application Form</h2>
 
         {/* Tab Navigation */}
         <div className="flex justify-between border-b mb-4 text-[14px] font-semibold overflow-x-auto  whitespace-nowrap scroll-smooth scrollbar-hide">

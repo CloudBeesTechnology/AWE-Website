@@ -23,8 +23,8 @@ export const About = () => {
           <div className="bg-white lg:px-10">
             {/* Title */}
             <div className="mb-8">
-              <h2 className="text-center text-[28px] font-semibold bg-[#FEF116] w-[250px] p-3">
-                Who We are...
+              <h2 className="text-center rounded text-[28px] max-sm:text-[20px] font-semibold bg-[#FEF116] max-sm:w-full w-[250px] p-3">
+                Who we are...
               </h2>
             </div>
 

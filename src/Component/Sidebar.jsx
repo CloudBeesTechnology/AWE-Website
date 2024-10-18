@@ -11,7 +11,7 @@ export const Sidebar = ({ showSidebar, toggleSidebar }) => {
     "/addCandidates/educationDetails",
     "/addCandidates/otherDetails",
   ];
-  
+
   const aboutPaths = [
     "/ourWorkForce",
     "/about",
@@ -19,6 +19,7 @@ export const Sidebar = ({ showSidebar, toggleSidebar }) => {
     "/ourVision",
     "/ourMission",
     "/OurService",
+    "/certification",
   ];
 
   const [showServicesList, setServicesList] = useState(false);
@@ -32,12 +33,12 @@ export const Sidebar = ({ showSidebar, toggleSidebar }) => {
   };
   // Check if the current path is part of recruitmentPaths
   const isRecruitmentActive = () => {
-    return recruitmentPaths.some(path => location.pathname.startsWith(path));
+    return recruitmentPaths.some((path) => location.pathname.startsWith(path));
   };
 
   // Check if the current path is part of aboutPaths
   const isAboutActive = () => {
-    return aboutPaths.some(path => location.pathname.startsWith(path));
+    return aboutPaths.some((path) => location.pathname.startsWith(path));
   };
   return (
     <>
@@ -63,59 +64,86 @@ export const Sidebar = ({ showSidebar, toggleSidebar }) => {
               isActive ? " text-dark_red font-bold " : ""
             }
             onClick={toggleSidebar}
-            >
+          >
             Home
           </NavLink>
           <div className="relative">
-      {/* About Us text with NavLink */}
-      <NavLink
-        to="/about"
-        className={isAboutActive() ? "text-dark_red font-bold" : ""}
-         onClick={toggleSidebar}
-      >
-        About Us
-      </NavLink>
-      {/* Icon to toggle the service list */}
-      <button onClick={toggleServiceList} className="ml-2 focus:outline-none">
-        <FaChevronDown className="inline text-dark_red" />
-      </button>
+            {/* About Us text with NavLink */}
+            <NavLink
+              to="/about"
+              className={isAboutActive() ? "text-dark_red font-bold" : ""}
+              onClick={toggleSidebar}
+            >
+              About Us
+            </NavLink>
+            {/* Icon to toggle the service list */}
+            <button
+              onClick={toggleServiceList}
+              className="ml-2 focus:outline-none"
+            >
+              <FaChevronDown className="inline text-dark_red" />
+            </button>
 
-      {/* Dropdown service list, shown only when showServicesList is true */}
-      {showServicesList && (
-        <div className=" top-8 -left-4 bg-white flex flex-col text-[18px] p-4 gap-1 w-[170px] shadow-md rounded-md font-medium">
-        <NavLink to="/ourMission" className="border-b border-grey p-1 text-dark_red text-[14px]" onClick={() => {
-  closeServiceList();
-  toggleSidebar();
-}} >MISSION & VISION</NavLink>
+            {/* Dropdown service list, shown only when showServicesList is true */}
+            {showServicesList && (
+              <div className=" top-8 -left-4 bg-white flex flex-col text-[18px] p-4 gap-1 w-[170px] shadow-md rounded-md font-medium">
+                <NavLink
+                  to="/ourMission"
+                  className="border-b border-grey p-1 text-dark_red text-[14px]"
+                  onClick={() => {
+                    closeServiceList();
+                    toggleSidebar();
+                  }}
+                >
+                  MISSION & VISION
+                </NavLink>
                 {/* <NavLink to="/ourVision" className="border-b border-grey p-1 text-dark_red text-[14px]" onClick={() => {
-  closeServiceList();
-  toggleSidebar();
-}} >VISION</NavLink> */}
-                <NavLink to="/values" className="border-b border-grey p-1 text-dark_red text-[14px]" onClick={() => {
-  closeServiceList();
-  toggleSidebar();
-}} >VALUES</NavLink>
-                <NavLink to="/OurService" className="border-b border-grey p-1 text-dark_red text-[14px]" onClick={() => {
-  closeServiceList();
-  toggleSidebar();
-}} >SERVICES</NavLink>
+                 closeServiceList();
+                 toggleSidebar();
+                 }} >VISION</NavLink> */}
+                <NavLink
+                  to="/values"
+                  className="border-b border-grey p-1 text-dark_red text-[14px]"
+                  onClick={() => {
+                    closeServiceList();
+                    toggleSidebar();
+                  }}
+                >
+                  VALUES
+                </NavLink>
+                <NavLink
+                  to="/OurService"
+                  className="border-b border-grey p-1 text-dark_red text-[14px]"
+                  onClick={() => {
+                    closeServiceList();
+                    toggleSidebar();
+                  }}
+                >
+                  SERVICES
+                </NavLink>
                 {/* <NavLink to="/ourWorkForce" className="border-b border-grey p-1 text-dark_red text-[14px]" onClick={() => {
-  closeServiceList();
-  toggleSidebar();
-}} >WORKFORCE</NavLink> */}
-                <NavLink to="/certification" className=" p-1 text-dark_red text-[14px]" onClick={() => {
-  closeServiceList();
-  toggleSidebar();
-}} >Achievements & Certification</NavLink>
+                closeServiceList();
+                toggleSidebar();
+                }} >WORKFORCE</NavLink> */}
+                <NavLink
+                  to="/certification"
+                  className=" p-1 text-dark_red text-[14px]"
+                  onClick={() => {
+                    closeServiceList();
+                    toggleSidebar();
+                  }}
+                >
+                  Achievements & Certification
+                </NavLink>
               </div>
-      )}
-    </div>
+            )}
+          </div>
 
           <NavLink
             to="/gallery"
             className={({ isActive }) =>
               isActive ? " text-dark_red font-bold" : ""
-            }          
+            }
             onClick={toggleSidebar}
           >
             Gallery
@@ -169,7 +197,8 @@ export const Sidebar = ({ showSidebar, toggleSidebar }) => {
   );
 };
 
-{/* <NavLink
+{
+  /* <NavLink
 to="/"
 className={({ isActive }) =>
   isActive ? "text-primary" : "text-secondary"
@@ -247,8 +276,10 @@ Home
     </NavLink>
   </div>
 )}
-{/* </div> */}
-{/* <NavLink
+{/* </div> */
+}
+{
+  /* <NavLink
 to="/about"
 className={({ isActive }) =>
   isActive ? "text-primary" : "text-secondary"
@@ -277,4 +308,5 @@ Contact
 </NavLink>
 <Link to="/login" className="btn mt-4" onClick={toggleSidebar}>
 Login
-</Link>  */}
+</Link>  */
+}

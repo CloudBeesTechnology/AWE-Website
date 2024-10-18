@@ -56,7 +56,7 @@ export const ImageGrid = ({ images, title, color }) => {
             <header>
                 <h1 className="px-12 mt-4 uppercase text-2xl font-semibold" style={{ color }}>{title}</h1>
             </header>
-            <div className="px-12 p-4 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4">
+            <div className="px-12 max-sm:px-2 p-4 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4">
 
                 {images.map((image, index) => (
                     <div key={index} className="relative cursor-pointer" onClick={() => openModal(index)}>

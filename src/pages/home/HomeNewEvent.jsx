@@ -220,7 +220,7 @@ export const HomeNewEvent = () => {
 
         {/* Right Event List Section */}
         <div className="justify-evenly gap-5 items-center bg-white shadow shadow-dark_red px-6 py-6 rounded-lg border w-full sm:w-[380px] h-[490px] max-sm:h-[380px] flex flex-col">
-          <ul className="space-y-10 max-sm:space-y-6">
+          <ul className="space-y-8 max-sm:space-y-6">
             {events.map((event, index) => ( 
               <li
                 key={index}
@@ -230,7 +230,7 @@ export const HomeNewEvent = () => {
               
               >
                 <span className="text-xl"><TiTickOutline /></span>
-                <span className={`text-sm transition ${activeIndex === index ? 'hover:text-dark_red' : 'hover:text-dark_red'}`}>{event.name}</span>
+                <span className={`text-[16px] max-w-sm:text-[14px] transition ${activeIndex === index ? 'hover:text-dark_red' : 'hover:text-dark_red'}`}>{event.name}</span>
               </li>
             ))}
           </ul>

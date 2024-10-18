@@ -21,6 +21,7 @@ export const Navbar = () => {
     "/ourVision",
     "/ourMission",
     "/OurService",
+    "/certification"
   ];
 
   const [showServicesList, setServicesList] = useState(false);
