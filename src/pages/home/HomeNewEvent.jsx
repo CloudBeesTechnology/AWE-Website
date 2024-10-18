@@ -155,6 +155,7 @@ export const HomeNewEvent = () => {
 
   const [selectedEvent, setSelectedEvent] = useState(events[0]);
   const [activeIndex, setActiveIndex] = useState(0);
+  const [name, setName] = useState('')
   const navigate = useNavigate();
 
   const handleEventHover = (event, index) => {
@@ -167,18 +168,27 @@ export const HomeNewEvent = () => {
   // };
 
   
-  const handleLinkClick = () => {
-    if (selectedEvent.link) {
-      navigate(selectedEvent.link, { state: { images: [selectedEvent.image], title: selectedEvent.name } });
+  // const handleLinkClick = () => {
+  //   if (selectedEvent.link) {
+  //     navigate(selectedEvent.link, { state: { images: [selectedEvent.image], title: selectedEvent.name } });
+  //   }
+  // };
+
+  const handleLinkClick = (event, index) => {
+    setSelectedEvent(event); // Update the selected event
+    setActiveIndex(index); // Set the active index
+    if (event.link) {
+      navigate(event.link, { state: { images: [event.image], title: event.name } });
     }
   };
+
 
 
   return (
     <div className="screen-size mx-auto sm:mb-10 mb-14">
       <h2 className=" text-black sm:my-10 mb-5 text-[20px] text-center sm:text-[34px] font-semibold relative">
         <span className='sm:absolute sm:w-[200px] sm:h-4 sm:top-11 sm:border-b-4 border-dark_red'></span>
-        NEWS & EVENT
+        NEWS & EVENTS
       </h2>
 
       <div className='flex flex-col sm:flex-row items-center justify-evenly w-full gap-2 lg:gap-10 my-2 lg:my-10'>
@@ -200,9 +210,8 @@ export const HomeNewEvent = () => {
                 key={index}
                 className={`flex gap-2 cursor-pointer ${activeIndex === index ? 'text-dark_red font-bold' : 'text-[#50A5EB]'}`}
                 onMouseEnter={() => handleEventHover(event, index)}
-                onClick={() => {
-                  handleLinkClick(event); 
-                }} 
+                onClick={() => handleLinkClick(event, index)} 
+              
               >
                 <span className="text-xl"><TiTickOutline /></span>
                 <span className={`text-sm transition ${activeIndex === index ? 'hover:text-dark_red' : 'hover:text-dark_red'}`}>{event.name}</span>
