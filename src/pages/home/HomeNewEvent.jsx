@@ -162,10 +162,16 @@ export const HomeNewEvent = () => {
     setActiveIndex(index);
   };
 
-  const handleImageClick = () => {
-    navigate(selectedEvent.link, { state: { images: [selectedEvent.image], title: selectedEvent.name } });
-  };
+  // const handleImageClick = () => {
+  //   navigate(selectedEvent.link, { state: { images: [selectedEvent.image], title: selectedEvent.name } });
+  // };
 
+  
+  const handleLinkClick = () => {
+    if (selectedEvent.link) {
+      navigate(selectedEvent.link, { state: { images: [selectedEvent.image], title: selectedEvent.name } });
+    }
+  };
 
 
   return (
@@ -194,7 +200,9 @@ export const HomeNewEvent = () => {
                 key={index}
                 className={`flex gap-2 cursor-pointer ${activeIndex === index ? 'text-dark_red font-bold' : 'text-[#50A5EB]'}`}
                 onMouseEnter={() => handleEventHover(event, index)}
-                onClick={handleImageClick} 
+                onClick={() => {
+                  handleLinkClick(event); 
+                }} 
               >
                 <span className="text-xl"><TiTickOutline /></span>
                 <span className={`text-sm transition ${activeIndex === index ? 'hover:text-dark_red' : 'hover:text-dark_red'}`}>{event.name}</span>
@@ -206,4 +214,3 @@ export const HomeNewEvent = () => {
     </div>
   );
 };
-// okay when i clik the the click the images comming but its going bottom section, but need to come top to bottom
