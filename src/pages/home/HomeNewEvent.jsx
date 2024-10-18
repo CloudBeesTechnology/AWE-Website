@@ -230,7 +230,7 @@ export const HomeNewEvent = () => {
               
               >
                 <span className="text-xl"><TiTickOutline /></span>
-                <span className={`text-[16px] max-w-sm:text-[14px] transition ${activeIndex === index ? 'hover:text-dark_red' : 'hover:text-dark_red'}`}>{event.name}</span>
+                <span className={`text-[16px] max-sm:text-[14px] transition ${activeIndex === index ? 'hover:text-dark_red' : 'hover:text-dark_red'}`}>{event.name}</span>
               </li>
             ))}
           </ul>
