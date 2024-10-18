@@ -182,6 +182,22 @@ export const HomeNewEvent = () => {
     }
   };
 
+  useEffect(() => {
+    const isSmallScreen = window.innerWidth < 640; // Change this threshold as needed
+
+    if (isSmallScreen) {
+      const interval = setInterval(() => {
+        setActiveIndex((prevIndex) => {
+          const nextIndex = (prevIndex + 1) % events.length;
+          setSelectedEvent(events[nextIndex]);
+          return nextIndex;
+        });
+      }, 3000); // Change image every 3 seconds
+
+      return () => clearInterval(interval); // Cleanup on unmount
+    }
+  }, [events]);
+
 
 
   return (
@@ -205,12 +221,12 @@ export const HomeNewEvent = () => {
         {/* Right Event List Section */}
         <div className="justify-evenly gap-5 items-center bg-white shadow shadow-dark_red px-6 py-6 rounded-lg border w-full sm:w-[380px] h-[490px] max-sm:h-[380px] flex flex-col">
           <ul className="space-y-10 max-sm:space-y-6">
-            {events.map((event, index) => (
+            {events.map((event, index) => ( 
               <li
                 key={index}
                 className={`flex gap-2 cursor-pointer ${activeIndex === index ? 'text-dark_red font-bold' : 'text-[#50A5EB]'}`}
                 onMouseEnter={() => handleEventHover(event, index)}
-                onClick={() => handleLinkClick(event, index)} 
+                onClick={() => handleLinkClick(event, index)}
               
               >
                 <span className="text-xl"><TiTickOutline /></span>
@@ -223,3 +239,4 @@ export const HomeNewEvent = () => {
     </div>
   );
 };
+// add that functionality for small scrrens automatic hovering links and image changingimage have to come automatically
