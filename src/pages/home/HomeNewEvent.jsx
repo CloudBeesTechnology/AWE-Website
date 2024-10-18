@@ -178,7 +178,7 @@ export const HomeNewEvent = () => {
     <div className="screen-size mx-auto sm:mb-10 mb-14">
       <h2 className=" text-black sm:my-10 mb-5 text-[20px] text-center sm:text-[34px] font-semibold relative">
         <span className='sm:absolute sm:w-[200px] sm:h-4 sm:top-11 sm:border-b-4 border-dark_red'></span>
-        NEWS & EVENTS
+        NEWS & EVENT
       </h2>
 
       <div className='flex flex-col sm:flex-row items-center justify-evenly w-full gap-2 lg:gap-10 my-2 lg:my-10'>
