@@ -13,7 +13,7 @@ export const AboutOurMission = () => {
   return (
     <section className="overflow-x-hidden">
       {/* Common Banner Section */}
-      <CommonBanner background={bg} title="Our Mission & Vision" />
+      <CommonBanner background={bg} title="Our Mission & Vision" /> 
 
       {/* Main Content */}
       <div className="w-full mt-12 px-8 lg:px-32">

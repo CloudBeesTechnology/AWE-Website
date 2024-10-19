@@ -21,12 +21,17 @@ export const CareerSection = () => {
         <div className=" max-sm:my-2 mb-10">
           <h2 className="text-3xl max-sm:text-[20px] font-bold">CAREER</h2>
           <p className="mt-4 text-[]18px] max-sm:text-[14px] max-sm:text-justify">
-            It sounds like you're looking for information on career
-            requirements. Could you specify which career or industry you're
-            interested in? Different careers have varying requirements, such as
-            specific educational backgrounds, skills, certifications, or
-            experience. Let me know more details, and I can provide tailored
-            information!
+            Fast movement, unlimited challenges and excitement to explore. This
+            is a right track for you. Having been established since 1980, Adinin
+            Works & Engineering Sdn. Bhd. is a leading EPC: Oil and Gas Sector
+            in Brunei Darussalam. Now we are opening career opportunities in
+            many challenging areas and eagerly await any qualified and energetic
+            candidates who have strong intention to join and share experiences
+            with us. We are offering competitive salary package with other
+            welfare and fringe benefits, dramatic career path, overseas training
+            and international professional working environment. Your submitted
+            CVs/Applications would be kept confidential in our recruitment
+            database.
           </p>
         </div>
 

@@ -105,7 +105,10 @@ const Achievements = () => {
         {/* <h2 className="text-center text-3xl font-bold mb-8">Our Achievements</h2> */}
 
         {/* First row: 4 certificates */}
-        <h2 className="max-sm:center text-xl font-bold py-4">ISO Certificates</h2>
+        <div className="max-sm:center">
+        <h2 className="mb-6 px-4 max-w-[200px] center rounded max-sm:center text-xl max-sm:text-[14px] bg-[#fef116] font-bold py-2 lg:py-4">ISO Certificates</h2>
+        </div>
+       
         <div className="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 gap-12 mb-8">
           {certificates.slice(0, 3).map((certificate, index) => (
             <div
@@ -125,7 +128,10 @@ const Achievements = () => {
         </div>
 
         {/* Remaining rows: Polaroid style for images after the 4th */}
-        <h2 className="max-sm:center text-xl font-bold py-4">Awards</h2>
+        <div className="max-sm:center">
+        <h2 className="mb-6 px-4 max-w-[200px] center rounded max-sm:center text-xl max-sm:text-[14px] bg-[#fef116] font-bold py-2 lg:py-4">Awards</h2>
+        </div>
+       
         <div className="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 gap-6">
           {certificates.slice(3).map((certificate, index) => (
             <div
