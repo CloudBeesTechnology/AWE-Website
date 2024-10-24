@@ -104,7 +104,7 @@ export const Navbar = () => {
                 <NavLink to="/values" className="border-b border-grey p-1 text-dark_red text-[14px]" onClick={closeServiceList}>VALUES</NavLink>
                 <NavLink to="/OurService" className="border-b border-grey p-1 text-dark_red text-[14px]" onClick={closeServiceList}>SERVICES</NavLink>
                 {/* <NavLink to="/ourWorkForce" className="border-b border-grey p-1 text-dark_red text-[14px]" onClick={closeServiceList}>WORKFORCE</NavLink> */}
-                <NavLink to="/certification" className="p-1 text-dark_red text-[14px]" onClick={closeServiceList}>Achievements & Certification</NavLink>
+                <NavLink to="/certification" className="uppercase p-1 text-dark_red text-[14px]" onClick={closeServiceList}>Achievements & Certification</NavLink>
               </div>
             )}
           </div>
