@@ -89,3 +89,32 @@ body {
   background-size: 18px 18px; /* Adjust size if needed */
   appearance: none; /* Remove default arrow */
 }
+
+/* styles.css or your main CSS file */
+.skeleton {
+  background: #e0e0e0; /* Light gray background */
+  border-radius: 4px;
+  animation: shimmer 1.5s infinite linear;
+  position: relative;
+  overflow: hidden;
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -200px 0;
+  }
+  100% {
+    background-position: 200px 0;
+  }
+}
+
+.skeleton::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0.6) 50%, rgba(255, 255, 255, 0.3) 100%);
+  animation: shimmer 1.5s infinite;
+}
