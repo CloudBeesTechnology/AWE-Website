@@ -59,6 +59,8 @@ export const CareerSection = () => {
                     src={job.icon}
                     alt={job.title}
                     className=" max-w-[10px] w-full border text-[red]"
+
+                    
                   /> */}
                   <p className="font-bold text-lg">{job.title}</p>
                 </div>
@@ -91,67 +93,3 @@ export const CareerSection = () => {
   );
 };
 
-// import React, { useEffect } from 'react';
-// import { CommonBanner } from '../../Component/Organization/CommonBanner';
-// import bg from "../../assets/applyJob/applyJob-1.jpeg";
-// import { Link } from 'react-router-dom';
-// import { CareerData } from './CareerData';
-
-// export const CareerSection = () => {
-//   useEffect(() => {
-//     window.scrollTo({
-//       top: 0,
-//       behavior: "smooth",
-//     });
-//   }, []);
-
-//   return (
-//     <section>
-//       <CommonBanner background={bg} title="Apply Job" />
-//       <div className="flex flex-col items-center p-4 sm:p-10 space-y-6 md:space-y-0 md:space-x-10 my-10">
-//         {/* Career Section */}
-//         <div className="mb-10 px-0 lg:px-24">
-//           <h2 className="text-[24px] text-[#303030] font-semibold">CAREER</h2>
-//           <p className="mt-4 text-lg max-sm:text-justify">
-//             Fast movement, unlimited challenges and excitement to explore. This is the right track for you. Having been established since 1980, Adinin Works & Engineering Sdn. Bhd. is a leading EPC: Oil and Gas Sector in Brunei Darussalam. We are now opening career opportunities in many challenging areas and eagerly await any qualified and energetic candidates who have a strong intention to join and share experiences with us. We are offering a competitive salary package with other welfare and fringe benefits, a dramatic career path, overseas training, and an international professional working environment. Your submitted CVs/Applications would be kept confidential in our recruitment database.
-//           </p>
-//         </div>
-
-//         <div className="text-start">
-//           {/* Title and description section */}
-//           <div className="text-start mb-6">
-//             <h2 className="text-[24px] text-[#303030] font-semibold">CAREER OPPORTUNITIES</h2>
-//           </div>
-
-//           <div className='flex flex-wrap justify-center items-start gap-7 p-2'>
-//             {CareerData.map((job, index) => (
-//               <div key={`${job.id}-${index}`} className="flex flex-col justify-between space-y-4 px-6 py-4 rounded-md shadow-[0_4px_10px_rgba(0,0,0,0.3)] w-full sm:w-[300px] h-[290px]">
-//                 <div className='flex items-center'>
-//                   <img
-//                     src={job.icon}
-//                     alt={job.title}
-//                     className="object-cover w-[33px] h-[24px] mr-4"
-//                   />
-//                   <p className="font-bold text-lg">{job.title}</p>
-//                 </div>
-//                 <div className='grid grid-cols-3 gap-2 w-full'>
-//                   <p className='border py-1 px-2 text-[12px]'>{job.experience}</p>
-//                   <p className='border py-1 px-4 text-[12px]'>{job.lpa}</p>
-//                   <p className='border py-1 px-3 text-[12px]'>{job.type}</p>
-//                 </div>
-
-//                 <h4 className="font-semibold">Description</h4>
-//                 <p className="text-[12px] font-medium h-[60px]">{job.description}</p>
-//                 <div className='flex justify-center py-2 w-full'>
-//                   <Link to="/addCandidates" className="bg-[#FEF116] text-[12px] text-black font-bold py-1 px-4 rounded">
-//                     APPLY JOB
-//                   </Link>
-//                 </div>
-//               </div>
-//             ))}
-//           </div>
-//         </div>
-//       </div>
-//     </section>
-//   );
-// };
