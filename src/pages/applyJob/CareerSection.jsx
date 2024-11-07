@@ -6,12 +6,12 @@ import { useEffect } from "react";
 import { CareerData } from "./CareerData";
 
 export const CareerSection = () => {
-  // useEffect(() => {
-  //   window.scrollTo({
-  //     top: 0,
-  //     behavior: "smooth",
-  //   });
-  // }, []);
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  }, []);
 
   return (
     <section>
@@ -60,7 +60,7 @@ export const CareerSection = () => {
                     alt={job.title}
                     className=" max-w-[10px] w-full border text-[red]"
 
-                    
+
                   /> */}
                   <p className="font-bold text-lg">{job.title}</p>
                 </div>
