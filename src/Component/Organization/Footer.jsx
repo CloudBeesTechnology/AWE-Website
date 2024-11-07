@@ -55,14 +55,14 @@ export const Footer = () => {
             </div>
 
             {/* Quick Links Section */}
-            <div className="text-center lg:text-start">
-              <h1 className="text-white  font-semibold text-[18px] sm:text-[20px] sm:font-bold">
-                Quick Links
+            <div className="text-center lg:text-start  max-sm:mt-5 space-y-7">
+            <div className="flex justify-center items-center">
+              <h1 className="text-white relative font-semibold text-[18px] sm:text-[20px] sm:font-bold after:absolute after:-bottom-2 after:left-0 after:w-[85%] after:h-1 after:bg-light_yellow">
+              Quick Links
               </h1>
-              <div className="flex justify-center lg:justify-start">
-                <div className="border-b-4 border-light_yellow w-[80px] mt-1"></div>
               </div>
-              <ul className="text-[16px] sm:text-[18px] font-lg text-white mt-4">
+             
+              <ul className="text-[16px] sm:text-[18px]  font-lg text-white mt-4">
                 <li className="py-1">
                   <Link to="/about" className="text-white">
                     About us
@@ -82,13 +82,13 @@ export const Footer = () => {
             </div>
 
             {/* Social Media Section */}
-            <div className="text-center">
-              <h1 className="text-white ] font-semibold text-[18px] sm:text-[20px] sm:font-bold">
+            <div className="text-center  max-sm:mt-5 space-y-7">
+              <div className="flex justify-center items-center">
+              <h1 className="text-white relative font-semibold text-[18px] sm:text-[20px] sm:font-bold after:absolute after:-bottom-2 after:left-0 after:w-[85%] after:h-1 after:bg-light_yellow">
                 Social Media
               </h1>
-              <div className="flex justify-center">
-                <div className="border-b-4 border-light_yellow w-[80px] lg:w-[120px] mt-2"></div>
               </div>
+            
               <div className="flex justify-center gap-3 lg:gap-6 mt-5 sm:mt-8">
                 <Link
                   to="https://www.facebook.com/profile.php?id=100093301044365&mibextid=LQQJ4d"
@@ -127,13 +127,14 @@ export const Footer = () => {
             </div>
 
             {/* Contact Information Section */}
-            <div className="text-center lg:text-start max-sm:mt-5">
-              <h1 className="text-white font-semibold text-[18px] sm:text-[20px] sm:font-bold">
-                Contact information
+            <div className="text-center lg:text-start max-sm:mt-5 space-y-7">
+            <div className="flex max-sm:justify-center items-center">
+              <h1 className="text-white relative font-semibold text-[18px] sm:text-[20px] sm:font-bold after:absolute after:-bottom-2 after:left-0 after:w-[85%] after:h-1 after:bg-light_yellow">
+              Contact information
               </h1>
-              <div className="flex justify-center lg:justify-start">
-                <div className="border-b-4 border-light_yellow w-[80px] lg:w-[94px]  mt-2"></div>
               </div>
+             
+              
               <address className="text-[16px] sm:text-[18px] text-white mt-4 sm:mt-6">
                 F118, 1st Floor, Komplek Harapan, <br />
                 Lot 3038, Jalan Setia Di-Raja,
@@ -142,9 +143,9 @@ export const Footer = () => {
                 <br />
                 Brunei Darussalam
                 <br />
-                Tel: +673 3331001
+                Tel : +673 3331001
                 <br />
-                Fax: +673 3334543
+                Fax : +673 3334543
               </address>
             </div>
           </div>

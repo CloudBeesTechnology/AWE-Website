@@ -6,12 +6,12 @@ import { useEffect } from "react";
 import { CareerData } from "./CareerData";
 
 export const CareerSection = () => {
-  useEffect(() => {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth",
-    });
-  }, []);
+  // useEffect(() => {
+  //   window.scrollTo({
+  //     top: 0,
+  //     behavior: "smooth",
+  //   });
+  // }, []);
 
   return (
     <section>
@@ -35,33 +35,6 @@ export const CareerSection = () => {
           </p>
         </div>
 
-        {/* Employment Application Form */}
-        {/* <div className="flex-1 center flex-col ">
-        <h3 className="font-bold text-lg mb-7"><span></span>JOB VACANCIES</h3>
-        <div className="space-y-4 p-2 rounded-md shadow-md sm:w-[300px] border-2 border-[red]">
-<div className='flex justify-evenly items-center'>
-
-            <img 
-              src={icon} 
-              alt="Welder" 
-              className="object-cover w-20"
-            />
-<p className="font-bold text-lg mb-4">Welding </p>
-
-  </div>          
-  <h4 className="font-semibold">Description</h4>
-          <p className=" text-[12px] font-medium ">Communicating effectively with clients, stakeholders, and project managers, both verbally and in writing.</p>
-<div className=' flex-wrap flex justify-between items-center gap-2'><p className='border py-1 px-2 text-[12px]'>Experience 0-1</p> <p className='border py-1 px-4 text-[12px]'>LPA</p> <p className='border py-1 px-3 text-[12px]'>Full Time</p></div>
-          <p>
-            <div className='center mt-5'>
-            <Link to="/addCandidates" className="bg-[#FEF116] text-black center font-bold py-1 px-4 rounded">
-             APPLY JOB
-            </Link>
-            </div>
-          </p>
-        </div>
-      </div> */}
-
         <div className="space-y-4 ">
           {/* Title and description section */}
           <div className="text-center mb-6">
@@ -75,41 +48,18 @@ export const CareerSection = () => {
           </div>
 
           <div className="flex max-[742px]:justify-center justify-between items-center flex-wrap gap-7 p-2 gap-y-10">
-            {/* {CareerData.map((job) => (
-        <div key={job.id} className=" gap-7 space-y-4 p-2 rounded-md shadow-md sm:w-[300px] sm:h-[300px]  border-2 border-[red]">
-          <div className='flex justify-evenly items-center '>
-            <img 
-              src={job.icon} 
-              alt={job.title} 
-              className="object-cover w-16 h-16 text-[red] "
-            />
-            <p className="font-bold text-lg  ">{job.title}</p>
-          </div>          
-          <h4 className="font-semibold">Description</h4>
-          <p className="text-[12px] font-medium h-[60px]">{job.description}</p>
-          <div className='flex-wrap flex justify-between items-center gap-2'>
-            <p className='border py-1 px-2 text-[12px]  '>{job.experience}</p>
-            <p className='border py-1 px-4 text-[12px]'>{job.lpa}</p>
-            <p className='border py-1 px-3 text-[12px]'>{job.type}</p>
-          </div>
-          <div className='center py-2'>
-            <Link to="/addCandidates" className="bg-[#FEF116] text-black center font-bold py-1 px-4 rounded">
-              APPLY JOB
-            </Link>
-          </div>
-        </div>
-      ))} */}
+ 
             {CareerData.map((job, index) => (
               <div
                 key={`${job.id}-${index}`}
-                className="gap-7 space-y-4 p-2 rounded-md shadow-md sm:w-[300px] sm:h-[300px] border-2 border-[red]"
+                className="space-y-4 p-2 rounded-md shadow-md max-w-xs w-full border-2 border-[red]"
               >
-                <div className="flex justify-evenly items-center ">
-                  <img
+                <div className="flex gap-5 items-center">
+                  {/* <img
                     src={job.icon}
                     alt={job.title}
-                    className="object-cover w-16 h-16 text-[red]"
-                  />
+                    className=" max-w-[10px] w-full border text-[red]"
+                  /> */}
                   <p className="font-bold text-lg">{job.title}</p>
                 </div>
                 <h4 className="font-semibold">Description</h4>

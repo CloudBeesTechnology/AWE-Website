@@ -1,8 +1,8 @@
 
-import icon1 from "../../assets/applyJob/icon.png";
-import icon2 from "../../assets/applyJob/Scaffolding.svg";
-import icon3 from "../../assets/applyJob/Field Engineer.svg";
-import icon4 from "../../assets/applyJob/HSSE.svg";
+import icon1 from "../../assets/applyJob/welding.png";
+import icon2 from "../../assets/applyJob/Scaffolding.png";
+import icon3 from "../../assets/applyJob/Field Engineer.png";
+import icon4 from "../../assets/applyJob/HSSE.png";
 
 export const CareerData = [
     {

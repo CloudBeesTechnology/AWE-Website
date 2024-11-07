@@ -77,7 +77,7 @@ import { PiMapPinAreaLight } from "react-icons/pi";
 
 export const BusinessEnquiries = () => {
   return (
-    <div className="screen-size flex flex-col items-center justify-center sm:px-10">
+    <div className="screen-size flex flex-col items-center justify-center pt-16 sm:px-10">
       {/* Heading */}
       <h2 className="text-[30px] max-sm:text-[20px] text-[#303030] font-semibold max-sm:mb-4 mb-8">
         Business Enquiries

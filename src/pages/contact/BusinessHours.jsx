@@ -81,7 +81,7 @@ import calendar from "../../assets/contact/Vector.svg";
 
 export const BusinessHours = () => {
   return (
-    <div className="screen-size flex flex-col items-center justify-center mt-6">
+    <div className="screen-size flex flex-col items-center justify-center pt-16">
       
       {/* Heading */}
       <h2 className="text-[30px] max-sm:text-[20px] font-semibold mb-6">Business Hours</h2>
