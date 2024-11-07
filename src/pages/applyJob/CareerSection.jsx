@@ -54,7 +54,7 @@ export const CareerSection = () => {
                 key={`${job.id}-${index}`}
                 className="space-y-4 p-2 rounded-md shadow-md max-w-xs w-full border-2 border-[red]"
               >
-                <div className="flex gap-5 items-center">
+                <div className="flex gap-5 center">
                   {/* <img
                     src={job.icon}
                     alt={job.title}
@@ -62,9 +62,9 @@ export const CareerSection = () => {
 
 
                   /> */}
-                  <p className="font-bold text-lg">{job.title}</p>
+                  <p className="font-bold text-lg text-center text-dark_red mt-2">{job.title}</p>
                 </div>
-                <h4 className="font-semibold">Description</h4>
+                <h4 className="font-semibold">Competency Requirements</h4>
                 <p className="text-[12px] font-medium h-[60px]">
                   {job.description}
                 </p>

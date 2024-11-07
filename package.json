@@ -10,10 +10,17 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@aws-amplify/api": "^6.1.1",
+    "@aws-amplify/auth": "^6.6.0",
+    "@aws-amplify/core": "^6.5.1",
+    "@aws-amplify/storage": "^6.6.14",
+    "@aws-amplify/ui-react": "^6.5.5",
     "@hookform/resolvers": "^3.9.0",
     "aws-amplify": "^6.6.2",
     "axios": "^1.7.7",
+    "file-saver": "^2.0.5",
     "firebase": "^10.12.4",
+    "lodash.get": "^4.4.2",
     "react": "^18.3.1",
     "react-awesome-slider": "^4.1.0",
     "react-dom": "^18.3.1",

@@ -5,22 +5,14 @@ import icon3 from "../../assets/applyJob/Field Engineer.png";
 import icon4 from "../../assets/applyJob/HSSE.png";
 
 export const CareerData = [
-    {
-        id: 1,
-        title: 'Trainee Welder',
-        description: 'Communicating effectively with clients, stakeholders, and project managers, both verbally and in writing.',
-        experience: 'experience',
-        lpa: 'LPA',
-        type: 'Full Time',
-        icon: icon1 // replace with actual path
-      },
+    
     {
       id: 1,
       title: 'Scaffolder',
       description: 'Valid Scaffold Part A & Part B Certificate with Minimum of 2 Years in Scaffolding. Onshore Based for BLNG Project.',
       experience: '2+ years',
-      lpa: 'BLNG',
-      type: 'Full Time',
+      lpa: 'Local Male',
+      type: 'End 14th-Nov',
       icon: icon2, // replace with actual path
     },
     {
@@ -28,8 +20,8 @@ export const CareerData = [
       title: 'Junior Field Engineer',
       description: 'Higher National Diploma in Mechanical Engineer. Onshore Based for BLNG Project.',
       experience: 'Entry Level',
-      lpa: 'BLNG',
-      type: 'Full Time',
+      lpa: 'Local M/F',
+      type: 'End 14th-Nov',
       icon: icon3, // replace with actual path
     },
     {
@@ -38,7 +30,7 @@ export const CareerData = [
       description: 'NEBOSH Certificate with Minimum of 2 Years in HSSE. Onshore Based for BLNG Project & Offshore Based for OME Project.',
       experience: '2+ years',
       lpa: 'BLNG & OME',
-      type: 'Full Time',
+      type: 'End 14th-Nov',
       icon: icon4, // replace with actual path
     },
   ];
