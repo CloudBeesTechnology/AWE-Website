@@ -20,7 +20,7 @@ export const CareerSection = () => {
         {/* Career Section */}
         <div className=" max-sm:my-2 mb-10">
           <h2 className="text-3xl max-sm:text-[20px] font-bold">CAREER</h2>
-          <p className="mt-4 text-[]18px] max-sm:text-[14px] max-sm:text-justify">
+          <p className="mt-4 text-[18px] max-sm:text-[14px] max-sm:text-justify">
             Fast movement, unlimited challenges and excitement to explore. This
             is a right track for you. Having been established since 1980, Adinin
             Works & Engineering Sdn. Bhd. is a leading EPC: Oil and Gas Sector
@@ -38,7 +38,7 @@ export const CareerSection = () => {
         <div className="space-y-4 ">
           {/* Title and description section */}
           <div className="text-center mb-6">
-            <h1 className="text-2xl  max-sm:text-[20px] font-bold mb-4">
+            <h1 className="text-2xl max-sm:text-[20px] font-bold mb-4">
               Available Job Listings
             </h1>
             <p className="text-[18px] max-sm:text-[14px] ">
