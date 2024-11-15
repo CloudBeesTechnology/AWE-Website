@@ -106,7 +106,7 @@ export const PersonalDetails = () => {
           <input
             type="text"
             {...register("contactNo")}
-            className="mt-2 p-2.5 text_size_9 bg-lite_skyBlue border border-[#dedddd] text-dark_grey outline-none rounded w-full"
+            className="mt-2 p-2.5 text_size_9  border border-[#dedddd]  outline-none rounded w-full"
           />
           {errors.contactNo && (
             <p className="text-[red] text-[12px]">{errors.contactNo.message}</p>
@@ -117,7 +117,7 @@ export const PersonalDetails = () => {
           <input
             type="text"
             {...register("alternateNo")}
-            className="mt-2 p-2.5 text_size_9 bg-lite_skyBlue border border-[#dedddd]  text-dark_grey outline-none rounded w-full"
+            className="mt-2 p-2.5 text_size_9  border border-[#dedddd]   outline-none rounded w-full"
           />
           {errors.alternateNo && (
             <p className="text-[red] text-[12px]">
@@ -135,7 +135,7 @@ export const PersonalDetails = () => {
           <input
             type="text"
             {...register("presentAddress")}
-            className="mt-2 p-2.5 text_size_9 bg-lite_skyBlue border border-[#dedddd] text-dark_grey outline-none rounded w-full"
+            className="mt-2 p-2.5 text_size_9  border border-[#dedddd]  outline-none rounded w-full"
           />
           {errors.presentAddress && (
             <p className="text-[red] text-[12px]">
@@ -148,7 +148,7 @@ export const PersonalDetails = () => {
           <input
             type="text"
             {...register("permanentAddress")}
-            className="mt-2 p-2.5 text_size_9 bg-lite_skyBlue border border-[#dedddd] text-dark_grey outline-none rounded w-full"
+            className="mt-2 p-2.5 text_size_9  border border-[#dedddd]  outline-none rounded w-full"
           />
           <p className="text-[red] text-[12px]">
             {errors.permanentAddress?.message}
@@ -163,14 +163,14 @@ export const PersonalDetails = () => {
           <input
             type="text"
             {...register("driveLic")}
-            className="mt-2 p-2.5 text_size_9 bg-lite_skyBlue border border-[#dedddd] text-dark_grey outline-none rounded w-full"
+            className="mt-2 p-2.5 text_size_9  border border-[#dedddd]  outline-none rounded w-full"
           />
         </div>
         <div>
           <label className="block mb-1">Language Proficiency</label>
           {/* <select
             {...register("lang")}
-            className="mt-2 p-2.5 text_size_9 bg-lite_skyBlue border border-[#dedddd] text-dark_grey outline-none rounded w-full"
+            className="mt-2 p-2.5 text_size_9  border border-[#dedddd]  outline-none rounded w-full"
           >
             <option value=""></option>
             {LanguageDD.map((option, index) => (
@@ -183,7 +183,7 @@ export const PersonalDetails = () => {
             type="text"
             {...register("lang")}
             placeholder="Ex: English, Mandarin, Malay, Other  "
-            className="mt-2 p-2.5 text_size_9 bg-lite_skyBlue border border-[#dedddd] text-dark_grey outline-none rounded w-full"
+            className="mt-2 p-2.5 text_size_9  border border-[#dedddd]  outline-none rounded w-full"
           />
           {errors.lang && (
             <p className="text-[red] text-[12px]">{errors.lang.message}</p>
@@ -198,7 +198,7 @@ export const PersonalDetails = () => {
           <input
             type="text"
             {...register("bwnIcNo")}
-            className="mt-2 p-2.5 text_size_9 bg-lite_skyBlue border border-[#dedddd] text-dark_grey outline-none rounded w-full"
+            className="mt-2 p-2.5 text_size_9  border border-[#dedddd]  outline-none rounded w-full"
           />
           {errors.bwnIcNo && (
             <p className="text-[red] text-[12px]">{errors.bwnIcNo.message}</p>
@@ -208,7 +208,7 @@ export const PersonalDetails = () => {
           <label className="block mb-1">Brunei I/C Colour</label>
           <select
             {...register("bwnIcColour")}
-            className="mt-2 p-2.5 text_size_9 bg-lite_skyBlue border border-[#dedddd] text-dark_grey outline-none rounded w-full"
+            className="mt-2 p-2.5 text_size_9  border border-[#dedddd]  outline-none rounded w-full"
           >
             <option value=""></option>
             {BwnIcColourDD.map((option, index) => (
@@ -231,7 +231,7 @@ export const PersonalDetails = () => {
           <input
             type="date"
             {...register("bwnIcExpiry")}
-            className="mt-2 p-2.5 text_size_9 bg-lite_skyBlue border border-[#dedddd] text-dark_grey outline-none rounded w-full"
+            className="mt-2 p-2.5 text_size_9  border border-[#dedddd]  outline-none rounded w-full"
           />
           {errors.bwnIcExpiry && (
             <p className="text-[red] text-[12px]">
@@ -247,7 +247,7 @@ export const PersonalDetails = () => {
           <input
             type="text"
             {...register("ppNo")}
-            className="mt-2 p-2.5 text_size_9 bg-lite_skyBlue border border-[#dedddd] text-dark_grey outline-none rounded w-full"
+            className="mt-2 p-2.5 text_size_9  border border-[#dedddd]  outline-none rounded w-full"
           />
           {errors.ppNo && (
             <p className="text-[red] text-[12px] ">{errors.ppNo.message}</p>
@@ -258,7 +258,7 @@ export const PersonalDetails = () => {
           <input
             type="date"
             {...register("ppIssued")}
-            className="mt-2 p-2.5 text_size_9 bg-lite_skyBlue border border-[#dedddd] text-dark_grey outline-none rounded w-full"
+            className="mt-2 p-2.5 text_size_9  border border-[#dedddd]  outline-none rounded w-full"
           />
           {errors.ppIssued && (
             <p className="text-[red] text-[12px]">{errors.ppIssued.message}</p>
@@ -269,7 +269,7 @@ export const PersonalDetails = () => {
           <input
             type="date"
             {...register("ppExpiry")}
-            className="mt-2 text_size_9 p-2.5 bg-lite_skyBlue border border-[#dedddd] text-dark_grey outline-none rounded w-full"
+            className="mt-2 text_size_9 p-2.5  border border-[#dedddd]  outline-none rounded w-full"
           />
           {errors.ppExpiry && (
             <p className="text-[red] text-[12px]">{errors.ppExpiry.message}</p>
@@ -280,7 +280,7 @@ export const PersonalDetails = () => {
           <input
             type="text"
             {...register("ppDestinate")}
-            className="mt-2 p-2.5 text_size_9 bg-lite_skyBlue border border-[#dedddd] text-dark_grey outline-none rounded w-full"
+            className="mt-2 p-2.5 text_size_9  border border-[#dedddd]  outline-none rounded w-full"
           />
           {errors.ppDestinate && (
             <p className="text-[red] text-[12px]">
@@ -301,37 +301,37 @@ export const PersonalDetails = () => {
               type="text"
               {...register(`familyDetails.${index}.name`)}
               placeholder="Name"
-              className="mt-2 p-2.5 text_size_9 bg-lite_skyBlue border border-[#dedddd] text-dark_grey outline-none rounded"
+              className="mt-2 p-2.5 text_size_9  border border-[#dedddd]  outline-none rounded"
             />
             <input
               type="text"
               {...register(`familyDetails.${index}.relationship`)}
               placeholder="Relationship"
-              className="mt-2 p-2.5 text_size_9 bg-lite_skyBlue border border-[#dedddd] text-dark_grey outline-none rounded"
+              className="mt-2 p-2.5 text_size_9  border border-[#dedddd]  outline-none rounded"
             />
             <input
               type="text"
               {...register(`familyDetails.${index}.age`)}
               placeholder="Age"
-              className="mt-2 p-2.5 text_size_9 bg-lite_skyBlue border border-[#dedddd] text-dark_grey outline-none rounded"
+              className="mt-2 p-2.5 text_size_9  border border-[#dedddd]  outline-none rounded"
             />
             <input
               type="text"
               {...register(`familyDetails.${index}.occupation`)}
               placeholder="Occupation"
-              className="mt-2 p-2.5 text_size_9 bg-lite_skyBlue border border-[#dedddd] text-dark_grey outline-none rounded"
+              className="mt-2 p-2.5 text_size_9  border border-[#dedddd]  outline-none rounded"
             />
             <input
               type="text"
               {...register(`familyDetails.${index}.placeOfOccupation`)}
               placeholder="Place of Occupation"
-              className="mt-2 p-2.5 text_size_9 bg-lite_skyBlue border border-[#dedddd] text-dark_grey outline-none rounded"
+              className="mt-2 p-2.5 text_size_9  border border-[#dedddd]  outline-none rounded"
             />
             {family.isNew && (
               <button
                 type="button"
                 onClick={() => removeFamily(index)} // Remove specific field set
-                className="absolute top-15 -right-7 text-medium_grey text-[18px]"
+                className="absolute top-15 -right-7  text-[18px]"
               >
                 <LuMinusSquare /> {/* Minus icon */}
               </button>
@@ -343,7 +343,7 @@ export const PersonalDetails = () => {
           type="button"
           onClick={handleAddFamily}
           // onClick={() => appendFamily({})}
-          className="absolute top-11 -right-7 text-medium_grey text-[18px]"
+          className="absolute top-11 -right-7  text-[18px]"
         >
           <LuPlusSquare />
         </button>
@@ -362,7 +362,7 @@ export const PersonalDetails = () => {
                   <textarea
                     {...field}
                     placeholder="School / University / Professional Institute"
-                    className="resize-none text_size_9 mt-2 p-2.5 bg-lite_skyBlue border border-[#dedddd] text-dark_grey outline-none rounded"
+                    className="resize-none text_size_9 mt-2 p-2.5  border border-[#dedddd]  outline-none rounded"
                   />
 
                   {errors.eduDetails?.[index]?.university && (
@@ -382,7 +382,7 @@ export const PersonalDetails = () => {
                     {...field}
                     type="date"
                     placeholder="From Date"
-                    className="resize-none mt-2 p-2.5 text_size_9  bg-lite_skyBlue border border-[#dedddd] text-dark_grey outline-none rounded"
+                    className="resize-none mt-2 p-2.5 text_size_9   border border-[#dedddd]  outline-none rounded"
                   ></textarea>
                   {errors.eduDetails?.[index]?.fromDate && (
                     <p className="text-[red] text-xs mt-1">
@@ -401,7 +401,7 @@ export const PersonalDetails = () => {
                     {...field}
                     type="date"
                     placeholder="To Date"
-                    className="resize-none mt-2 p-2.5 text_size_9  bg-lite_skyBlue border border-[#dedddd] text-dark_grey outline-none rounded"
+                    className="resize-none mt-2 p-2.5 text_size_9   border border-[#dedddd]  outline-none rounded"
                   ></textarea>
                   {errors.eduDetails?.[index]?.toDate && (
                     <p className="text-[red] text-xs mt-1">
@@ -419,7 +419,7 @@ export const PersonalDetails = () => {
                   <textarea
                     {...field}
                     placeholder="Highest Standard / Passed / Certificate / Degree / Professional Qualification"
-                    className="resize-none mt-2 p-2.5  bg-lite_skyBlue border border-[#dedddd] text-dark_grey outline-none rounded text_size_9"
+                    className="resize-none mt-2 p-2.5   border border-[#dedddd]  outline-none rounded text_size_9"
                   />
                   {errors.eduDetails?.[index]?.degree && (
                     <p className="text-[red] text-xs mt-1">
@@ -433,7 +433,7 @@ export const PersonalDetails = () => {
               <button
                 type="button"
                 onClick={() => removeEducation(index)} // Remove specific field set
-                className="absolute top-15 -right-7 text-medium_grey text-[18px]"
+                className="absolute top-15 -right-7  text-[18px]"
               >
                 <LuMinusSquare /> {/* Minus icon */}
               </button>
@@ -444,7 +444,7 @@ export const PersonalDetails = () => {
           type="button"
           onClick={handleAddEducation}
           // onClick={() => appendEducation({})}
-          className="absolute top-12 -right-7 text-medium_grey text-[18px]"
+          className="absolute top-12 -right-7  text-[18px]"
         >
           <LuPlusSquare />
         </button>
@@ -461,44 +461,44 @@ export const PersonalDetails = () => {
               type="text"
               {...register(`workExperience.${index}.name`)}
               placeholder="Name and Address"
-              className="mt-2 p-2.5 text_size_9 bg-lite_skyBlue border border-[#dedddd] text-dark_grey outline-none rounded"
+              className="mt-2 p-2.5 text_size_9  border border-[#dedddd]  outline-none rounded"
             />
             <input
               type="text"
               {...register(`workExperience.${index}.position`)}
               placeholder="Position Held"
-              className="mt-2 p-2.5 text_size_9 bg-lite_skyBlue border border-[#dedddd] text-dark_grey outline-none rounded"
+              className="mt-2 p-2.5 text_size_9  border border-[#dedddd]  outline-none rounded"
             />
             <input
               type="date"
               {...register(`workExperience.${index}.from`)}
               placeholder="From"
-              className="mt-2 p-2.5 text_size_9 bg-lite_skyBlue border border-[#dedddd] text-dark_grey outline-none rounded"
+              className="mt-2 p-2.5 text_size_9  border border-[#dedddd]  outline-none rounded"
             />
             <input
               type="date"
               {...register(`workExperience.${index}.to`)}
               placeholder="To"
-              className="mt-2 p-2.5 text_size_9 bg-lite_skyBlue border border-[#dedddd] text-dark_grey outline-none rounded"
+              className="mt-2 p-2.5 text_size_9  border border-[#dedddd]  outline-none rounded"
             />
             <input
               type="text"
               {...register(`workExperience.${index}.salary`)}
               placeholder="Salary"
-              className="mt-2 p-2.5 text_size_9 bg-lite_skyBlue border border-[#dedddd] text-dark_grey outline-none rounded"
+              className="mt-2 p-2.5 text_size_9  border border-[#dedddd]  outline-none rounded"
             />
             <input
               type="text"
               {...register(`workExperience.${index}.reasonForLeaving`)}
               placeholder="Reason for Leaving"
-              className="mt-2 p-2.5 text_size_9 bg-lite_skyBlue border border-[#dedddd] text-dark_grey outline-none rounded"
+              className="mt-2 p-2.5 text_size_9  border border-[#dedddd]  outline-none rounded"
             />
 
             {employment.isNew && (
               <button
                 type="button"
                 onClick={() => removeEmployment(index)} // Remove specific field set
-                className="absolute top-15 -right-7 text-medium_grey text-[18px]"
+                className="absolute top-15 -right-7  text-[18px]"
               >
                 <LuMinusSquare /> {/* Minus icon */}
               </button>
@@ -509,7 +509,7 @@ export const PersonalDetails = () => {
           type="button"
           onClick={handleAddEmployment}
           // onClick={() => appendEmployment({})}
-          className="absolute top-11 -right-7 text-medium_grey text-[18px]"
+          className="absolute top-11 -right-7  text-[18px]"
         >
           <LuPlusSquare />
         </button>
@@ -848,7 +848,7 @@ export const PersonalDetails = () => {
 //         <button
 //           type="button"
 //           onClick={() => appendFamily({})}
-//           className="absolute top-11 -right-7 text-medium_grey text-[18px]"
+//           className="absolute top-11 -right-7  text-[18px]"
 //         >
 //           <LuPlusSquare />
 //         </button>
@@ -939,7 +939,7 @@ export const PersonalDetails = () => {
 //         <button
 //           type="button"
 //           onClick={() => appendEducation({})}
-//           className="absolute top-12 -right-7 text-medium_grey text-[18px]"
+//           className="absolute top-12 -right-7  text-[18px]"
 //         >
 //           <LuPlusSquare />
 //         </button>
@@ -993,7 +993,7 @@ export const PersonalDetails = () => {
 //         <button
 //           type="button"
 //           onClick={() => appendEmployment({})}
-//           className="absolute top-11 -right-7 text-medium_grey text-[18px]"
+//           className="absolute top-11 -right-7  text-[18px]"
 //         >
 //           <LuPlusSquare />
 //         </button>

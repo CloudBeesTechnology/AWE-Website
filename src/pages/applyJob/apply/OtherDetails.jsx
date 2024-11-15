@@ -235,7 +235,7 @@ export const OtherDetails = () => {
                 <input
                   {...field}
                   disabled={watch("perIS") !== "yes"}
-                  className={`mt-2 text_size_7 p-2.5 bg-lite_skyBlue border border-[#dedddd] text-dark_grey outline-none rounded w-full ${
+                  className={`mt-2 text_size_7 p-2.5  border border-[#dedddd]  outline-none rounded w-full ${
                     errors.perIDesc ? "border-[red]" : ""
                   }`}
                 />
@@ -257,7 +257,7 @@ export const OtherDetails = () => {
         </label>
         <textarea
           {...register("supportInfo")}
-          className="resize-none mt-2 text_size_7 p-2.5 bg-lite_skyBlue border border-[#dedddd] text-dark_grey outline-none rounded w-full"
+          className="resize-none mt-2 text_size_7 p-2.5  border border-[#dedddd]  outline-none rounded w-full"
           rows="4"
         ></textarea>
       </div>
@@ -268,7 +268,7 @@ export const OtherDetails = () => {
         <div className="flex items-center justify-between mt-3 mb-10 gap-5">
           {/* Resume Upload */}
           <div>
-            <label className="flex items-center px-3 py-2 text_size_7 p-2.5 bg-lite_skyBlue border border-[#dedddd] rounded-md cursor-pointer">
+            <label className="flex items-center px-3 py-2 text_size_7 p-2.5  border border-[#dedddd] rounded-md cursor-pointer">
               Upload Resume
               <input
                 type="file"
@@ -295,7 +295,7 @@ export const OtherDetails = () => {
 
           {/* Certificate Upload */}
           <div>
-            <label className="flex items-center px-3 py-2 text_size_7 p-2.5 bg-lite_skyBlue border border-[#dedddd] rounded-md cursor-pointer">
+            <label className="flex items-center px-3 py-2 text_size_7 p-2.5  border border-[#dedddd] rounded-md cursor-pointer">
               Qualification Certificate
               <input
                 type="file"
@@ -321,7 +321,7 @@ export const OtherDetails = () => {
 
           {/* Passport Upload */}
           <div>
-            <label className="flex items-center px-3 py-2 text_size_7 p-2.5 bg-lite_skyBlue border border-[#dedddd] rounded-md cursor-pointer">
+            <label className="flex items-center px-3 py-2 text_size_7 p-2.5  border border-[#dedddd] rounded-md cursor-pointer">
               Upload IC / Passport
               <input
                 type="file"
@@ -354,9 +354,9 @@ export const OtherDetails = () => {
           {...register("empStatement", {
             required: "This field is required",
           })}
-          className="w-5 h-5 border-medium_grey rounded"
+          className="w-5 h-5  rounded"
         />
-        <label htmlFor="empStatement" className="ml-2 text-gray-700">
+        <label htmlFor="empStatement" className="ml-2 ">
           I Hereby Declare that every statement made by me in this form is true
           and correct and I understand and agree that any false declaration made
           by me may be ground for termination of my contract of employment
@@ -783,7 +783,7 @@ export const OtherDetails = () => {
 //         <div className="flex items-center justify-between mt-3 mb-10 max-sm:flex-wrap">
 //           {/* Resume Upload */}
 //           <div className="max-sm:w-full  mb-4">
-//             <label className="flex justify-between items-center px-3 py-2 text_size_7 p-2.5 bg-lite_skyBlue border border-[#dedddd] rounded-md cursor-pointer">
+//             <label className="flex justify-between items-center px-3 py-2 text_size_7 p-2.5  border border-[#dedddd] rounded-md cursor-pointer">
 //               Upload Resume
 //               <input
 //                 type="file"
@@ -804,7 +804,7 @@ export const OtherDetails = () => {
 
 //           {/* Certificate Upload */}
 //           <div className="max-sm:w-full mb-4">
-//             <label className="flex justify-between items-center px-3 py-2 text_size_7 p-2.5 bg-lite_skyBlue border border-[#dedddd] rounded-md cursor-pointer">
+//             <label className="flex justify-between items-center px-3 py-2 text_size_7 p-2.5  border border-[#dedddd] rounded-md cursor-pointer">
 //               Qualification Certificate
 //               <input
 //                 type="file"
@@ -825,7 +825,7 @@ export const OtherDetails = () => {
 
 //           {/* Passport Upload */}
 //           <div className="max-sm:w-full">
-//             <label className="flex justify-between items-center px-3 py-2 text_size_7 p-2.5 bg-lite_skyBlue border border-[#dedddd] rounded-md cursor-pointer">
+//             <label className="flex justify-between items-center px-3 py-2 text_size_7 p-2.5  border border-[#dedddd] rounded-md cursor-pointer">
 //               Upload IC / Passport
 //               <input
 //                 type="file"
@@ -850,7 +850,7 @@ export const OtherDetails = () => {
 //           type="checkbox"
 //           id="employeeStatement"
 //           {...register('employeeStatement', { required: 'This field is required' })}
-//           className="w-5 h-5 border-medium_grey rounded"
+//           className="w-5 h-5  rounded"
 //         />
 //         <label htmlFor="employeeStatement" className="ml-2 max-sm:text-[12px]">
 //           I Hereby Declare that every statement made by me in this form is true and correct and I understand and agree that any false declaration made by me may be ground for termination of my contract of employment without notice.

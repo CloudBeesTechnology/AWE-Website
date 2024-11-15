@@ -104,7 +104,7 @@ export const ApplicantDetails = () => {
               onChange={handleFileChange}
               className="hidden"
             />
-           <div className="h-[120px] max-w-[120px] relative rounded-md bg-lite_skyBlue">
+           <div className="h-[120px] max-w-[120px] relative rounded-md ">
               <img
                 src={
                   profilePhoto
@@ -120,7 +120,7 @@ export const ApplicantDetails = () => {
               />
               {(profilePhoto || uploadedDocs.profilePhoto) && (
                 <div
-                  className="absolute top-24 -right-3  bg-lite_grey p-[2px] rounded-full cursor-pointer"
+                  className="absolute top-24 -right-3  p-[2px] rounded-full cursor-pointer"
                   onClick={() => document.getElementById("fileInput").click()}
                 >
                   <IoCameraOutline className="w-6 h-6 p-1" />
@@ -155,7 +155,7 @@ export const ApplicantDetails = () => {
               onChange={(e) => handleFileUpload(e, "profilePhoto")}
               className="hidden"
             />
-            <div className="h-[120px] max-w-[120px] relative rounded-md bg-lite_skyBlue">
+            <div className="h-[120px] max-w-[120px] relative rounded-md ">
               <img
                 src={
                   profilePhoto
@@ -171,7 +171,7 @@ export const ApplicantDetails = () => {
               />
               {(profilePhoto || uploadedDocs.profilePhoto) && (
                 <div
-                  className="absolute top-24 -right-3  bg-lite_grey p-[2px] rounded-full cursor-pointer"
+                  className="absolute top-24 -right-3  p-[2px] rounded-full cursor-pointer"
                   onClick={() => document.getElementById("fileInput").click()}
                 >
                   <IoCameraOutline className="w-6 h-6 p-1" />
@@ -268,7 +268,7 @@ export const ApplicantDetails = () => {
               {field.type === "select" ? (
                 <select
                   {...register(field.name)}
-                  className="mt-2 p-2.5 text_size_7 bg-lite_skyBlue border border-[#dedddd] text-dark_grey outline-none rounded w-full"
+                  className="mt-2 p-2.5 text_size_7  border border-[#dedddd]  outline-none rounded w-full"
                 >
                     <option value=""></option>
                   {(field.options || []).map((option, i) => (
@@ -284,7 +284,7 @@ export const ApplicantDetails = () => {
                   disabled={field.disabled}
                   min={field.min}
                   max={field.max}
-                  className="mt-2 p-2 text_size_7 bg-lite_skyBlue border border-[#dedddd] text-dark_grey   outline-none rounded w-full"
+                  className="mt-2 p-2 text_size_7  border border-[#dedddd]    outline-none rounded w-full"
                 /> // border border-[#EAEAEA]
               )}
               {errors[field.name] && (
@@ -443,7 +443,7 @@ export const ApplicantDetails = () => {
 //               onChange={handleFileChange}
 //               className="hidden"
 //             />
-//             <div className="h-[120px] max-w-[120px] rounded-md bg-lite_skyBlue">
+//             <div className="h-[120px] max-w-[120px] rounded-md ">
 //               <img
 //                 src={file ? URL.createObjectURL(file) : avatar}
 //                 id="previewImg"
@@ -595,7 +595,7 @@ export const ApplicantDetails = () => {
 // //               <input
 // //                 {...register("position")}
 // //                 type="text"
-// //                 className="mt-2 p-2 text_size_7 bg-lite_skyBlue border border-[#dedddd] text-dark_grey outline-none rounded w-full"
+// //                 className="mt-2 p-2 text_size_7  border border-[#dedddd]  outline-none rounded w-full"
 // //               />
 // //               {errors.position && (
 // //                 <p className="text-[red] text-[13px]">{errors.position.message}</p>
@@ -622,7 +622,7 @@ export const ApplicantDetails = () => {
 // //               onChange={handleFileChange}
 // //               className="hidden"
 // //             />
-// //             <div className="h-[120px] max-w-[120px] rounded-md bg-lite_skyBlue">
+// //             <div className="h-[120px] max-w-[120px] rounded-md ">
 // //               <img
 // //                 src={file ? URL.createObjectURL(file) : avatar}
 // //                 id="previewImg"
@@ -667,7 +667,7 @@ export const ApplicantDetails = () => {
 // //               {field.type === "select" ? (
 // //                 <select
 // //                   {...register(field.name)}
-// //                   className="mt-2 p-2.5 text_size_7 bg-lite_skyBlue text-dark_grey outline-none rounded w-full"
+// //                   className="mt-2 p-2.5 text_size_7   outline-none rounded w-full"
 // //                 >
 // //                   {(field.options || []).map((option, i) => (
 // //                     <option key={i} value={option}>
@@ -680,7 +680,7 @@ export const ApplicantDetails = () => {
 // //                   {...register(field.name)}
 // //                   type={field.type}
 // //                   disabled={field.disabled}
-// //                   className="mt-2 p-2 text_size_7 bg-lite_skyBlue text-dark_grey outline-none rounded w-full"
+// //                   className="mt-2 p-2 text_size_7   outline-none rounded w-full"
 // //                 />
 // //               )}
 // //               {errors[field.name] && (
@@ -759,7 +759,7 @@ export const ApplicantDetails = () => {
 // //               <input
 // //                 {...register("position")}
 // //                 type="text"
-// //                 className="mt-2 p-2 text_size_7 bg-lite_skyBlue text-dark_grey outline-none rounded w-full"
+// //                 className="mt-2 p-2 text_size_7   outline-none rounded w-full"
 // //               />
 // //               {errors.position && <p className="text-[red] text-[13px]">{errors.position.message}</p>}
 // //             </div>
@@ -797,7 +797,7 @@ export const ApplicantDetails = () => {
 // //               onChange={handleFileChange}
 // //               className="hidden"
 // //             />
-// //             <div className="h-[120px] max-w-[120px] rounded-md bg-lite_skyBlue">
+// //             <div className="h-[120px] max-w-[120px] rounded-md ">
 // //               <img
 // //                 src={file ? URL.createObjectURL(file) : avatar}
 // //                 id="previewImg"
@@ -844,7 +844,7 @@ export const ApplicantDetails = () => {
 // //               {field.type === "select" ? (
 // //                 <select
 // //                   {...register(field.name)}
-// //                   className="mt-2 p-2.5 text_size_7 bg-lite_skyBlue text-dark_grey outline-none rounded w-full"
+// //                   className="mt-2 p-2.5 text_size_7   outline-none rounded w-full"
 // //                 >
 // //                   {(field.options || []).map((option, i) => (
 // //                     <option key={i} value={option}>
@@ -857,7 +857,7 @@ export const ApplicantDetails = () => {
 // //                   {...register(field.name)}
 // //                   type={field.type}
 // //                   disabled={field.disabled}
-// //                   className="mt-2 p-2 text_size_7 bg-lite_skyBlue text-dark_grey outline-none rounded w-full"
+// //                   className="mt-2 p-2 text_size_7   outline-none rounded w-full"
 // //                 />
 // //               )}
 // //               {errors[field.name] && (
@@ -932,7 +932,7 @@ export const ApplicantDetails = () => {
 // //               <input
 // //                 {...register("position")}
 // //                 type="text"
-// //                 className="mt-2 p-2 text_size_7 bg-lite_skyBlue text-dark_grey outline-none rounded w-full"
+// //                 className="mt-2 p-2 text_size_7   outline-none rounded w-full"
 // //               />
 // //               {errors.position && <p className="text-[red] text-[13px]">{errors.position.message}</p>}
 // //             </div>
@@ -964,7 +964,7 @@ export const ApplicantDetails = () => {
 // //               onChange={handleFileChange}
 // //               className="hidden"
 // //             />
-// //             <div className="h-[120px] max-w-[120px] rounded-md bg-lite_skyBlue">
+// //             <div className="h-[120px] max-w-[120px] rounded-md ">
 // //               <img
 // //                 src={file ? URL.createObjectURL(file) : avatar}
 // //                 id="previewImg"
@@ -1011,7 +1011,7 @@ export const ApplicantDetails = () => {
 // //               {field.type === "select" ? (
 // //                 <select
 // //                   {...register(field.name)}
-// //                   className="mt-2 p-2.5 text_size_7 bg-lite_skyBlue text-dark_grey outline-none rounded w-full"
+// //                   className="mt-2 p-2.5 text_size_7   outline-none rounded w-full"
 // //                 >
 // //                   {(field.options || []).map((option, i) => (
 // //                     <option key={i} value={option}>
@@ -1024,7 +1024,7 @@ export const ApplicantDetails = () => {
 // //                   {...register(field.name)}
 // //                   type={field.type}
 // //                   disabled={field.disabled}
-// //                   className="mt-2 p-2 text_size_7 bg-lite_skyBlue text-dark_grey outline-none rounded w-full"
+// //                   className="mt-2 p-2 text_size_7   outline-none rounded w-full"
 // //                 />
 // //               )}
 // //               {errors[field.name] && <p className="text-[red] text-[13px]">{errors[field.name]?.message}</p>}
@@ -1098,7 +1098,7 @@ export const ApplicantDetails = () => {
 // //                   <input
 // //                     {...field}
 // //                     type="text"
-// //                     className="mt-2 p-2 text_size_7 bg-lite_skyBlue text-dark_grey outline-none rounded w-full"
+// //                     className="mt-2 p-2 text_size_7   outline-none rounded w-full"
 // //                   />
 // //                 )}
 // //               />
@@ -1115,7 +1115,7 @@ export const ApplicantDetails = () => {
 // //               onChange={handleFileChange}
 // //               className="hidden"
 // //             />
-// //             <div className="h-[120px] max-w-[120px] rounded-md bg-lite_skyBlue">
+// //             <div className="h-[120px] max-w-[120px] rounded-md ">
 // //               <img
 // //                 src={file ? URL.createObjectURL(file) : avatar}
 // //                 id="previewImg"
@@ -1162,7 +1162,7 @@ export const ApplicantDetails = () => {
 // //                   render={({ field }) => (
 // //                     <select
 // //                       {...field}
-// //                       className="mt-2 p-2.5 text_size_7 bg-lite_skyBlue text-dark_grey outline-none rounded w-full"
+// //                       className="mt-2 p-2.5 text_size_7   outline-none rounded w-full"
 // //                     >
 // //                       {field.options.map((option, i) => (
 // //                         <option key={i} value={option}>
@@ -1181,7 +1181,7 @@ export const ApplicantDetails = () => {
 // //                       {...field}
 // //                       type={field.type}
 // //                       disabled={field.disabled}
-// //                       className="mt-2 p-2 text_size_7 bg-lite_skyBlue text-dark_grey outline-none rounded w-full"
+// //                       className="mt-2 p-2 text_size_7   outline-none rounded w-full"
 // //                     />
 // //                   )}
 // //                 />

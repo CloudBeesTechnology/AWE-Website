@@ -214,7 +214,7 @@ export const Footer = () => {
                     alt="CloudBees Technologies Logo"
                   />
                 </a>
-                <span className="absolute left-1/2 transform -translate-x-1/2 bottom-full mb-4 max-sm:mb-3 w-max rounded bg-gray-700 text-white text-xs p-1 opacity-0 group-hover:opacity-100 transition-opacity duration-200">
+                <span className="absolute left-1/2 transform -translate-x-1/2 bottom-full mb-4 max-sm:mb-3 w-max rounded text-white text-xs p-1 opacity-0 group-hover:opacity-100 transition-opacity duration-200">
                   Visit CloudBees Tech
                 </span>
                 

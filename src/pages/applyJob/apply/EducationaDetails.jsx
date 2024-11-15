@@ -166,7 +166,7 @@ export const EducationDetails = () => {
                 <input
                   {...field}
                   placeholder="Name"
-                  className="mt-2  text_size_7 p-2.5 bg-lite_skyBlue border border-[#dedddd] text-dark_grey outline-none rounded w-full"
+                  className="mt-2  text_size_7 p-2.5  border border-[#dedddd]  outline-none rounded w-full"
                 />
               )}
             />
@@ -177,7 +177,7 @@ export const EducationDetails = () => {
                 <input
                   {...field}
                   placeholder="Address"
-                  className="mt-2  text_size_7 p-2.5 bg-lite_skyBlue border border-[#dedddd] text-dark_grey outline-none rounded w-full"
+                  className="mt-2  text_size_7 p-2.5  border border-[#dedddd]  outline-none rounded w-full"
                 />
               )}
             />
@@ -188,7 +188,7 @@ export const EducationDetails = () => {
                 <input
                   {...field}
                   placeholder="Telephone"
-                  className="mt-2 text_size_7 w-[150px] p-2.5 bg-lite_skyBlue border border-[#dedddd] text-dark_grey outline-none rounded"
+                  className="mt-2 text_size_7 w-[150px] p-2.5  border border-[#dedddd]  outline-none rounded"
                 />
               )}
             />
@@ -199,7 +199,7 @@ export const EducationDetails = () => {
                 <input
                   {...field}
                   placeholder="Profession"
-                  className="mt-2 text_size_7 p-2.5 bg-lite_skyBlue border border-[#dedddd] text-dark_grey outline-none rounded w-full"
+                  className="mt-2 text_size_7 p-2.5  border border-[#dedddd]  outline-none rounded w-full"
                 />
               )}
             />
@@ -207,7 +207,7 @@ export const EducationDetails = () => {
               <button
                 type="button"
                 onClick={() => removeCharacterReferee(index)} // Remove specific field set
-                className="absolute top-15 -right-7 text-medium_grey text-[18px]"
+                className="absolute top-15 -right-7  text-[18px]"
               >
                 <LuMinusSquare />
               </button>
@@ -217,7 +217,7 @@ export const EducationDetails = () => {
         <button
           type="button"
           onClick={handleAddReferee} // Add a new referee with isNew: true
-          className="absolute top-11 -right-7 text-medium_grey text-[18px]"
+          className="absolute top-11 -right-7  text-[18px]"
         >
           <LuPlusSquare />
         </button>
@@ -237,7 +237,7 @@ export const EducationDetails = () => {
                 <input
                   {...field}
                   placeholder="Name"
-                  className="mt-2  text_size_7 p-2.5 bg-lite_skyBlue border border-[#dedddd] text-dark_grey outline-none rounded w-full"
+                  className="mt-2  text_size_7 p-2.5  border border-[#dedddd]  outline-none rounded w-full"
                 />
               )}
             />
@@ -248,7 +248,7 @@ export const EducationDetails = () => {
                 <input
                   {...field}
                   placeholder="Position Held"
-                  className="mt-2  text_size_7 p-2.5 bg-lite_skyBlue border border-[#dedddd] text-dark_grey outline-none rounded w-full"
+                  className="mt-2  text_size_7 p-2.5  border border-[#dedddd]  outline-none rounded w-full"
                 />
               )}
             />
@@ -259,7 +259,7 @@ export const EducationDetails = () => {
                 <input
                   {...field}
                   placeholder="Relationship"
-                  className="mt-2  text_size_7 p-2.5 bg-lite_skyBlue border border-[#dedddd] text-dark_grey outline-none rounded w-full"
+                  className="mt-2  text_size_7 p-2.5  border border-[#dedddd]  outline-none rounded w-full"
                 />
               )}
             />
@@ -268,7 +268,7 @@ export const EducationDetails = () => {
               <button
                 type="button"
                 onClick={() => removeRelative(index)} // Remove specific field set
-                className="absolute top-15 -right-7 text-medium_grey text-[18px]"
+                className="absolute top-15 -right-7  text-[18px]"
               >
                 <LuMinusSquare /> {/* Minus icon */}
               </button>
@@ -278,7 +278,7 @@ export const EducationDetails = () => {
         <button
           type="button"
           onClick={handleAddRelative}
-          className="absolute top-11 -right-7 text-medium_grey text-[18px]"
+          className="absolute top-11 -right-7  text-[18px]"
         >
           <LuPlusSquare />
         </button>
@@ -295,7 +295,7 @@ export const EducationDetails = () => {
           render={({ field }) => (
             <textarea
               {...field}
-              className="resize-none mt-2 text_size_7 p-2.5 bg-lite_skyBlue border border-[#dedddd] text-dark_grey outline-none rounded w-full"
+              className="resize-none mt-2 text_size_7 p-2.5  border border-[#dedddd]  outline-none rounded w-full"
               rows="3"
             ></textarea>
           )}
@@ -315,7 +315,7 @@ export const EducationDetails = () => {
                   <input
                     {...field}
                     placeholder="Name of Person notify"
-                    className="resize-none text_size_9 mt-2   p-2.5 bg-lite_skyBlue border border-[#dedddd] text-dark_grey outline-none rounded"
+                    className="resize-none text_size_9 mt-2   p-2.5  border border-[#dedddd]  outline-none rounded"
                   />
                   {errors.emgDetails?.[index]?.name && (
                     <p className="text-[red] text-xs mt-1">
@@ -333,7 +333,7 @@ export const EducationDetails = () => {
                   <input
                     {...field}
                     placeholder="Relationship"
-                    className="mt-2 p-2.5 text_size_9  bg-lite_skyBlue border border-[#dedddd] text-dark_grey outline-none rounded"
+                    className="mt-2 p-2.5 text_size_9   border border-[#dedddd]  outline-none rounded"
                   />
                   {errors.emgDetails?.[index]?.relationship && (
                     <p className="text-[red] text-xs mt-1">
@@ -351,7 +351,7 @@ export const EducationDetails = () => {
                   <input
                     {...field}
                     placeholder="Address"
-                    className="mt-2 p-2.5 text_size_9 bg-lite_skyBlue border border-[#dedddd] text-dark_grey outline-none rounded"
+                    className="mt-2 p-2.5 text_size_9  border border-[#dedddd]  outline-none rounded"
                   />
                   {errors.emgDetails?.[index]?.address && (
                     <p className="text-[red] text-xs mt-1">
@@ -369,7 +369,7 @@ export const EducationDetails = () => {
                   <input
                     {...field}
                     placeholder="Contant Number"
-                    className=" mt-2 p-2.5 bg-lite_skyBlue border border-[#dedddd] text-dark_grey outline-none rounded text_size_9"
+                    className=" mt-2 p-2.5  border border-[#dedddd]  outline-none rounded text_size_9"
                   />
                   {errors.emgDetails?.[index]?.phoneNumber && (
                     <p className="text-[red] text-xs mt-1">
@@ -387,7 +387,7 @@ export const EducationDetails = () => {
                   <input
                     {...field}
                     placeholder="Blood Group"
-                    className=" mt-2 p-2.5 text_size_9 bg-lite_skyBlue border border-[#dedddd] text-dark_grey outline-none rounded"
+                    className=" mt-2 p-2.5 text_size_9  border border-[#dedddd]  outline-none rounded"
                   />
                   {errors.emgDetails?.[index]?.bloodGroup && (
                     <p className="text-[red] text-xs mt-1">
@@ -401,7 +401,7 @@ export const EducationDetails = () => {
               <button
                 type="button"
                 onClick={() => removeEmergency(index)} // Remove specific field set
-                className="absolute top-15 -right-7 text-medium_grey text-[18px]"
+                className="absolute top-15 -right-7  text-[18px]"
               >
                 <LuMinusSquare /> {/* Minus icon */}
               </button>
@@ -411,7 +411,7 @@ export const EducationDetails = () => {
         <button
           type="button"
           onClick={handleAddEmergency}
-          className="absolute top-11 -right-7 text-medium_grey text-[18px]"
+          className="absolute top-11 -right-7  text-[18px]"
         >
           <LuPlusSquare />
         </button>
@@ -498,8 +498,8 @@ export const EducationDetails = () => {
                   <input
                     id={`${section.field}Desc`}
                     {...field}
-                    className={`w-[450px] mt-2 text_size_7 p-2.5 bg-lite_skyBlue border border-[#dedddd] text-dark_grey outline-none rounded ${
-                      errors[`${section.field}Desc`] ? "border-red-500" : ""
+                    className={`w-[450px] mt-2 text_size_7 p-2.5  border border-[#dedddd]  outline-none rounded ${
+                      errors[`${section.field}Desc`] ? "border-[red]" : ""
                     }`}
                     disabled={watch(section.field) !== "yes"} // Disable when "No" is selected
                   />
@@ -685,7 +685,7 @@ export const EducationDetails = () => {
 //         <button
 //           type="button"
 //           onClick={() => appendCharacterReferee({ name: "", address: "", telephone: "", profession: "" })}
-//           className="absolute top-11 -right-7 text-medium_grey text-[18px]"
+//           className="absolute top-11 -right-7  text-[18px]"
 //         >
 //           <LuPlusSquare />
 //         </button>
@@ -734,7 +734,7 @@ export const EducationDetails = () => {
 //         <button
 //           type="button"
 //           onClick={() => appendRelative({ name: "", positionHeld: "", relationship: "" })}
-//           className="absolute top-11 -right-7 text-medium_grey text-[18px]"
+//           className="absolute top-11 -right-7  text-[18px]"
 //         >
 //           <LuPlusSquare />
 //         </button>
@@ -857,7 +857,7 @@ export const EducationDetails = () => {
 //         <button
 //           type="button"
 //           onClick={() => appendEmergency({ name: "", relationship: "", address: "", phoneNumber: "", bloodGroup: "" })}
-//           className="absolute top-11 -right-7 text-medium_grey text-[18px]"
+//           className="absolute top-11 -right-7  text-[18px]"
 //         >
 //           <LuPlusSquare />
 //         </button>
@@ -935,7 +935,7 @@ export const EducationDetails = () => {
 //                   <input
 //                     id={`${section.field}Description`}
 //                     {...field}
-//                     className={`w-full sm:w-[450px] mt-2 text_size_7 p-2.5 bg-lite_skyBlue border border-[#dedddd] text-dark_grey outline-none rounded ${
+//                     className={`w-full sm:w-[450px] mt-2 text_size_7 p-2.5  border border-[#dedddd]  outline-none rounded ${
 //                       errors[`${section.field}Description`] ? "border-red-500" : ""
 //                     }`}
 //                     disabled={watch(section.field) !== "yes"} // Disable when "No" is selected
@@ -1012,32 +1012,32 @@ export const EducationDetails = () => {
 // //               type="text"
 // //               {...register(`characterReferees.${index}.name`)}
 // //               placeholder="Name"
-// //               className="mt-2 p-2 text_size_7 p-2.5 bg-lite_skyBlue border border-[#dedddd] text-dark_grey outline-none rounded w-full"
+// //               className="mt-2 p-2 text_size_7 p-2.5  border border-[#dedddd]  outline-none rounded w-full"
 // //             />
 // //             <input
 // //               type="text"
 // //               {...register(`characterReferees.${index}.address`)}
 // //               placeholder="Address"
-// //               className="mt-2 p-2 text_size_7 p-2.5 bg-lite_skyBlue border border-[#dedddd] text-dark_grey outline-none rounded w-full"
+// //               className="mt-2 p-2 text_size_7 p-2.5  border border-[#dedddd]  outline-none rounded w-full"
 // //             />
 // //             <input
 // //               type="text"
 // //               {...register(`characterReferees.${index}.telephone`)}
 // //               placeholder="Telephone"
-// //               className="mt-2 p-2 text_size_7 w-[150px] p-2.5 bg-lite_skyBlue border border-[#dedddd] text-dark_grey outline-none rounded"
+// //               className="mt-2 p-2 text_size_7 w-[150px] p-2.5  border border-[#dedddd]  outline-none rounded"
 // //             />
 // //             <input
 // //               type="text"
 // //               {...register(`characterReferees.${index}.profession`)}
 // //               placeholder="Profession"
-// //               className="mt-2 p-2 text_size_7 p-2.5 bg-lite_skyBlue border border-[#dedddd] text-dark_grey outline-none rounded w-full"
+// //               className="mt-2 p-2 text_size_7 p-2.5  border border-[#dedddd]  outline-none rounded w-full"
 // //             />
 // //           </div>
 // //         ))}
 // //         <button
 // //           type="button"
 // //           onClick={() => appendCharacterReferee({ name: "", address: "", telephone: "", profession: "" })}
-// //           className="absolute top-10 -right-7 text-medium_grey"
+// //           className="absolute top-10 -right-7 "
 // //         >
 // //           <LuPlusSquare />
 // //         </button>
@@ -1052,26 +1052,26 @@ export const EducationDetails = () => {
 // //               type="text"
 // //               {...register(`relatives.${index}.name`)}
 // //               placeholder="Name"
-// //               className="mt-2 p-2 text_size_7 p-2.5 bg-lite_skyBlue border border-[#dedddd] text-dark_grey outline-none rounded w-full"
+// //               className="mt-2 p-2 text_size_7 p-2.5  border border-[#dedddd]  outline-none rounded w-full"
 // //             />
 // //             <input
 // //               type="text"
 // //               {...register(`relatives.${index}.positionHeld`)}
 // //               placeholder="Position Held"
-// //               className="mt-2 p-2 text_size_7 p-2.5 bg-lite_skyBlue border border-[#dedddd] text-dark_grey outline-none rounded w-full"
+// //               className="mt-2 p-2 text_size_7 p-2.5  border border-[#dedddd]  outline-none rounded w-full"
 // //             />
 // //             <input
 // //               type="text"
 // //               {...register(`relatives.${index}.relationship`)}
 // //               placeholder="Relationship"
-// //               className="mt-2 p-2 text_size_7 p-2.5 bg-lite_skyBlue border border-[#dedddd] text-dark_grey outline-none rounded w-full"
+// //               className="mt-2 p-2 text_size_7 p-2.5  border border-[#dedddd]  outline-none rounded w-full"
 // //             />
 // //           </div>
 // //         ))}
 // //         <button
 // //           type="button"
 // //           onClick={() => appendRelative({ name: "", positionHeld: "", relationship: "" })}
-// //           className="absolute top-10 -right-7 text-medium_grey"
+// //           className="absolute top-10 -right-7 "
 // //         >
 // //           <LuPlusSquare />
 // //         </button>
@@ -1082,7 +1082,7 @@ export const EducationDetails = () => {
 // //         <label className="text_size_6 mb-3">Brief Description of Present Duties</label>
 // //         <textarea
 // //           {...register("duties")}
-// //           className="resize-none mt-2 p-2 text_size_7 p-2.5 bg-lite_skyBlue border border-[#dedddd] text-dark_grey outline-none rounded w-full"
+// //           className="resize-none mt-2 p-2 text_size_7 p-2.5  border border-[#dedddd]  outline-none rounded w-full"
 // //           rows="3"
 // //         ></textarea>
 // //       </div>
@@ -1100,7 +1100,7 @@ export const EducationDetails = () => {
 // //                   <input
 // //                     {...field}
 // //                     placeholder="Name"
-// //                     className="resize-none text_size_9 mt-2 p-2 w-[250px] p-2.5 bg-lite_skyBlue border border-[#dedddd] text-dark_grey outline-none rounded"
+// //                     className="resize-none text_size_9 mt-2 p-2 w-[250px] p-2.5  border border-[#dedddd]  outline-none rounded"
 // //                   />
 // //                   {errors.emergencyContact?.[index]?.name && (
 // //                     <p className="text-[red] text-xs mt-1">
@@ -1118,7 +1118,7 @@ export const EducationDetails = () => {
 // //                   <input
 // //                     {...field}
 // //                     placeholder="Relationship"
-// //                     className="resize-none mt-2 p-2 text_size_9 w-[120px] p-2.5 bg-lite_skyBlue border border-[#dedddd] text-dark_grey outline-none rounded"
+// //                     className="resize-none mt-2 p-2 text_size_9 w-[120px] p-2.5  border border-[#dedddd]  outline-none rounded"
 // //                   />
 // //                   {errors.emergencyContact?.[index]?.relationship && (
 // //                     <p className="text-[red] text-xs mt-1">
@@ -1136,7 +1136,7 @@ export const EducationDetails = () => {
 // //                   <input
 // //                     {...field}
 // //                     placeholder="Address"
-// //                     className="resize-none mt-2 p-2 text_size_9 w-[120px] p-2.5 bg-lite_skyBlue border border-[#dedddd] text-dark_grey outline-none rounded"
+// //                     className="resize-none mt-2 p-2 text_size_9 w-[120px] p-2.5  border border-[#dedddd]  outline-none rounded"
 // //                     rows="3"
 // //                   />
 // //                   {errors.emergencyContact?.[index]?.address && (
@@ -1155,7 +1155,7 @@ export const EducationDetails = () => {
 // //                   <input
 // //                     {...field}
 // //                     placeholder="Phone Number"
-// //                     className="resize-none mt-2 p-2 w-[280px] p-2.5 bg-lite_skyBlue border border-[#dedddd] text-dark_grey outline-none rounded text_size_9"
+// //                     className="resize-none mt-2 p-2 w-[280px] p-2.5  border border-[#dedddd]  outline-none rounded text_size_9"
 // //                   />
 // //                   {errors.emergencyContact?.[index]?.phoneNumber && (
 // //                     <p className="text-[red] text-xs mt-1">
@@ -1173,7 +1173,7 @@ export const EducationDetails = () => {
 // //                   <input
 // //                     {...field}
 // //                     placeholder="Blood Group"
-// //                     className="resize-none mt-2 p-2 text_size_9 w-[120px] p-2.5 bg-lite_skyBlue border border-[#dedddd] text-dark_grey outline-none rounded"
+// //                     className="resize-none mt-2 p-2 text_size_9 w-[120px] p-2.5  border border-[#dedddd]  outline-none rounded"
 // //                   />
 // //                   {errors.emergencyContact?.[index]?.bloodGroup && (
 // //                     <p className="text-[red] text-xs mt-1">
@@ -1188,7 +1188,7 @@ export const EducationDetails = () => {
 // //         <button
 // //           type="button"
 // //           onClick={() => appendEmergency({ name: "", relationship: "", address: "", phoneNumber: "", bloodGroup: "" })}
-// //           className="absolute top-0 right-0 text-medium_grey"
+// //           className="absolute top-0 right-0 "
 // //         >
 // //           <LuPlusSquare />
 // //         </button>
@@ -1232,7 +1232,7 @@ export const EducationDetails = () => {
 // //               <input
 // //                 type="text"
 // //                 {...register(`${section}Details`)}
-// //                 className="w-[450px] mt-2 p-2 text_size_7 p-2.5 bg-lite_skyBlue border border-[#dedddd] text-dark_grey outline-none rounded"
+// //                 className="w-[450px] mt-2 p-2 text_size_7 p-2.5  border border-[#dedddd]  outline-none rounded"
 // //                 disabled={watch(`${section}`) !== "yes"} // Disable when "No" is selected
 // //               />
 // //             </div>
