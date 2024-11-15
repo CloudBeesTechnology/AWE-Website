@@ -46,8 +46,11 @@ export const CareerSection = () => {
               move!
             </p>
           </div>
-
-          <div className="flex max-[742px]:justify-center justify-between items-center flex-wrap gap-7 p-2 gap-y-10">
+          <p className="center italic text-lg text-dark_red font-semibold">
+            "Stay tuned for exciting opportunities! We’ll be sharing upcoming
+            vacancies soon – don’t miss out!"
+          </p>
+          {/* <div className="flex max-[742px]:justify-center justify-between items-center flex-wrap gap-7 p-2 gap-y-10">
  
             {CareerData.map((job, index) => (
               <div
@@ -55,13 +58,13 @@ export const CareerSection = () => {
                 className="space-y-4 p-2 rounded-md shadow-md max-w-xs w-full border-2 border-[red]"
               >
                 <div className="flex gap-5 items-center">
-                  {/* <img
+                  <img
                     src={job.icon}
                     alt={job.title}
                     className=" max-w-[10px] w-full border text-[red]"
 
 
-                  /> */}
+                  />
                   <p className="font-bold text-lg">{job.title}</p>
                 </div>
                 <h4 className="font-semibold">Description</h4>
@@ -86,10 +89,9 @@ export const CareerSection = () => {
                 </div>
               </div>
             ))}
-          </div>
+          </div> */}
         </div>
       </div>
     </section>
   );
 };
-
