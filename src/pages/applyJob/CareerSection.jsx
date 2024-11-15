@@ -47,8 +47,8 @@ export const CareerSection = () => {
             </p>
           </div>
           <p className="center italic text-lg text-dark_red font-semibold">
-            "Stay tuned for exciting opportunities! We’ll be sharing upcoming
-            vacancies soon – don’t miss out!"
+            "Stay tuned for exciting opportunities! We'll be sharing upcoming
+            vacancies soon - don't miss out!"
           </p>
           {/* <div className="flex max-[742px]:justify-center justify-between items-center flex-wrap gap-7 p-2 gap-y-10">
  
@@ -67,7 +67,7 @@ export const CareerSection = () => {
                   />
                   <p className="font-bold text-lg">{job.title}</p>
                 </div>
-                <h4 className="font-semibold">Description</h4>
+                <h4 className="font-semibold">Competency Requirements</h4>
                 <p className="text-[12px] font-medium h-[60px]">
                   {job.description}
                 </p>
