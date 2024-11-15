@@ -7,7 +7,6 @@ import { useLocation, useNavigate } from "react-router-dom";
 import { IoCameraOutline } from "react-icons/io5";
 import { FormField } from "./FormField";
 import { ContractTypeDD, GenderDD, MaritalDD, NationalityDD, RaceDD, ReligionDD } from "./DropDownMenus";
-import { uploadDocs } from "./UploadDocs";
 
 export const ApplicantDetails = () => {
   useEffect(() => {
@@ -50,7 +49,7 @@ export const ApplicantDetails = () => {
       setProfilePhoto(selectedFile);
       setValue("profilePhoto", selectedFile);
 
-      await uploadDocs(selectedFile, "profilePhoto", setUploadedDocs, "Employee");
+      // await uploadDocs(selectedFile, "profilePhoto", setUploadedDocs, "Employee");
     }
   };
 

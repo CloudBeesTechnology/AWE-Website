@@ -42,7 +42,7 @@
 // };
 
 import React, { useState } from 'react';
-import get from 'lodash.get';
+// import get from 'lodash.get';
 
 export const FormField = ({
   label,
@@ -59,7 +59,7 @@ export const FormField = ({
   const [selectedOption, setSelectedOption] = useState("");
 
   // Display error only if there's no value in the selected option
-  const errorMessage = !selectedOption && get(errors, name)?.message;
+  // const errorMessage = !selectedOption && get(errors, name)?.message;
 
   const handleSelectChange = (e) => {
     const value = e.target.value;
@@ -102,9 +102,9 @@ export const FormField = ({
       )}
 
       {/* Show error message if no value is selected and there's an error */}
-      {errorMessage && (
+      {/* {errorMessage && (
         <p className="text-[red] text-[12px] pt-2">{errorMessage}</p>
-      )}
+      )} */}
     </div>
   );
 };

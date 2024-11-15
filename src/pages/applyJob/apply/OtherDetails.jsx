@@ -2,18 +2,12 @@ import React, { useEffect, useState } from "react";
 import { useForm, Controller } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import { CandidatesSchema } from "../../services/Validation";
-import { generateClient } from "aws-amplify/api";
 import { GoUpload } from "react-icons/go"; // Ensure this import is correct
 import { useLocation } from "react-router-dom";
-import { listPersonalDetails } from "../../../graphql/queries";
-import { RecODFunc } from "./RecODFunc";
 import { FormField } from "./FormField";
-import { uploadDocs } from "./UploadDocs";
 import { SpinLogo } from "./SpinLogo";
-const client = generateClient();
 
 export const OtherDetails = () => {
-  const { submitODFunc } = RecODFunc();
   const [notification, setNotification] = useState(false);
   const location = useLocation();
   const navigatingEducationData = location.state?.FormData;
@@ -44,103 +38,10 @@ export const OtherDetails = () => {
   });
 
   // File upload handler
-  const handleFileChange = async (e, type) => {
-    const file = e.target.files[0];
-    setValue(type, file); // Set file value for validation
-    const personName = navigatingEducationData?.name;
-    if (file) {
-      if (type === "uploadResume") {
-        await uploadDocs(file, "uploadResume", setUploadedDocs, personName);
 
-        setUploadedFileNames((prev) => ({
-          ...prev,
-          uploadResume: file.name, // Store the file name for display
-        }));
-      } else if (type === "uploadCertificate") {
-        await uploadDocs(
-          file,
-          "uploadCertificate",
-          setUploadedDocs,
-          personName
-        );
-
-        setUploadedFileNames((prev) => ({
-          ...prev,
-          uploadCertificate: file.name, // Store the file name for display
-        }));
-      } else if (type === "uploadPp") {
-        await uploadDocs(file, "uploadPassport", setUploadedDocs, personName);
-
-        setUploadedFileNames((prev) => ({
-          ...prev,
-          uploadPp: file.name, // Store the file name for display
-        }));
-      }
-    }
-  };
-
-  const getTotalCount = async () => {
-    try {
-      const result = await client.graphql({
-        query: listPersonalDetails,
-      });
-      const items = result?.data?.listPersonalDetails?.items || [];
-      return items.length; // Return the count of all entries
-    } catch (error) {
-      console.error("Error fetching total count:", error);
-      return 0; // Return 0 if there's an error
-    }
-  };
-
-  const generateNextTempID = (totalCount) => {
-    const nextNumber = totalCount + 1;
-    const nextTempID = `TEMP${String(nextNumber).padStart(3, "0")}`;
-    return nextTempID;
-  };
-
-  useEffect(() => {
-    const fetchNextTempID = async () => {
-      const totalCount = await getTotalCount();
-      const nextTempID = generateNextTempID(totalCount);
-      setLatesTempIDData(nextTempID); // Set the generated ID
-    };
-    fetchNextTempID();
-  }, []);
-
-  const onSubmit = async (data) => {
-    try {
-      const reqValue = {
-        ...data,
-        ...navigatingEducationData,
-        eduDetails: JSON.stringify(data.eduDetails),
-        familyDetails: JSON.stringify(data.familyDetails),
-        workExperience: JSON.stringify(data.workExperience),
-        emgDetails: JSON.stringify(data.emgDetails),
-        referees: JSON.stringify(data.referees),
-        relatives: JSON.stringify(data.relatives),
-        uploadResume: uploadedDocs.uploadResume,
-        uploadCertificate: uploadedDocs.uploadCertificate,
-        uploadPp: uploadedDocs.uploadPassport,
-        status:"Acitve"
-      };
-
-      await submitODFunc({
-        reqValue,
-        latestTempIDData,
-      });
-      setNotification(true);
-    } catch (error) {
-      console.log(error);
-      
-      console.error(
-        "Error submitting data to AWS:",
-        JSON.stringify(error, null, 2)
-      );
-    }
-  };
 
   return (
-    <form onSubmit={handleSubmit(onSubmit)} className="pt-5">
+    <form className="pt-5">
       {/* Salary Expected */}
       <div className=" grid grid-cols-2 gap-5">
         <div className="mb-4">
@@ -273,7 +174,7 @@ export const OtherDetails = () => {
               <input
                 type="file"
                 {...register("uploadResume")}
-                onChange={(e) => handleFileChange(e, "uploadResume")}
+                // onChange={(e) => handleFileChange(e, "uploadResume")}
                 className="hidden"
                 accept="application/pdf, application/msword, application/vnd.openxmlformats-officedocument.wordprocessingml.document"
               />
@@ -300,7 +201,7 @@ export const OtherDetails = () => {
               <input
                 type="file"
                 {...register("uploadCertificate")}
-                onChange={(e) => handleFileChange(e, "uploadCertificate")}
+                // onChange={(e) => handleFileChange(e, "uploadCertificate")}
                 className="hidden"
                 accept="application/pdf, image/png, image/jpeg"
               />
@@ -326,7 +227,7 @@ export const OtherDetails = () => {
               <input
                 type="file"
                 {...register("uploadPp")}
-                onChange={(e) => handleFileChange(e, "uploadPp")}
+                // onChange={(e) => handleFileChange(e, "uploadPp")}
                 className="hidden"
                 accept="application/pdf, image/png, image/jpeg"
               />
